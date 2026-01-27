@@ -1,0 +1,844 @@
+{
+  "version": "1.0",
+  "description": "CCH Tax Software Export File Mapping",
+  "file_structure": {
+    "encoding": "UTF-16LE",
+    "patterns": {
+      "header": "**BEGIN,{year}:I:{client_id}:{seq},{ssn},{office},{group},{location}",
+      "form": "\\@{form_code} \\ {form_name}",
+      "section": "\\:{section_number}",
+      "entry": "\\&{entry_number}",
+      "field": ".{field_number} {value}",
+      "end": "\\*"
+    }
+  },
+  "data_types": {
+    "string": {
+      "description": "Text value"
+    },
+    "currency": {
+      "description": "Monetary amount, may include commas and decimals"
+    },
+    "date": {
+      "description": "Date in MM/DD/YYYY or MM/DD/YY format"
+    },
+    "ssn": {
+      "description": "Social Security Number XXX-XX-XXXX"
+    },
+    "ein": {
+      "description": "Employer ID XX-XXXXXXX"
+    },
+    "state": {
+      "description": "Two-letter state code"
+    },
+    "zip": {
+      "description": "5 or 9 digit ZIP code"
+    },
+    "boolean": {
+      "description": "X indicates true"
+    },
+    "code": {
+      "description": "Single letter or short code"
+    },
+    "phone": {
+      "description": "Phone number"
+    },
+    "email": {
+      "description": "Email address"
+    },
+    "integer": {
+      "description": "Whole number"
+    },
+    "decimal": {
+      "description": "Decimal number"
+    }
+  },
+  "form_categories": {
+    "client_info": [
+      "101",
+      "151",
+      "103"
+    ],
+    "bank_info": [
+      "921",
+      "925"
+    ],
+    "irs_income": [
+      "180",
+      "181",
+      "182",
+      "183",
+      "184",
+      "185",
+      "190",
+      "267",
+      "761"
+    ],
+    "irs_deductions": [
+      "206",
+      "208",
+      "622"
+    ],
+    "irs_healthcare": [
+      "623",
+      "624",
+      "641"
+    ],
+    "worksheets": [
+      "131",
+      "132",
+      "133",
+      "134",
+      "135",
+      "136",
+      "171",
+      "172",
+      "177",
+      "191",
+      "204",
+      "211",
+      "212",
+      "213",
+      "217"
+    ],
+    "depreciation": [
+      "420",
+      "421"
+    ],
+    "consolidated": [
+      "881",
+      "882",
+      "883",
+      "886"
+    ],
+    "efile": [
+      "491",
+      "492",
+      "901"
+    ],
+    "passthrough": [
+      "185",
+      "120",
+      "311",
+      "312",
+      "313"
+    ],
+    "state_ny": [
+      "6840",
+      "6842",
+      "6843",
+      "6844",
+      "6848",
+      "6850",
+      "6852",
+      "6854",
+      "6888",
+      "6908"
+    ],
+    "state_nj": [
+      "6640",
+      "6642",
+      "6644",
+      "6646",
+      "6648",
+      "6652"
+    ],
+    "state_other": [
+      "3540",
+      "3740",
+      "3940",
+      "4140",
+      "4340",
+      "4540",
+      "4940",
+      "5140",
+      "5340",
+      "5440",
+      "5740",
+      "5940",
+      "6140",
+      "6340",
+      "6740",
+      "6940",
+      "7140",
+      "7240",
+      "7340",
+      "7440",
+      "7740",
+      "8340",
+      "8640",
+      "8740"
+    ]
+  },
+  "forms": {
+    "101": {
+      "name": "Client Information",
+      "irs_form": null,
+      "fields": {
+        "30": {
+          "name": "state",
+          "type": "state"
+        },
+        "31": {
+          "name": "city_code",
+          "type": "string"
+        },
+        "40": {
+          "name": "taxpayer_first_name",
+          "type": "string"
+        },
+        "41": {
+          "name": "taxpayer_middle_initial",
+          "type": "string"
+        },
+        "42": {
+          "name": "taxpayer_last_name",
+          "type": "string"
+        },
+        "44": {
+          "name": "taxpayer_ssn",
+          "type": "ssn"
+        },
+        "45": {
+          "name": "spouse_first_name",
+          "type": "string"
+        },
+        "47": {
+          "name": "spouse_last_name",
+          "type": "string"
+        },
+        "49": {
+          "name": "spouse_ssn",
+          "type": "ssn"
+        },
+        "60": {
+          "name": "taxpayer_occupation",
+          "type": "string"
+        },
+        "61": {
+          "name": "taxpayer_dob",
+          "type": "date"
+        },
+        "67": {
+          "name": "spouse_occupation",
+          "type": "string"
+        },
+        "68": {
+          "name": "spouse_dob",
+          "type": "date"
+        },
+        "80": {
+          "name": "address_street",
+          "type": "string"
+        },
+        "82": {
+          "name": "address_city",
+          "type": "string"
+        },
+        "83": {
+          "name": "address_state",
+          "type": "state"
+        },
+        "84": {
+          "name": "address_zip",
+          "type": "zip"
+        },
+        "90": {
+          "name": "filing_status",
+          "type": "code"
+        },
+        "110": {
+          "name": "dependent1_first_name",
+          "type": "string"
+        },
+        "112": {
+          "name": "dependent1_last_name",
+          "type": "string"
+        },
+        "114": {
+          "name": "dependent1_ssn",
+          "type": "ssn"
+        },
+        "115": {
+          "name": "dependent1_relationship",
+          "type": "string"
+        },
+        "117": {
+          "name": "dependent2_first_name",
+          "type": "string"
+        },
+        "119": {
+          "name": "dependent2_last_name",
+          "type": "string"
+        },
+        "121": {
+          "name": "dependent2_ssn",
+          "type": "ssn"
+        },
+        "122": {
+          "name": "dependent2_relationship",
+          "type": "string"
+        },
+        "140": {
+          "name": "dependent1_dob",
+          "type": "date"
+        },
+        "152": {
+          "name": "dependent2_dob",
+          "type": "date"
+        }
+      }
+    },
+    "180": {
+      "name": "W-2 Wage Statement",
+      "irs_form": "W-2",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code",
+          "values": {
+            "T": "Taxpayer",
+            "S": "Spouse"
+          }
+        },
+        "40": {
+          "name": "employer_ein",
+          "type": "ein",
+          "box": "b"
+        },
+        "41": {
+          "name": "employer_name",
+          "type": "string",
+          "box": "c"
+        },
+        "42": {
+          "name": "employer_address",
+          "type": "string"
+        },
+        "43": {
+          "name": "employer_city",
+          "type": "string"
+        },
+        "44": {
+          "name": "employer_state",
+          "type": "state"
+        },
+        "45": {
+          "name": "employer_zip",
+          "type": "zip"
+        },
+        "54": {
+          "name": "wages_tips",
+          "type": "currency",
+          "box": "1"
+        },
+        "55": {
+          "name": "fed_tax_withheld",
+          "type": "currency",
+          "box": "2"
+        },
+        "56": {
+          "name": "ss_wages",
+          "type": "currency",
+          "box": "3"
+        },
+        "57": {
+          "name": "ss_tax_withheld",
+          "type": "currency",
+          "box": "4"
+        },
+        "58": {
+          "name": "medicare_wages",
+          "type": "currency",
+          "box": "5"
+        },
+        "59": {
+          "name": "medicare_tax_withheld",
+          "type": "currency",
+          "box": "6"
+        },
+        "65": {
+          "name": "box12a_code",
+          "type": "code",
+          "box": "12a"
+        },
+        "66": {
+          "name": "box12a_amount",
+          "type": "currency"
+        },
+        "67": {
+          "name": "box12b_code",
+          "type": "code",
+          "box": "12b"
+        },
+        "68": {
+          "name": "box12b_amount",
+          "type": "currency"
+        },
+        "69": {
+          "name": "box12c_code",
+          "type": "code",
+          "box": "12c"
+        },
+        "70": {
+          "name": "box12c_amount",
+          "type": "currency"
+        },
+        "73": {
+          "name": "statutory_employee",
+          "type": "boolean",
+          "box": "13"
+        },
+        "74": {
+          "name": "retirement_plan",
+          "type": "boolean",
+          "box": "13"
+        },
+        "76": {
+          "name": "box14_desc1",
+          "type": "string",
+          "box": "14"
+        },
+        "77": {
+          "name": "box14_amt1",
+          "type": "currency"
+        },
+        "85": {
+          "name": "state",
+          "type": "state",
+          "box": "15"
+        },
+        "86": {
+          "name": "state_ein",
+          "type": "string"
+        },
+        "87": {
+          "name": "state_wages",
+          "type": "currency",
+          "box": "16"
+        },
+        "88": {
+          "name": "state_tax",
+          "type": "currency",
+          "box": "17"
+        },
+        "89": {
+          "name": "local_wages",
+          "type": "currency",
+          "box": "18"
+        },
+        "90": {
+          "name": "local_tax",
+          "type": "currency",
+          "box": "19"
+        },
+        "91": {
+          "name": "locality_name",
+          "type": "string",
+          "box": "20"
+        }
+      }
+    },
+    "181": {
+      "name": "1099-INT Interest Income",
+      "irs_form": "1099-INT",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "40": {
+          "name": "payer_name",
+          "type": "string"
+        },
+        "41": {
+          "name": "payer_address",
+          "type": "string"
+        },
+        "42": {
+          "name": "payer_city",
+          "type": "string"
+        },
+        "43": {
+          "name": "payer_state",
+          "type": "state"
+        },
+        "44": {
+          "name": "payer_zip",
+          "type": "zip"
+        },
+        "49": {
+          "name": "payer_tin",
+          "type": "ein"
+        },
+        "59": {
+          "name": "account_number",
+          "type": "string"
+        },
+        "71": {
+          "name": "interest_income",
+          "type": "currency",
+          "box": "1"
+        },
+        "72": {
+          "name": "early_withdrawal_penalty",
+          "type": "currency",
+          "box": "2"
+        },
+        "73": {
+          "name": "us_savings_bond_interest",
+          "type": "currency",
+          "box": "3"
+        },
+        "74": {
+          "name": "fed_tax_withheld",
+          "type": "currency",
+          "box": "4"
+        }
+      }
+    },
+    "182": {
+      "name": "1099-DIV Dividend Income",
+      "irs_form": "1099-DIV",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "40": {
+          "name": "payer_name",
+          "type": "string"
+        },
+        "49": {
+          "name": "payer_tin",
+          "type": "ein"
+        },
+        "70": {
+          "name": "ordinary_dividends",
+          "type": "currency",
+          "box": "1a"
+        },
+        "71": {
+          "name": "qualified_dividends",
+          "type": "currency",
+          "box": "1b"
+        },
+        "72": {
+          "name": "capital_gain_dist",
+          "type": "currency",
+          "box": "2a"
+        },
+        "78": {
+          "name": "nondividend_dist",
+          "type": "currency",
+          "box": "3"
+        },
+        "79": {
+          "name": "fed_tax_withheld",
+          "type": "currency",
+          "box": "4"
+        }
+      }
+    },
+    "184": {
+      "name": "1099-R Retirement Distributions",
+      "irs_form": "1099-R",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "40": {
+          "name": "payer_name",
+          "type": "string"
+        },
+        "47": {
+          "name": "payer_tin",
+          "type": "ein"
+        },
+        "56": {
+          "name": "gross_distribution",
+          "type": "currency",
+          "box": "1"
+        },
+        "57": {
+          "name": "taxable_amount",
+          "type": "currency",
+          "box": "2a"
+        },
+        "61": {
+          "name": "fed_tax_withheld",
+          "type": "currency",
+          "box": "4"
+        },
+        "64": {
+          "name": "distribution_code",
+          "type": "code",
+          "box": "7"
+        }
+      }
+    },
+    "185": {
+      "name": "K-1 Partnership Income",
+      "irs_form": "Schedule K-1 (1065)",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "33": {
+          "name": "partner_type",
+          "type": "code",
+          "values": {
+            "P": "General",
+            "L": "Limited"
+          }
+        },
+        "45": {
+          "name": "partnership_ein",
+          "type": "ein"
+        },
+        "46": {
+          "name": "partnership_name",
+          "type": "string"
+        },
+        "85": {
+          "name": "ordinary_income",
+          "type": "currency",
+          "box": "1"
+        },
+        "89": {
+          "name": "net_rental_re_income",
+          "type": "currency",
+          "box": "2"
+        },
+        "93": {
+          "name": "guaranteed_payments",
+          "type": "currency",
+          "box": "4c"
+        },
+        "94": {
+          "name": "interest_income",
+          "type": "currency",
+          "box": "5"
+        },
+        "95": {
+          "name": "ordinary_dividends",
+          "type": "currency",
+          "box": "6a"
+        },
+        "97": {
+          "name": "royalties",
+          "type": "currency",
+          "box": "7"
+        },
+        "98": {
+          "name": "net_stcg",
+          "type": "currency",
+          "box": "8"
+        },
+        "99": {
+          "name": "net_ltcg",
+          "type": "currency",
+          "box": "9a"
+        }
+      }
+    },
+    "190": {
+      "name": "SSA-1099 Social Security",
+      "irs_form": "SSA-1099",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "40": {
+          "name": "beneficiary_name",
+          "type": "string"
+        },
+        "42": {
+          "name": "benefits_paid",
+          "type": "currency",
+          "box": "3"
+        },
+        "44": {
+          "name": "net_benefits",
+          "type": "currency",
+          "box": "5"
+        },
+        "51": {
+          "name": "claim_number",
+          "type": "string"
+        }
+      }
+    },
+    "206": {
+      "name": "1098 Mortgage Interest",
+      "irs_form": "1098",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "34": {
+          "name": "lender_name",
+          "type": "string"
+        },
+        "41": {
+          "name": "mortgage_interest",
+          "type": "currency",
+          "box": "1"
+        },
+        "42": {
+          "name": "lender_tin",
+          "type": "ein"
+        },
+        "44": {
+          "name": "points_paid",
+          "type": "currency",
+          "box": "6"
+        },
+        "55": {
+          "name": "property_address",
+          "type": "string"
+        }
+      }
+    },
+    "267": {
+      "name": "1099-NEC Non-Employee Compensation",
+      "irs_form": "1099-NEC",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "40": {
+          "name": "payer_name",
+          "type": "string"
+        },
+        "49": {
+          "name": "payer_tin",
+          "type": "ein"
+        },
+        "59": {
+          "name": "nonemployee_compensation",
+          "type": "currency",
+          "box": "1"
+        },
+        "70": {
+          "name": "fed_tax_withheld",
+          "type": "currency",
+          "box": "4"
+        }
+      }
+    },
+    "622": {
+      "name": "1098-E Student Loan Interest",
+      "irs_form": "1098-E",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "40": {
+          "name": "lender_name",
+          "type": "string"
+        },
+        "48": {
+          "name": "lender_tin",
+          "type": "ein"
+        },
+        "60": {
+          "name": "student_loan_interest",
+          "type": "currency",
+          "box": "1"
+        }
+      }
+    },
+    "624": {
+      "name": "1095-A Health Insurance Marketplace",
+      "irs_form": "1095-A",
+      "fields": {
+        "40": {
+          "name": "marketplace_state",
+          "type": "state"
+        },
+        "41": {
+          "name": "policy_number",
+          "type": "string"
+        },
+        "42": {
+          "name": "plan_name",
+          "type": "string"
+        },
+        "62": {
+          "name": "covered_individual",
+          "type": "string"
+        },
+        "126": {
+          "name": "annual_premium",
+          "type": "currency",
+          "box": "33A"
+        },
+        "127": {
+          "name": "annual_slcsp",
+          "type": "currency",
+          "box": "33B"
+        },
+        "128": {
+          "name": "annual_aptc",
+          "type": "currency",
+          "box": "33C"
+        }
+      }
+    },
+    "921": {
+      "name": "Bank Account Information",
+      "irs_form": null,
+      "fields": {
+        "33": {
+          "name": "checking_account",
+          "type": "boolean"
+        },
+        "37": {
+          "name": "bank_name",
+          "type": "string"
+        },
+        "38": {
+          "name": "routing_number",
+          "type": "string"
+        },
+        "39": {
+          "name": "account_number",
+          "type": "string"
+        },
+        "41": {
+          "name": "direct_deposit",
+          "type": "boolean"
+        }
+      }
+    },
+    "120": {
+      "name": "S-Corp K-1",
+      "irs_form": "K-1 1120S",
+      "fields": {
+        "30": {
+          "name": "taxpayer_or_spouse",
+          "type": "code"
+        },
+        "44": {
+          "name": "corporation_ein",
+          "type": "ein"
+        },
+        "45": {
+          "name": "corporation_name",
+          "type": "string"
+        },
+        "60": {
+          "name": "box1_ordinary_income",
+          "type": "currency"
+        }
+      }
+    }
+  }
+}

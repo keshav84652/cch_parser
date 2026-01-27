@@ -1,0 +1,2447 @@
+**BEGIN,2023:I:20010:1,130-68-4150,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.143 1
+.155 2
+.167 3
+.30 NY
+.31 NYC
+.211M P01264592
+.213M 115274
+.44 130-68-4150
+.49 130-66-8478
+.66 B
+.72 B
+.60 Dentist
+.67 Real Estate
+.61 07/16/1978
+.68 02/10/1983
+.80 100 Barclay Street
+.82 New York
+.83 NY
+.84 10007
+.90 2
+.40 Rabiel
+.42 Amirian
+.45 Natalie
+.112 Amirian
+.119 Amirian
+.180 S
+.110 Noah Zachary
+.115 Son
+.185 S
+.117 Layla
+.122 Daughter
+.190 S
+.124 Elle
+.129 Daughter
+.140 10/12/2013
+.114 733-35-4610
+.152 01/14/2016
+.121 442-83-5192
+.164 11/15/2019
+.128 859-07-9881
+.47 Maroof
+.81 22A
+.126 Amirian
+.204M 20010:V1
+.206M 2022.05030
+.435M X
+.207M 2022.05010
+.205M X
+.200M 2022.0503
+.201M X
+.210M PRAKASH T KASAT CPA
+.299 X
+.202M 12/03/2023
+.203M 10/15/20
+\@151 \ 1A
+\:1
+\&1
+.65 (718) 227-6035
+.71 (516) 967-6760
+.75 bkdentist@gmail.com
+.77 3
+.78 3
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Entity Fully Disposed SchK entity 1 R & B 26, LLC. Please Review.
+.92 Foreign Country Code blank or invalid.  Review Foreign Tax Credit.
+.94 Payer EIN blank or invalid.  Review Form IRS 1099-G,
+.96 Payer EIN blank or invalid. Review IRS-1099MISC Income.
+.98 - Payments in Lieu of dividends
+.100 Asset Business Use less than 100% #8 134 Hampshire Rd
+.102 Address information has been transferred from the prior year.
+\@103 \ 3
+\:1
+\&2
+.90 Please review this information to ensure the information is correct.
+.92 Address information has been transferred from the prior year.
+.94 Please review this information to ensure the information is correct.
+.96 Overrides have pro formaed to New York Other >
+.98 LLC / LLP Filing Fee Payment Form (Interview Form NY32).
+.100 Please verify these still apply.
+.102 Address information has been transferred from the prior year.
+\@103 \ 3
+\:1
+\&3
+.90 Please review this information to ensure the information is correct.
+.92 Overrides have pro formaed to  Consolidated 1099 >
+.94 Form 1099-DIV Dividend Income > (Interview Form CN-2).
+.96 Please verify these still apply.
+.98 Overrides have pro formaed to New York Other >
+.100 LLC / LLP Filing Fee Payment Form (Interview Form NY32).
+.102 Please verify these still apply.
+\@103 \ 3
+\:1
+\&4
+.90 Address information has been transferred from the prior year.
+.92 Please review this information to ensure the information is correct.
+\@104 \ 4
+\:1
+\&1
+.36 2
+.37 2
+\@105 \ 5
+\:1
+\&1
+.91 749927
+.96 2
+\@106 \ 6
+\:1
+\&1
+.45 N
+\@108 \ 8
+\:1
+\&1
+.30 2
+.31 .35
+.35 882436
+.36 5255
+.37 55681
+.42 -3000
+.48 -195965
+.53 744407
+.88 1730
+.76 744407
+.81 10000
+.82 29820
+.83 145695
+.86 185515
+.89 187245
+.90 557162
+.38 30591
+\@109 \ 9
+\:1
+\&1
+.41 818
+.58 137106
+.71 5692
+.72 688
+.75 143486
+.85 104382
+.98 40000
+.99 6537
+.30 137924
+.106 154471
+.107 10985
+.108 10397
+.110 588
+.118 7473
+.115 NY
+.116 791770
+.117 84702
+.122 52513
+.120 129742
+.34 137924
+.87 3552
+\@921 \ BNK-1
+\:1
+\&1
+.41 X
+.38 021000089
+.39 6782910080
+.40 1
+.33 X
+.34 X
+\@180 \ IRS-W2
+\:1
+\&1
+.30 T
+.54 130192
+.55 1405
+.41 Advanced Dental Care of NYC PC
+.42 142 Joralemon Street - 6EF
+.43 Brooklyn
+.56 130192
+.57 8071.9
+.58 130192
+.59 1887.78
+.54M 594,608.
+.40 27-1287360
+.85 NY
+.86 27-1287360
+.87 130192
+.88 624
+.90 380
+.89 130192
+.91 NYC
+.44 NY
+.45 11201
+.210 3
+\@180 \ IRS-W2
+\:2
+\&2
+.30 T
+.54 50000
+.41 Brooklyn Comfortable Dental Care
+.42 89 Remsen St
+.43 Brooklyn
+.56 50000
+.57 3100
+.58 50000
+.59 725
+.74 X
+.54M 77,000.
+.40 82-2778042
+.85 NY
+.86 822778042
+.87 50000
+.88 1113.75
+.90 1630.75
+.89 50000
+.92 NYC
+.91 NYC
+.44 NY
+.45 11201
+.210 11
+\@180 \ IRS-W2
+\:4
+\&3
+.30 S
+.54 132800
+.55 11571
+.41 Advanced Dental Care of NYC PC
+.42 142 Joralemon Street - 6EF
+.43 Brooklyn
+.56 132800
+.57 8233.6
+.58 132800
+.59 1925.6
+.76 NYSDI
+.77 28
+.79 NYPFL
+.80 399
+.54M 182,400.
+.40 27-1287360
+.85 NY
+.86 271287360
+.87 132800
+.88 7005
+.90 4878
+.89 132800
+.91 NYC
+.44 NY
+.45 11201
+\@180 \ IRS-W2
+\:5
+\&4
+.30 S
+.54 39214
+.55 2851
+.41 Royal Chain Inc
+.42 2 W 46th Street
+.43 New York
+.56 39214
+.57 2431.27
+.58 39214
+.59 568.6
+.40 13-2968795
+.85 NY
+.86 132968795
+.87 39214
+.88 1479
+.90 1087
+.89 39214
+.91 NYC
+.44 NY
+.45 10036
+\@133 \ A-3
+\:1
+\&1
+.33 T
+.30 34490
+.LIST 30 _ 3
+Mnanda - 10/12/21 11:58 AM Worksheet Itemized Deductions (Schedule A)
+Peoples United                        17978           _
+                                      16512           _
+\@134 \ A-4
+\:1
+\&1
+.40 Margin Interest
+.41 A
+.42 34490
+.LIST 42 _ 3
+150415 - 10/15/23 21:15 PM Worksheet Itemized Deductions (Schedule A)
+Fixed line ending in 811              17978       17977
+Fixed line ending in 337              16512       15208
+.43 T
+.46 Disallowed Investment Interest Prior Years
+.47 D
+.48 7665
+.LIST 48 _ 3
+150415 - 10/15/23 21:15 PM Worksheet Itemized Deductions (Schedule A)
+Fixed line ending in 811                  _       17977
+Fixed line ending in 337                  _       15208
+.49 T
+.70 T
+.76 7670
+.42M 33,185.
+.76M 3,402.
+\@135 \ A-5
+\:1
+\&1
+.31 T
+.30 139763
+.61 T
+.67 T
+.73 T
+.60M 1,319.
+.66M 4,225.
+.72M 7,500.
+\@420 \ DP-1
+\:1
+\&1
+\F20016
+\O1
+.30 1
+.36 2
+.42 3
+.48 4
+.54 5
+.113 B
+.31 142 Joralemon St -  6CD
+.32 12/10/15
+.33 MSL
+.34 39
+.35 306277
+.65 55299
+.66 7853
+.71 7853
+.37 Land - Unit CD
+.43 142 Joralemon St - 6EF
+.49 Land - Unit EF
+.55 Closing costs
+.38 12/10/15
+.44 12/10/15
+.50 12/10/15
+.56 12/10/15
+.126 L
+.139 B
+.152 L
+.165 B
+.39 L
+.45 MSL
+.51 L
+.57 MSL
+.46 39
+.58 39
+.41 34031
+.47 382630
+.53 42514
+.59 9175
+.81 69086
+.97 1655
+.82 9811
+.98 235
+.87 9811
+.103 235
+.70 55299
+.86 69086
+.102 1655
+\@420 \ DP-1
+\:1
+\&2
+\F20016
+\O1
+.30 6
+.36 7
+.113 B
+.31 142 Joralemon - 6A
+.32 01/05/17
+.33 MSL
+.34 39
+.35 368989
+.65 56386
+.66 9461
+.71 9461
+.37 Land-142 Joralemon - 6A
+.38 01/05/17
+.126 L
+.39 L
+.41 40999
+.70 56386
+\@420 \ DP-1
+\:2
+\&3
+\F20016
+\O2
+.30 8
+.36 9
+.113 B
+.31 134 Hampshire Rd
+.32 06/30/15
+.33 MSL
+.34 39
+.35 664000
+.65 136200
+.66 17026
+.71 17026
+.37 Land-134 Hampshire
+.38 06/30/15
+.126 L
+.39 L
+.41 166000
+.70 136200
+\@422 \ DP-3
+\:2
+\&1
+\F20016
+\O2
+.30 8
+.38 .5
+.37 .5
+.40 .5
+.39 .5
+.135 68100
+.136 68100
+\@181 \ IRS-1099INT
+\:1
+\&1
+.30 T
+.71M 300.
+.40 Citibank & Various
+\@181 \ IRS-1099INT
+\:1
+\&2
+.30 S
+.71M 4.
+.40 JP Morgan
+\@182 \ IRS-1099DIV
+\:1
+\&1
+.30 S
+.70 439
+.72 1678
+.43 TX
+.44 78278
+.70M 2,302.
+.40 AB Relative value A
+.41 PO Box 786003
+.42 San Antonio
+.71 439
+\@182 \ IRS-1099DIV
+\:1
+\&2
+.30 T
+.70 9977
+.43 MO
+.44 64121
+.70M 5,939.
+.40 Blackstone Private credit fund
+.41 PO Box 219270
+.42 Kansas City
+\@182 \ IRS-1099DIV
+\:1
+\&3
+.30 T
+.72 1674
+.73 1408
+.78 9491
+.43 MO
+.44 64121
+.70M 532.
+.40 Blackstone Real Estate
+.41 PO Box 219349
+.42 Kansas City
+\@182 \ IRS-1099DIV
+\:1
+\&4
+.30 T
+.78 125
+.40 Fundrise East Coast Opportunistic REIT LLC
+\@182 \ IRS-1099DIV
+\:1
+\&5
+.30 T
+.70 265
+.78 1061
+.70M 19,008.
+.40 Fundrise Equity REIT LLC
+.80 265
+\@182 \ IRS-1099DIV
+\:1
+\&6
+.30 T
+.70 1827
+.43 DC
+.44 20036
+.70M 469.
+.40 Fundrise Income real estate fund, LLC
+.41 11 Dupont Circle, 9th Floor
+.42 Washington
+.80 1827
+\@182 \ IRS-1099DIV
+\:1
+\&7
+.30 T
+.70M 127.
+.40 Fundrise Real Estate Investment Trust
+\@182 \ IRS-1099DIV
+\:1
+\&8
+.30 T
+.70 266
+.43 DC
+.44 20036
+.70M 253.
+.40 Fundrise West Coast Opportunistic REIT LLC
+.41 11 Dupont Circle, 9th Floor
+.42 Washington
+.80 266
+\@182 \ IRS-1099DIV
+\:1
+\&9
+.30 S
+.70 61
+.72 601
+.43 MO
+.44 64121
+.70M 2,316.
+.40 Invesco Investment Svcs, Inc
+.41 PO Box 219319
+.42 Kansas City
+.71 61
+\@182 \ IRS-1099DIV
+\:1
+\&10
+.30 T
+.78 86
+.43 DC
+.44 20036
+.40 Fundrise Real Estate Interval Fund, LLC
+.41 11 Dupont Circle NW, 9th Floor
+.42 Washington
+.49 83-4327607
+\@881 \ CN-1
+\:5
+\&1
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-29087
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:8
+\&2
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-29114
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:9
+\&3
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-29115
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:10
+\&4
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-28544
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:13
+\&5
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-40660
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:14
+\&6
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-40663
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:17
+\&7
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 04-3523567
+.46 636-350208
+.51 New York
+.34 National Financial Services LLC
+.30 T
+.35 499 Washington Blvd
+.56 130-68-4150
+.36 Jersey City
+.37 NJ
+.38 07310
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:18
+\&8
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 04-3523567
+.46 656-484472
+.51 New York
+.34 National financial Services LLC
+.30 T
+.35 499 Washington Blvd
+.56 130-68-4150
+.36 jersey City
+.37 NJ
+.38 07310
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:20
+\&9
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.51 New York
+.34 Merrill BOA 98L79
+.30 T
+.56 130-68-4150
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:21
+\&10
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-40659
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:22
+\&11
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-42458
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:23
+\&12
+.50 100 Barclay Street Apt. No. 22A
+.49 Rabiel Amirian
+.44 13-5674085
+.46 877-29090
+.51 New York
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.56 130-68-4150
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:24
+\&13
+.50 100 Barclay Street Apt. No. 22A
+.49 Natalie Maroof
+.44 13-5674085
+.46 830-15649
+.51 New York
+.34 Merrill BOA 15649
+.30 S
+.35 1500 American Boulevard
+.56 130-66-8478
+.36 Pennington
+.37 NJ
+.38 08534
+.52 NY
+.53 10007
+\@881 \ CN-1
+\:26
+\&14
+.44 13-5674085
+.46 877-29089
+.34 Merrill Bank of America Company
+.30 T
+.35 1500 American Boulevard
+.36 Pennington
+.37 NJ
+.38 08534
+\@882 \ CN-2
+\:5
+\&1
+.31 1698
+.32 1698
+.53 OC
+.52 2
+.54 OC
+.57 71
+.60 419
+.LIST 60 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.61 419
+.LIST 61 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.31M 1,975.
+\@882 \ CN-2
+\:9
+\&2
+.31 9128
+.32 8778
+.34 6
+.35 2
+.40 106
+.53 OC
+.52 2
+.54 OC
+.57 82
+.60 846
+.LIST 60 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.61 846
+.LIST 61 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.42 322
+.39 6
+.31M 8,025.
+\@882 \ CN-2
+\:10
+\&3
+.31 6077
+.31M 16.
+\@882 \ CN-2
+\:13
+\&4
+.31 4604
+.32 117
+.34 701
+.35 183
+.40 492
+.42 4411
+.38 85
+.39 589
+.31M 4,843.
+\@882 \ CN-2
+\:14
+\&5
+.30 Merrill BOA 40663
+.31 3207
+.32 2972
+.34 30
+.35 3
+.40 44
+.53 UK
+.52 2
+.57 0
+.60 68
+.LIST 60 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.61 68
+.LIST 61 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.42 210
+.39 30
+.31M 3,061.
+\@882 \ CN-2
+\:17
+\&6
+.31 21175
+.34 2582
+.35 234
+.40 5234
+.42 1805
+.31M 14,957.
+\@882 \ CN-2
+\:18
+\&7
+.31 2501
+.32 2055
+.40 29
+.53 OC
+.52 2
+.54 OC
+.57 83
+.60 1004
+.LIST 60 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.61 800
+.LIST 61 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.42 141
+.31M 4,335.
+\@882 \ CN-2
+\:20
+\&8
+.53 OC
+.52 2
+.31M 4,854.
+\@882 \ CN-2
+\:24
+\&9
+.31 5008
+.32 4654
+.34 2703
+.53 OC
+.52 2
+.57 222
+.60 1954
+.LIST 60 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.61 1264
+.LIST 61 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.42 9
+.31M 10,287.
+\@882 \ CN-2
+\:26
+\&10
+.31 1909
+.32 1867
+.53 OC
+.52 2
+.54 OC
+.57 218
+.60 1503
+.LIST 60 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+.61 1502
+.LIST 61 _ 3
+NAgarwal - 10/12/24 08:42 AM Worksheet Consolidated 1099
+                                         80           _
+                                        339           _
+\@883 \ CN-3
+\:5
+\&1
+.31 57
+\@883 \ CN-3
+\:8
+\&2
+.31 28
+.31M 12.
+\@883 \ CN-3
+\:8
+\&3
+.30 Merrill BOA 29114 - AIP
+\@883 \ CN-3
+\:8
+\&4
+.30 Merrill BOA 29114 - US OID
+\@883 \ CN-3
+\:9
+\&5
+.31 94
+.31M 20.
+\@883 \ CN-3
+\:10
+\&6
+.31 16221
+.31M 4,505.
+\@883 \ CN-3
+\:13
+\&7
+.31 23
+\@883 \ CN-3
+\:14
+\&8
+.31 38
+\@883 \ CN-3
+\:21
+\&9
+.31 194
+.31M 44.
+\@883 \ CN-3
+\:22
+\&10
+.31 74
+.31M 10.
+\@883 \ CN-3
+\:23
+\&11
+.31 133
+.47 0
+.31M 15,950.
+.39 1832
+.45 9870
+\@883 \ CN-3
+\:24
+\&12
+.31 36
+.31M 15.
+\@883 \ CN-3
+\:26
+\&13
+.31 33
+\@886 \ CN-4
+\:5
+\&1
+.30 Merrill #9087 ST
+.34 S
+.35 A
+.38 Merrill #9087 LT
+.42 L
+.43 A
+.36 01/01/23
+.37 12/31/23
+.55 129929
+.56 132480
+.44 99/99/99
+.45 12/31/23
+.63 19480
+.64 11878
+\@886 \ CN-4
+\:9
+\&2
+.30 Merrill #9115 ST
+.34 S
+.35 A
+.38 Merrill #9115 LT
+.42 L
+.43 A
+.36 01/01/23
+.37 12/31/23
+.55 358873
+.56 353519
+.44 99/99/99
+.45 12/31/23
+.63 59986
+.64 58105
+.62 15
+.80 W
+.70 88
+.93 W
+\@886 \ CN-4
+\:13
+\&3
+.30 Merrill #0660 ST
+.34 S
+.35 A
+.38 Merrill #0660 LT
+.42 L
+.43 A
+.36 01/01/23
+.37 12/31/23
+.55 253481
+.56 255299
+.44 99/99/99
+.45 12/31/23
+.63 16927
+.64 19738
+.62 28
+.80 W
+\@886 \ CN-4
+\:14
+\&4
+.30 Merrill #0663 ST
+.34 S
+.35 A
+.38 Merrill #0663 LT
+.42 L
+.43 A
+.36 01/01/23
+.37 12/31/23
+.55 256269
+.56 256508
+.44 99/99/99
+.45 12/31/23
+.63 26163
+.64 27053
+\@886 \ CN-4
+\:18
+\&5
+.30 Fidelity #4472 ST
+.34 S
+.35 A
+.38 Fidelity #4472 LT
+.42 L
+.43 A
+.36 01/01/23
+.37 12/31/23
+.55 91719
+.56 91823
+.44 99/99/99
+.45 12/31/23
+.63 2044
+.64 1969
+\@886 \ CN-4
+\:23
+\&6
+.30 Merrill #9090 ST
+.34 S
+.35 A
+.38 Merrill #9090 LT
+.42 L
+.43 A
+.36 01/01/23
+.37 12/31/23
+.55 44478
+.56 45867
+.44 99/99/99
+.45 12/31/23
+.63 26731
+.64 28400
+\@886 \ CN-4
+\:24
+\&7
+.30 Merrill #5649 ST Covered
+.34 S
+.35 B
+.38 Merrill #5649 LT Covered
+.42 L
+.43 B
+.36 99/99/99
+.37 12/31/23
+.55 185185
+.56 181854
+.44 99/99/99
+.45 12/31/23
+.63 48778
+.64 32587
+.62 44
+.80 W
+.70 4
+.93 W
+\@886 \ CN-4
+\:26
+\&8
+.30 Merrill #9089 ST 
+.34 S
+.35 A
+.38 Merrill #9089 LT
+.42 L
+.43 A
+.36 01/01/23
+.37 12/31/23
+.55 131963
+.56 130276
+.44 99/99/99
+.45 12/31/23
+.63 15978
+.64 14351
+\@204 \ D-1A
+\:1
+\&1
+.30 91322
+\@211 \ E-1
+\:2
+\&2
+.41 Hampshire Road 134 LLC
+.42 134 Hampshire Rd
+.30 T
+.34 4
+.60 9094
+.37 X
+.78 423
+.87 2936
+.45 11023
+.108 4241
+.38 .5
+.44 NY
+.43 Great Neck
+.36 .25
+\@211 \ E-1
+\:1
+\&1
+.41 RNA 26 Equities, LLC
+.42 142 Joralemon Street
+.30 T
+.140 Bank service fees
+.34 4
+.141 180
+.60 62400
+.50 X
+.87 35198
+.144 X
+.151 X
+.45 11201
+.44 NY
+.43 Brooklyn
+.87M 37,470.
+\@212 \ E-2
+\:2
+\&2
+.42 4
+\@212 \ E-2
+\:1
+\&1
+.42 4
+\@213 \ E-3
+\:2
+\&2
+.40 11597
+.42 11597
+\@213 \ E-3
+\:1
+\&1
+.40 76359
+.42 71340
+\@217 \ E-7
+\:2
+\&2
+.54 8513
+.56 -3
+.55 -8513
+\@217 \ E-7
+\:1
+\&1
+.47 37470
+.54 27360
+.56 -20
+.55 -64830
+\@185 \ IRS-K1 1065
+\:8
+\&3
+.85 8
+.190 Other deductions
+.34 4
+.45 47-5171948
+.33 P
+.46 16E18 Investor 1 LLC
+.30 T
+.95M -1,002.
+.550 28218
+.551 28109
+.191M 213.
+.48 New York
+.49 NY
+.50 10003
+.47 16 East 18th Street
+.61 X
+.62 X
+.64 Individual
+.65 .0162
+.67 .0162
+.69 .0161
+.74 -23715
+\@185 \ IRS-K1 1065
+\:10
+\&5
+.85 10
+.190 Other deductions
+.34 4
+.45 81-1062009
+.33 P
+.46 234-236E24 Investor 1 LLC
+.30 T
+.95M -422.
+.550 12562
+.551 12511
+.191M 212.
+.48 New York
+.49 NY
+.50 10003
+.47 16 East 18th Street
+.61 X
+.62 X
+.64 Individual
+.65 .0389
+.67 .0389
+.69 .0389
+.74 37075
+\@185 \ IRS-K1 1065
+\:2
+\&1
+.85 2
+.955 5
+.34 4
+.95 -14991
+.33 P
+.46 3436 Kings LLC
+.132 49
+.30 T
+.35 Kings 26, LLC
+.93M -160.
+.550 12970
+.551 2799
+.48 Great Neck
+.49 NY
+.50 11024
+.47 425 Northern Blvd Ste 32
+.61 X
+.62 X
+.64 Partnership
+.65 .0657895
+.66 .0657895
+.67 .0657895
+.68 .0657895
+.69 .0657895
+.70 .0657895
+.72 813307
+.74 272699
+.78 257659
+.968 954611
+.175 -15040
+.944 -14991
+.950 49
+.958 20696
+.956 3436 Kings LLC
+.972 2
+.177 757797
+\@185 \ IRS-K1 1065
+\:9
+\&4
+.85 9
+.190 Other deductions
+.34 4
+.45 47-3217246
+.33 P
+.46 350W18 Investor 1 LLC
+.30 T
+.95M -211.
+.550 14590
+.551 14521
+.191M 102.
+.48 New York
+.49 NY
+.50 10003
+.47 16 East 18th Street
+.61 X
+.62 X
+.64 Individual
+.65 .0357
+.67 .0357
+.69 .0357
+.74 35041
+\@185 \ IRS-K1 1065
+\:13
+\&7
+.85 13
+.34 4
+.95 -67137
+.45 86-2012320
+.33 P
+.46 48 East 63rd Street, LLC
+.30 T
+.95M -68,159.
+.550 117067
+.551 117065
+.220 13
+.223M 8,565.
+.48 New York
+.49 NY
+.50 10280
+.47 375 Sount End Ave, #22S
+.61 X
+.62 X
+.64 Individual
+.65 .073171
+.66 .0619
+.67 .073171
+.68 .0619
+.69 .073171
+.70 .0619
+.72 469202
+.74 32903
+.75 15000
+.78 -19234
+.967 415956
+.967M 392,489.
+.968M 392,489.
+.175 -67137
+.944 -67137
+.972 13
+.958M 33,087.
+.177 467709
+\@185 \ IRS-K1 1065
+\:15
+\&8
+.85 17
+.955 17
+.90 -4237
+.34 4
+.45 87-4426669
+.33 P
+.46 97212 VENTURES LP
+.118 433
+.87 NY
+.30 T
+.297 433
+.299 4670
+.93M -3,710.
+.550 3709
+.551 3709
+.154 4670
+.86 17
+.48 NEW ROCHELLE
+.49 NY
+.50 10804
+.47 23 HUNT PATH
+.51 3
+.61 X
+.62 X
+.64 Individual
+.65 .01711979
+.66 .01074025
+.67 .01711979
+.68 .01074025
+.69 .01711979
+.70 .01074025
+.71 1647
+.74 56290
+.75 30000
+.78 82053
+.175 -4237
+.972 17
+.176 244
+\@185 \ IRS-K1 1065
+\:24
+\&15
+.85 29
+.34 4
+.45 87-2623918
+.46 MASTERWORKS 085, LLC
+.30 T
+.299 395
+.154 395
+.48 New York
+.49 NY
+.50 10281
+.47 225 LIBERTY STREET, 29TH FL
+.51 3
+.52 X
+.61 X
+.62 X
+.64 Individual
+.65 .09528
+.66 .09528
+.67 .09528
+.68 .09528
+.69 .09528
+.70 .09528
+.74 15000
+.78 14605
+.175 -395
+\@185 \ IRS-K1 1065
+\:17
+\&9
+.85 20
+.955 16
+.34 4
+.95 -37763
+.45 87-3935675
+.33 P
+.46 Mazal Tov 1438 Harrison LLC
+.30 T
+.95M -23,748.
+.550 23742
+.551 23742
+.48 Hallandale
+.49 FL
+.50 333009
+.47 1745 E Hallandale Beach Blvd
+.61 X
+.62 X
+.64 Individual
+.65 .5
+.66 .5
+.67 .5
+.68 .5
+.69 .5
+.70 .5
+.72 400000
+.74 121563
+.75 10000
+.78 93800
+.968 538124
+.968M 538,124.
+.175 -37763
+.944 -37763
+.972 20
+.177 400000
+\@185 \ IRS-K1 1065
+\:18
+\&10
+.85 22
+.190 Management & Admin Fees
+.34 4
+.45 35-2784921
+.33 P
+.46 Revere Partners RF, LP - A4
+.101 36
+.191 562
+.87 NY
+.30 T
+.297 36
+.550 400
+.551 400
+.101M 97.
+.191M 400.
+.86 22
+.48 Seattle
+.49 WA
+.50 98114
+.47 PO Box 3217
+.295M 2,392.
+.297M 97.
+.299M 400.
+.51 1
+.61 X
+.62 X
+.64 Individual
+.65 .0217605
+.66 .02147244
+.67 .0217605
+.68 .02147244
+.69 .0217605
+.70 .02147244
+.74 7305
+.78 6779
+.175 -526
+\@185 \ IRS-K1 1065
+\:21
+\&13
+.85 25
+.190 Management & Admin Fees
+.34 4
+.45 61-2064633
+.33 P
+.46 Revere Partners RF, LP - B1
+.191 537
+.87 NY
+.30 T
+.48 Seattle
+.49 WA
+.50 98114
+.47 PO Box 3217
+.51 3
+.61 X
+.62 X
+.64 Individual
+.65 .01893139
+.66 .01893139
+.67 .01893139
+.68 .01893139
+.69 .01893139
+.70 .01893139
+.74 11576
+.78 11039
+.175 -537
+\@185 \ IRS-K1 1065
+\:20
+\&12
+.85 24
+.190 Other deductions
+.34 4
+.45 88-3353680
+.33 P
+.46 Revere Partners RF, LP - B2
+.101 349
+.191 500
+.87 NJ
+.30 T
+.297 349
+.550 125
+.551 125
+.101M 109.
+.191M 125.
+.86 24
+.48 Seattle
+.49 WA
+.50 98114
+.47 PO Box 3217
+.295M 1,024.
+.297M 109.
+.299M 125.
+.51 1
+.61 X
+.62 X
+.64 Individual
+.65 .01759788
+.66 .01756668
+.67 .01759788
+.68 .01756668
+.69 .01759788
+.70 .01756668
+.74 9372
+.78 9221
+.153 500
+.175 -151
+\@185 \ IRS-K1 1065
+\:19
+\&11
+.85 23
+.190 Portfolio Income
+.34 4
+.45 88-4289819
+.33 P
+.46 Revere Partners RF, LP - B3
+.101 65
+.191 500
+.87 NY
+.30 T
+.297 65
+.101M 2.
+.295 1470
+.86 23
+.48 Seattle
+.49 WA
+.50 98114
+.47 PO Box 3217
+.297M 2.
+.51 3
+.61 X
+.62 X
+.64 Individual
+.65 .014695239
+.66 .01380391
+.67 .01469524
+.68 .01380391
+.69 .01469524
+.70 .01380391
+.74 11025
+.77 1470
+.78 9120
+.175 -435
+\@185 \ IRS-K1 1065
+\:22
+\&14
+.85 28
+.34 4
+.45 92-1425937
+.33 P
+.46 Revere Partners RF, LP - B4
+.30 T
+.295 173
+.48 Seattle
+.49 WA
+.50 98114
+.47 PO Box 3217
+.51 1
+.61 X
+.62 X
+.64 Individual
+.65 0
+.66 .00161773
+.67 0
+.68 .00161773
+.69 0
+.70 .00161773
+.75 1469
+.77 -173
+.78 1296
+\@185 \ IRS-K1 1065
+\:12
+\&6
+.85 14
+.34 4
+.45 33-1182633
+.33 P
+.46 Summit Partners Sustainable Opportunities
+.125 2502
+.30 T
+.297 -4406
+.146M 903.
+.550 12798
+.551 12798
+.574 5
+.220 14
+.125M -12,514.
+.226 3
+.393 867
+.48 Boston
+.49 MA
+.50 02116
+.47 222 Berkeley Street, 18th Floor
+.51 3
+.61 X
+.62 X
+.64 Individual
+.65 .000126
+.66 .000144
+.67 .000126
+.68 .000144
+.69 .000126
+.70 .000144
+.71 21245
+.74 87100
+.78 83018
+.175 -4082
+.176 19526
+.1082 -6633
+.1083 919
+\@185 \ IRS-K1 1065
+\:7
+\&2
+.85 7
+.955 8
+.34 4
+.93 418
+.45 46-2192198
+.33 P
+.46 Verena Solutions LLC
+.87 IL
+.30 T
+.94 418
+.930 418
+.293 2
+.93M -130.
+.550 1718
+.551 1716
+.250M -1.
+.86 7
+.48 Chicago
+.49 IL
+.50 60642
+.47 965 West Chicago Avenue
+.51 3
+.61 X
+.62 X
+.64 Individual
+.65 .00131302
+.66 .00131302
+.67 .00131302
+.68 .00131302
+.69 .00131302
+.70 .00131302
+.71 902
+.74 7987
+.76 -2
+.78 8403
+.967 182
+.968 302
+.967M 404.
+.968M 204.
+.175 418
+.958 21
+.956 Verena Solutions LLC
+.961 46-2192198
+.972 7
+.958M 15.
+.964 23
+.176 763
+\@120 \ IRS-K1 1120S
+\:3
+\&1
+.60 3
+.944 1
+.30 T
+.33 1
+.34 Advanced Dental Care of NYC, P.C.
+.44 27-1287360
+.45 Advanced Dental Care of NYC, P.C.
+.68 464120
+.LIST 68 _ 3
+BCHOI01 - 12/10/24 10:15 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.74 6103
+.102 36563
+.920 464120
+.LIST 920 _ 3
+BCHOI01 - 12/10/24 10:16 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.266 6103
+.68M -175823.
+.102M 117,051.
+.263M 7,085.
+.369M 594,608.
+.263 900
+.277 1158606
+.278 2119156
+.47 Brooklyn
+.48 NY
+.49 11201
+.46 142 Joralemon Street Suite 6F
+.50 3
+.58 1
+.277M 1829129.
+.278M 2121300.
+.943 1
+.945 Advanced Dental Care of NYC, P.C.
+.135 200
+.136 200
+.142 200
+.562 3
+.143 200
+.563 1
+\@120 \ IRS-K1 1120S
+\:6
+\&4
+.60 6
+.944 6
+.30 T
+.33 1
+.44 82-1632035
+.45 Brooklyn Care Dental P.C.
+.68 7861
+.LIST 68 _ 3
+BCHOI01 - 12/10/24 10:15 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.920 7861
+.LIST 920 _ 3
+BCHOI01 - 12/10/24 10:16 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.68M 15,132.
+.264 23065
+.47 Brooklyn
+.48 NY
+.49 11210
+.46 142 Joralemon Street Suite 6F
+.50 3
+.58 .1
+.943 1
+.135 100
+.136 100
+.142 100
+.562 6
+.143 100
+.563 1
+\@120 \ IRS-K1 1120S
+\:11
+\&5
+.60 11
+.944 22
+.30 T
+.33 1
+.44 82-2778042
+.45 Brooklyn Comfortable Dental Care PC
+.68 120907
+.LIST 68 _ 3
+BCHOI01 - 12/10/24 10:15 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.102 2600
+.920 120907
+.LIST 920 _ 3
+BCHOI01 - 12/10/24 10:16 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.68M -47,065.
+.74M 72.
+.266M 72.
+.102M 15,600.
+.263M 8,015.
+.369M 77,000.
+.263 6296
+.277 1113375
+.278 213182
+.47 Brooklyn
+.48 NY
+.49 11201
+.46 142 Joralemon Street Suite 6D
+.50 3
+.58 .1
+.943 1
+.135 100
+.136 100
+.142 100
+.562 11
+.143 100
+.563 1
+\@120 \ IRS-K1 1120S
+\:5
+\&3
+.60 5
+.944 3
+.30 T
+.33 1
+.34 Brooklyn Cosmetic and Implant Dentistry,
+.44 46-1342611
+.45 Brooklyn Cosmetic and Implant Dentistry,
+.68 2937
+.LIST 68 _ 3
+BCHOI01 - 12/10/24 10:15 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.920 2937
+.LIST 920 _ 3
+BCHOI01 - 12/10/24 10:16 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.68M 5,525.
+.47 Brooklyn
+.48 NY
+.49 11201
+.46 142 Joralemon Street Suite 6F
+.50 3
+.58 .1
+.943 1
+.945 Brooklyn Cosmetic and Implant Dentistry,
+.135 100
+.136 100
+.142 100
+.562 5
+.143 100
+.563 1
+\@120 \ IRS-K1 1120S
+\:16
+\&6
+.60 19
+.944 15
+.30 T
+.33 1
+.44 82-2749704
+.45 Brooklyn Dental Smiles, P.C.
+.68 539
+.LIST 68 _ 3
+BCHOI01 - 12/10/24 10:15 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.920 539
+.LIST 920 _ 3
+BCHOI01 - 12/10/24 10:16 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.68M 81.
+.47 Brooklyn
+.48 NY
+.49 11201
+.46 142 Joralemon Street, Ste 6A
+.50 3
+.58 .1
+.943 1
+.135 100
+.136 100
+.142 100
+.562 19
+.143 100
+.563 1
+\@120 \ IRS-K1 1120S
+\:4
+\&2
+.60 4
+.944 2
+.30 T
+.33 1
+.34 Brooklyn Downtown Dental PC
+.44 47-1487291
+.45 Brooklyn Downtown Dental PC
+.68 639
+.LIST 68 _ 3
+BCHOI01 - 12/10/24 10:15 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.920 639
+.LIST 920 _ 3
+BCHOI01 - 12/10/24 10:16 AM Worksheet S Corporation Passthrough (IRS K-1 1120S)
+                                     484120           _
+                                     -20000           _
+.68M 6,266.
+.47 Brooklyn
+.48 NY
+.49 10307
+.46 142 Joralemon Street Suite 6F
+.50 3
+.58 .1
+.943 1
+.945 Brooklyn Downtown Dental PC
+.135 200
+.136 200
+.142 200
+.562 4
+.143 200
+.563 1
+\@120 \ IRS-K1 1120S
+\:23
+\&7
+.60 30
+.944 35
+.30 T
+.33 1
+.44 82-2764001
+.45 Brooklyn Gentle Dental PC
+.47 Brooklyn
+.48 NY
+.49 11201
+.46 142 Joralemon Street Ste 6D
+.50 3
+.58 .1
+.943 1
+.135 100
+.136 100
+.142 100
+.562 30
+.143 100
+.563 1
+\@491 \ EF-1
+\:1
+\&1
+.30 Y
+.430M X
+\@492 \ EF-2
+\:1
+\&1
+.57 44150
+.58 08478
+\@391 \ EXT-1
+\:1
+\&1
+.36 2
+.48 40000
+.37 X
+.49 0
+.33 2
+\@391 \ EXT-1
+\:1
+\&2
+.49 0
+.59 NYC
+\@703 \ M-3
+\:1
+\&1
+.85 52513
+.81 F
+.82 NY
+.84 2022
+.33 557162
+.36 185515
+.39 25900
+.51 2
+.117 129742
+.54 157888
+.57 3061
+.69 10000
+\@743 \ QBI-1
+\:1
+\&1
+.30 X
+\@1202 \ QBI-3
+\:1
+\&1
+.30 2017
+.31 RENT
+.32 1
+.57 2020
+.84 2021
+.111 2022
+.138 2021
+.165 2022
+.192 2017
+.219 2020
+.246 2022
+.273 2020
+.38 5084
+.58 RENT
+.85 RENT
+.112 RENT
+.139 RENT
+.166 RENT
+.193 PASS
+.220 PASS
+.247 PASS
+.274 PASS
+.34 RNA 26 Equities, LLC - 142 Joralemo
+.59 1
+.86 1
+.113 1
+.140 2
+.167 2
+.194 2
+.221 2
+.248 2
+.275 7
+.36 P
+.61 RNA 26 Equities, LLC - 142 Joralemo
+.62 X
+.89 X
+.143 X
+.224 X
+.251 X
+.278 X
+.88 RNA 26 Equities, LLC - 142 Joralemo
+.115 RNA 26 Equities, LLC - 142 Joralemo
+.142 Hampshire Road 134 LLC - 134 Hampsh
+.169 Hampshire Road 134 LLC - 134 Hampsh
+.196 3436 Kings LLC
+.223 3436 Kings LLC
+.250 3436 Kings LLC
+.277 Verena Solutions LLC
+.63 P
+.64 3957
+.195 5
+.222 5
+.249 5
+.276 8
+.90 P
+.91 2670
+.117 P
+.118 64830
+.144 P
+.145 3087
+.171 P
+.172 8513
+.198 P
+.200 10341
+.225 P
+.226 2506
+.252 P
+.253 160
+.279 P
+.280 610
+.47 162
+.209 230
+.133 20
+.187 3
+.190 3
+.268 3
+.150 3
+.49 20
+.211 3
+\@1202 \ QBI-3
+\:1
+\&2
+.30 2021
+.31 PASS
+.32 7
+.35 X
+.57 2022
+.84 2017
+.111 2022
+.138 2022
+.58 PASS
+.85 PASS
+.112 PASS
+.139 PASS
+.37 978
+.34 Verena Solutions LLC
+.59 7
+.86 13
+.113 13
+.140 20
+.36 P
+.61 Verena Solutions LLC
+.62 X
+.116 X
+.143 X
+.88 48 East 63rd Street, LLC
+.115 48 East 63rd Street, LLC
+.142 Mazal Tov 1438 Harrison LLC
+.63 P
+.64 130
+.33 8
+.60 8
+.87 9
+.114 9
+.141 16
+.90 P
+.92 48938
+.117 P
+.118 68159
+.144 P
+.145 23742
+.133 30
+.103 30
+\@209 \ IRS-1099G
+\:1
+\&1
+.30 T
+.40 New York State Income Tax Division Division
+\@312 \ P-2
+\:1
+\&1
+.40 OC
+.41 UK
+.32 2
+.90 OC
+.30 OC
+\@313 \ P-3
+\:1
+\&1
+.32 -55
+.67 -160
+.30 818
+.31 818
+.33 524
+.36 347
+.34 508
+.37 347
+.65 818
+.68 524
+.71 347
+.66 818
+.69 524
+.72 347
+\@327 \ P-17
+\:1
+\&1
+.35 882436
+\@331 \ T-1
+\:1
+\&1
+.30 1
+\@332 \ T-2
+\:1
+\&1
+.58 143486
+.70 40000
+.71 04/15/24
+.45 9588
+.60 744407
+\@333 \ T-3
+\:1
+\&1
+.30 X
+.31 X
+.34 10/15/2024
+\@651 \ T-22
+\:1
+\&1
+.40 18116
+.41 494407
+.42 10000
+.45 91322
+.31 F
+\@651 \ T-22
+\:2
+\&2
+.50 73845
+.51 884877
+.31 S
+.32 NY
+\@430 \ FE-1
+\:1
+\&1
+.43 X
+\@4940 \ IL1
+\:1
+\&1
+.92 M
+.98 C
+.95 T
+.91 78
+.94 S
+.101 T
+.97 23
+.100 A
+.93 X
+.99 X
+\@4974 \ IL18
+\:1
+\&1
+.34 1
+.37 7
+\@4976 \ IL19
+\:1
+\&1
+.60 418
+.61 418
+\@4978 \ IL20
+\:1
+\&1
+.34 78
+.35 78
+.64 23
+.65 23
+\@4980 \ IL21
+\:1
+\&1
+.61 23
+\@6840 \ NY1
+\:1
+\&1
+.33 NY
+.34 369
+\@6841 \ NY1A
+\:1
+\&1
+.73 6020
+.100 100000002023266
+.101 2
+\@6842 \ NY2
+\:1
+\&1
+.30 T
+.31 1
+\@6844 \ NY3
+\:1
+\&1
+.60 201
+.64 210
+.100 210
+.104 303
+.61 X
+.65 X
+.101 X
+.63 11912
+.LIST 63 _ 6
+150415 - 10/13/22 13:29 PM Worksheet Income / Deductions
+Brooklyn Comfortable Dental            3697       52208
+Brooklyn care dental                      _         300
+Brooklyn cosmetic and implant          1026          50
+Brooklyn downtown dental                688          50
+Advanced Dental                        6501           _
+.67 14164
+.LIST 67 _ 2
+NAgarwal - 10/11/23 08:29 AM Worksheet Income / Deductions
+Advanced dental care                  14164       89941
+.105 X
+.62 11912
+.LIST 62 _ 6
+BCHOI01 - 05/01/21 11:39 AM Worksheet Income / Deductions
+Brooklyn Downtown Dental                688          50
+Advanced Dental                        6501           _
+Brooklyn Cosmetic and Implant          1026          50
+Brooklyn Comfortable Dental            3697       52208
+Brooklyn care dental                      _         300
+.66 14164
+.LIST 66 _ 2
+NAgarwal - 10/11/23 08:27 AM Worksheet Income / Deductions
+Advanced dental care of NYC           14164       89941
+.102 68082
+.LIST 102 _ 4
+150415 - 10/13/22 13:33 PM Worksheet Income / Deductions
+Brooklyn Comfortable Dental               _           _
+Advanced dental care                  30796       17988
+Brooklyn Comfortable dental           37286           _
+.103 68082
+.LIST 103 _ 4
+150415 - 10/13/22 13:34 PM Worksheet Income / Deductions
+Brooklyn Comfortable Dental               _           _
+Advanced dental care                  30796       17988
+Brooklyn Comfortable dental           37286           _
+.107 3788
+.LIST 107 _ 6
+BCHOI01 - 10/15/22 10:15 AM Worksheet Income / Deductions
+Advanced Dental                        3328           _
+Brooklyn Dental                          80           _
+Brooklyn Comfortable dental              75           _
+Brooklyn Dental Smiles                    5           _
+Brooklyn Downtown Dental                300           _
+.106 3788
+.LIST 106 _ 6
+BCHOI01 - 10/15/22 10:14 AM Worksheet Income / Deductions
+Advanced Dental                        3328           _
+Brooklyn Dental                          80           _
+Brooklyn Comfortable dental              75           _
+Brooklyn Dental Smiles                    5           _
+Brooklyn Downtown Dental                300           _
+\@6844 \ NY3
+\:1
+\&2
+.60 209
+.100 205
+.104 213
+.61 X
+.101 X
+.63 553
+.LIST 63 _ 6
+150415 - 10/13/22 13:29 PM Worksheet Income / Deductions
+Brooklyn Comfortable Dental            3697       52208
+Brooklyn care dental                      _         300
+Brooklyn cosmetic and implant          1026          50
+Brooklyn downtown dental                688          50
+Advanced Dental                        6501           _
+.105 X
+.62 553
+.LIST 62 _ 6
+BCHOI01 - 05/01/21 11:39 AM Worksheet Income / Deductions
+Brooklyn Downtown Dental                688          50
+Advanced Dental                        6501           _
+Brooklyn Cosmetic and Implant          1026          50
+Brooklyn Comfortable Dental            3697       52208
+Brooklyn care dental                      _         300
+.102 105543
+.LIST 102 _ 4
+150415 - 10/13/22 13:33 PM Worksheet Income / Deductions
+Brooklyn Comfortable Dental               _           _
+Advanced dental care                  30796       17988
+Brooklyn Comfortable dental           37286           _
+.103 105543
+.LIST 103 _ 4
+150415 - 10/13/22 13:34 PM Worksheet Income / Deductions
+Brooklyn Comfortable Dental               _           _
+Advanced dental care                  30796       17988
+Brooklyn Comfortable dental           37286           _
+.107 1917
+.LIST 107 _ 6
+BCHOI01 - 10/15/22 10:15 AM Worksheet Income / Deductions
+Advanced Dental                        3328           _
+Brooklyn Dental                          80           _
+Brooklyn Comfortable dental              75           _
+Brooklyn Dental Smiles                    5           _
+Brooklyn Downtown Dental                300           _
+.106 1917
+.LIST 106 _ 6
+BCHOI01 - 10/15/22 10:14 AM Worksheet Income / Deductions
+Advanced Dental                        3328           _
+Brooklyn Dental                          80           _
+Brooklyn Comfortable dental              75           _
+Brooklyn Dental Smiles                    5           _
+Brooklyn Downtown Dental                300           _
+\@6846 \ NY4
+\:1
+\&1
+.40 NYS T/E AIP
+\@6848 \ NY5
+\:1
+\&1
+.30 1
+.41 7
+\@6850 \ NY6
+\:1
+\&1
+.40 52513
+.53 884877
+.54 77229
+\@6852 \ NY7
+\:1
+\&1
+.40 10/15/2024
+.43 X
+.44 X
+\@6902 \ NY32
+\:1
+\&1
+.33 48 E63rd Street NLE LLC
+.35 86-2942138
+.41 Inactive
+.43 03/30/2021
+.46 X
+.60 Rabiel Amirian
+.62 Y
+\@6902 \ NY32
+\:1
+\&2
+.33 Hampshire Road 134 LLC
+.46 X
+.49 X
+.31 1
+.60 Rabiel Amirian
+.62 Y
+\@6902 \ NY32
+\:1
+\&3
+.33 RNA 26 Equities LLC
+.35 47-5360287
+.46 X
+.31 2
+.60 Rabiel Amirian
+.62 Y
+\@6902 \ NY32
+\:1
+\&4
+.33 Kings 26, LLC
+.35 82-4878922
+.46 X
+.60 Rabiel Amirian
+\@6902 \ NY32
+\:1
+\&5
+.33 K Holdings Group LLC
+.46 X
+.49 X
+.60 Rabiel Amirian
+\@6908 \ MTA1
+\:1
+\&1
+.30 T
+\*

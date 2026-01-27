@@ -197,3 +197,9 @@ salierno_analysis.txt
 fermin_analysis.txt
 wai_kit_analysis.txt
 categorized_analysis.txt
+
+# Allow specific data files and mappings
+!data/*.txt
+!data/individuals_only/
+!mappings/cch_mapping.json
+!arvind_debug_results.json
