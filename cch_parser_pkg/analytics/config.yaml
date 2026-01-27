@@ -1,0 +1,45 @@
+# Analytics Module Configuration
+# Adjust these values to change scoring weights and fee tiers
+
+scoring:
+  # Points per form type (higher = more complex)
+  w2: 5
+  form_1099_int: 3
+  form_1099_div: 3
+  form_1099_r: 5
+  form_1099_nec: 8
+  form_1099_misc: 5
+  form_1099_g: 3
+  k1_1065: 15
+  k1_1120s: 15
+  fbar: 20
+  form_1098: 3
+  form_1095_a: 2
+  form_1095_c: 2
+  ssa_1099: 3
+  brokerage: 10
+  balance_sheet: 25
+
+fee_tiers:
+  # Fee based on complexity score
+  - max_score: 50
+    fee: 250
+    tier_name: "Simple"
+  - max_score: 100
+    fee: 400
+    tier_name: "Standard"
+  - max_score: 200
+    fee: 650
+    tier_name: "Complex"
+  - max_score: 400
+    fee: 1000
+    tier_name: "Very Complex"
+  - max_score: 999999
+    fee: 1500
+    tier_name: "Ultra Complex"
+
+# Chart settings
+charts:
+  style: "seaborn-v0_8-whitegrid"
+  figsize: [10, 6]
+  dpi: 150

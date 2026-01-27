@@ -1,0 +1,705 @@
+# CCH Tax Software Export File Mapping
+# Version: 1.1 (Enhanced with additional field mappings)
+# Purpose: Field mappings for parsing CCH export files
+# Sources: Original analysis + cch_field_mapping (1).md cross-reference
+
+file_structure:
+  encoding: UTF-16LE
+  header_pattern: "**BEGIN,{year}:I:{client_id}:{seq},{ssn},{office},{group},{location}"
+  form_pattern: "\\@{form_code} \\ {form_name}"
+  section_pattern: "\\:{section_number}"
+  entry_pattern: "\\&{entry_number}"
+  field_pattern: ".{field_number} {value}"
+  end_marker: "\\*"
+
+# Form 101 - Primary Client Information
+form_101:
+  name: "Client Information"
+  description: "Primary taxpayer and dependent information"
+  fields:
+    "30": {name: "state", type: "string"}
+    "31": {name: "city_code", type: "string"}
+    "40": {name: "taxpayer_first_name", type: "string"}
+    "41": {name: "taxpayer_middle_initial", type: "string"}
+    "42": {name: "taxpayer_last_name", type: "string"}
+    "44": {name: "taxpayer_ssn", type: "ssn"}
+    "45": {name: "spouse_first_name", type: "string"}
+    "47": {name: "spouse_last_name", type: "string"}
+    "49": {name: "spouse_ssn", type: "ssn"}
+    "60": {name: "taxpayer_occupation", type: "string"}
+    "61": {name: "taxpayer_dob", type: "date"}
+    "67": {name: "spouse_occupation", type: "string"}
+    "68": {name: "spouse_dob", type: "date"}
+    "80": {name: "address_street", type: "string"}
+    "81": {name: "address_apt", type: "string"}
+    "82": {name: "address_city", type: "string"}
+    "83": {name: "address_state", type: "state"}
+    "84": {name: "address_zip", type: "zip"}
+    "90": {name: "filing_status", type: "code"}
+    "110": {name: "dependent1_first_name", type: "string"}
+    "112": {name: "dependent1_last_name", type: "string"}
+    "114": {name: "dependent1_ssn", type: "ssn"}
+    "115": {name: "dependent1_relationship", type: "string"}
+    "117": {name: "dependent2_first_name", type: "string"}
+    "119": {name: "dependent2_last_name", type: "string"}
+    "121": {name: "dependent2_ssn", type: "ssn"}
+    "122": {name: "dependent2_relationship", type: "string"}
+    "140": {name: "dependent1_dob", type: "date"}
+    "143": {name: "number_of_dependents", type: "integer"}
+    "152": {name: "dependent2_dob", type: "date"}
+    "155": {name: "number_of_exemptions", type: "integer"}
+
+# Form 151 - Contact Information (1A)
+form_151:
+  name: "Contact Information"
+  fields:
+    "65": {name: "taxpayer_phone", type: "phone"}
+    "66": {name: "taxpayer_phone_alt", type: "phone"}
+    "67": {name: "spouse_phone", type: "phone"}
+    "75": {name: "taxpayer_email", type: "email"}
+    "76": {name: "spouse_email", type: "email"}
+    "77": {name: "communication_preference", type: "code"}
+    "78": {name: "document_preference", type: "code"}
+
+# Form 921 - Bank Information (BNK-1)
+form_921:
+  name: "Bank Account"
+  fields:
+    "33": {name: "is_checking", type: "boolean", true_value: "X"}
+    "34": {name: "is_savings", type: "boolean", true_value: "X"}
+    "37": {name: "bank_name", type: "string"}
+    "38": {name: "routing_number", type: "string"}
+    "39": {name: "account_number", type: "string"}
+    "40": {name: "account_type_code", type: "code"}
+    "41": {name: "direct_deposit", type: "boolean", true_value: "X"}
+
+# Form 180 - W-2 Wage Statement
+form_180:
+  name: "IRS Form W-2"
+  description: "Wage and Tax Statement"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code", values: {T: "Taxpayer", S: "Spouse"}}
+    "31": {name: "corrected", type: "code"}
+    "40": {name: "employer_ein", type: "ein"}
+    "41": {name: "employer_name", type: "string"}
+    "42": {name: "employer_address", type: "string"}
+    "43": {name: "employer_city", type: "string"}
+    "44": {name: "employer_state", type: "state"}
+    "45": {name: "employer_zip", type: "zip"}
+    "47": {name: "control_number", type: "string"}
+    "53": {name: "statutory_employee", type: "code"}
+    "54": {name: "box1_wages", type: "currency"}
+    "54M": {name: "box1_wages_memo", type: "string"}
+    "55": {name: "box2_fed_withheld", type: "currency"}
+    "56": {name: "box3_ss_wages", type: "currency"}
+    "57": {name: "box4_ss_withheld", type: "currency"}
+    "58": {name: "box5_medicare_wages", type: "currency"}
+    "59": {name: "box6_medicare_withheld", type: "currency"}
+    "60": {name: "box7_ss_tips", type: "currency"}
+    "61": {name: "box8_allocated_tips", type: "currency"}
+    "63": {name: "box10_dependent_care", type: "currency"}
+    "64": {name: "box11_nonqualified_plans", type: "currency"}
+    "65": {name: "box12a_code", type: "code"}
+    "66": {name: "box12a_amount", type: "currency"}
+    "67": {name: "box12b_code", type: "code"}
+    "68": {name: "box12b_amount", type: "currency"}
+    "69": {name: "box12c_code", type: "code"}
+    "70": {name: "box12c_amount", type: "currency"}
+    "71": {name: "box12d_code", type: "code"}
+    "72": {name: "box12d_amount", type: "currency"}
+    "73": {name: "box13_statutory", type: "boolean", true_value: "X"}
+    "74": {name: "box13_retirement", type: "boolean", true_value: "X"}
+    "75": {name: "box13_sick_pay", type: "boolean", true_value: "X"}
+    "76": {name: "box14_desc1", type: "string"}
+    "77": {name: "box14_amt1", type: "currency"}
+    "79": {name: "box14_desc2", type: "string"}
+    "80": {name: "box14_amt2", type: "currency"}
+    "85": {name: "box15_state", type: "state"}
+    "86": {name: "box15_state_ein", type: "string"}
+    "87": {name: "box16_state_wages", type: "currency"}
+    "88": {name: "box17_state_tax", type: "currency"}
+    "89": {name: "box18_local_wages", type: "currency"}
+    "90": {name: "box19_local_tax", type: "currency"}
+    "91": {name: "box20_locality", type: "string"}
+    "131": {name: "disability_code", type: "string"}
+
+# Form 181 - 1099-INT Interest Income
+form_181:
+  name: "IRS Form 1099-INT"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "31": {name: "joint_account", type: "code"}
+    "40": {name: "payer_name", type: "string"}
+    "41": {name: "payer_address", type: "string"}
+    "42": {name: "payer_city", type: "string"}
+    "43": {name: "payer_state", type: "state"}
+    "44": {name: "payer_zip", type: "zip"}
+    "49": {name: "payer_tin", type: "ein"}
+    "59": {name: "account_number", type: "string"}
+    "71": {name: "box1_interest", type: "currency"}
+    "71M": {name: "box1_interest_prior", type: "currency"}  # Prior year interest
+    "72": {name: "box2_early_withdrawal", type: "currency"}
+    "73": {name: "box3_savings_bond", type: "currency"}
+    "74": {name: "box4_fed_withheld", type: "currency"}
+    "75": {name: "box5_investment_exp", type: "currency"}
+    "76": {name: "box6_foreign_tax", type: "currency"}
+    "77": {name: "box7_foreign_country", type: "string"}
+    "78": {name: "box8_tax_exempt", type: "currency"}
+    "79": {name: "box9_private_activity", type: "currency"}
+    "80": {name: "box10_market_discount", type: "currency"}
+    "81": {name: "box11_bond_premium", type: "currency"}
+    "82": {name: "box12_bond_premium_treasury", type: "currency"}
+    "83": {name: "box13_bond_premium_tax_exempt", type: "currency"}
+    "84": {name: "box14_tax_exempt_credit_bonds", type: "currency"}
+    "85": {name: "box15_state", type: "state"}
+    "86": {name: "box16_state_id", type: "string"}
+    "87": {name: "box17_state_tax_withheld", type: "currency"}
+    "58": {name: "fatca_filing", type: "boolean", true_value: "X"}
+    "70": {name: "payer_tin_alt", type: "ein"}
+    "32": {name: "state_abbreviation", type: "state"}
+    "33": {name: "code", type: "string"}
+    "88": {name: "state_code", type: "state"}
+
+# Form 182 - 1099-DIV Dividend Income
+form_182:
+  name: "IRS Form 1099-DIV"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "payer_name", type: "string"}
+    "41": {name: "payer_address", type: "string"}
+    "42": {name: "payer_city", type: "string"}
+    "43": {name: "payer_state", type: "state"}
+    "44": {name: "payer_zip", type: "zip"}
+    "49": {name: "payer_tin", type: "ein"}
+    "59": {name: "account_number", type: "string"}
+    "70": {name: "box1a_ordinary_div", type: "currency"}
+    "70M": {name: "box1a_ordinary_div_prior", type: "currency"}  # Prior year dividends
+    "71": {name: "box1b_qualified_div", type: "currency"}
+    "72": {name: "box2a_cap_gain", type: "currency"}
+    "73": {name: "box2b_unrecap_1250", type: "currency"}
+    "74": {name: "box2c_section_1202", type: "currency"}
+    "75": {name: "box2d_collectibles", type: "currency"}
+    "76": {name: "box2e_897_gain", type: "currency"}
+    "77": {name: "box2f_897_ordinary", type: "currency"}
+    "78": {name: "box3_nondiv_dist", type: "currency"}
+    "79": {name: "box4_fed_withheld", type: "currency"}
+    "80": {name: "box5_section_199a", type: "currency"}
+    "81": {name: "box6_investment_exp", type: "currency"}
+    "82": {name: "box7_foreign_tax", type: "currency"}
+    "83": {name: "box8_foreign_country", type: "string"}
+
+# Form 184 - 1099-R Retirement Distributions
+form_184:
+  name: "IRS Form 1099-R"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "payer_name", type: "string"}
+    "41": {name: "payer_address", type: "string"}
+    "42": {name: "payer_city", type: "string"}
+    "43": {name: "payer_state", type: "state"}
+    "44": {name: "payer_zip", type: "zip"}
+    "47": {name: "payer_tin", type: "ein"}
+    "56": {name: "box1_gross_dist", type: "currency"}
+    "57": {name: "box2a_taxable", type: "currency"}
+    "61": {name: "box4_fed_withheld", type: "currency"}
+    "64": {name: "box7_dist_code", type: "code"}
+    "73": {name: "state_code", type: "state"}
+    "90": {name: "payer_ein", type: "ein"}
+
+# Form 185 - K-1 1065 Partnership
+# Updated with correct field numbers from source data analysis
+form_185:
+  name: "IRS Schedule K-1 (1065)"
+  description: "Partner's Share of Income"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "31": {name: "final_k1", type: "code"}
+    "32": {name: "entity_type", type: "string"}
+    "33": {name: "partner_type", type: "code", values: {P: "General Partner", L: "Limited Partner"}}
+    "34": {name: "partner_percentage", type: "decimal"}
+    "35": {name: "sub_entity_name", type: "string"}  # Sub-entity name (e.g., Kings 26, LLC)
+    "45": {name: "partnership_ein", type: "ein"}
+    "46": {name: "partnership_name", type: "string"}
+    "47": {name: "partnership_address", type: "string"}
+    "48": {name: "partnership_city", type: "string"}
+    "49": {name: "partnership_state", type: "state"}
+    "50": {name: "partnership_zip", type: "zip"}
+    "51": {name: "num_partners", type: "integer"}
+    "61": {name: "general_partner", type: "boolean", true_value: "X"}
+    "62": {name: "limited_partner", type: "boolean", true_value: "X"}
+    "64": {name: "individual_partner", type: "string"}
+    "65": {name: "profit_share_beginning", type: "decimal"}
+    "66": {name: "loss_share_beginning", type: "decimal"}
+    "67": {name: "capital_share_beginning", type: "decimal"}
+    "68": {name: "profit_share_ending", type: "decimal"}
+    "69": {name: "loss_share_ending", type: "decimal"}
+    "70": {name: "capital_share_ending", type: "decimal"}
+    "71": {name: "beginning_capital_account", type: "currency"}
+    "72": {name: "capital_contributed", type: "currency"}
+    "74": {name: "withdrawals_distributions", type: "currency"}
+    "75": {name: "ending_capital_account", type: "currency"}
+    "78": {name: "capital_account_analysis", type: "currency"}
+    # Box 1-11 Income fields
+    "85": {name: "box1_ordinary_income", type: "currency"}
+    "89": {name: "box2_net_rental_re_old", type: "currency"}  # Old mapping, keep for compatibility
+    "90": {name: "box3_other_rental", type: "currency"}
+    "91": {name: "box4a_guaranteed_services", type: "currency"}
+    "92": {name: "box4b_guaranteed_capital", type: "currency"}
+    "93": {name: "box4c_total_guaranteed", type: "currency"}
+    "94": {name: "box5_interest", type: "currency"}
+    "95": {name: "box6a_ordinary_div", type: "currency"}
+    "96": {name: "box6b_qualified_div", type: "currency"}
+    "97": {name: "box7_royalties", type: "currency"}
+    "98": {name: "box8_net_stcg", type: "currency"}
+    "99": {name: "box9a_net_ltcg", type: "currency"}
+    "100": {name: "box10_net_1231", type: "currency"}
+    "101": {name: "box11_other_income", type: "currency"}
+    # NEW: Correct rental income fields from source analysis
+    "550": {name: "box2_net_rental_re", type: "currency"}  # CORRECT field for net rental RE income
+    "551": {name: "ending_rental_basis", type: "currency"}
+    # Additional fields found in source
+    "175": {name: "alternative_ordinary_income", type: "currency"}
+    "944": {name: "rental_re_taxpayer", type: "currency"}
+    "958": {name: "depreciation_deduction", type: "currency"}
+    "959": {name: "other_deduction", type: "currency"}
+    "956": {name: "sub_entity_name_alt", type: "string"}
+    "961": {name: "sub_entity_ein", type: "ein"}
+    "968": {name: "capital_account_total", type: "currency"}
+    "972": {name: "k1_count", type: "integer"}
+    "363": {name: "k1_description", type: "string"}
+    "366": {name: "domestic_foreign", type: "code", values: {F: "Foreign", D: "Domestic"}}
+    "367": {name: "k1_state", type: "state"}
+
+# Form 206 - 1098 Mortgage Interest
+form_206:
+  name: "IRS Form 1098"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "34": {name: "lender_name", type: "string"}
+    "35": {name: "lender_address", type: "string"}
+    "36": {name: "lender_city", type: "string"}
+    "37": {name: "lender_state", type: "state"}
+    "38": {name: "lender_zip", type: "zip"}
+    "41": {name: "box1_mortgage_interest", type: "currency"}
+    "42": {name: "lender_tin", type: "ein"}
+    "44": {name: "box2_points", type: "currency"}
+    "55": {name: "property_address", type: "string"}
+    "56": {name: "property_state", type: "state"}
+    "61": {name: "loan_number", type: "string"}
+
+# Form 190 - SSA-1099 Social Security
+form_190:
+  name: "SSA-1099"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "beneficiary_name", type: "string"}
+    "42": {name: "box3_benefits_paid", type: "currency"}
+    "44": {name: "box5_net_benefits", type: "currency"}
+    "51": {name: "claim_number", type: "string"}
+
+# Form 267 - 1099-NEC Non-Employee Compensation
+form_267:
+  name: "IRS Form 1099-NEC"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "payer_name", type: "string"}
+    "41": {name: "payer_address", type: "string"}
+    "42": {name: "payer_city", type: "string"}
+    "43": {name: "payer_state", type: "state"}
+    "44": {name: "payer_zip", type: "zip"}
+    "49": {name: "payer_tin", type: "ein"}
+    "59": {name: "box1_nec", type: "currency"}
+    "70": {name: "box4_fed_withheld", type: "currency"}
+
+# Form 622 - 1098-E Student Loan Interest
+form_622:
+  name: "IRS Form 1098-E"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "lender_name", type: "string"}
+    "41": {name: "lender_address", type: "string"}
+    "42": {name: "lender_city", type: "string"}
+    "43": {name: "lender_state", type: "state"}
+    "44": {name: "lender_zip", type: "zip"}
+    "48": {name: "lender_tin", type: "ein"}
+    "57": {name: "account_number", type: "string"}
+    "60": {name: "box1_interest_paid", type: "currency"}
+    "61": {name: "box2_origination_check", type: "boolean", true_value: "X"}
+
+# Form 624 - 1095-A Health Insurance
+form_624:
+  name: "IRS Form 1095-A"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "marketplace_state", type: "state"}
+    "41": {name: "policy_number", type: "string"}
+    "42": {name: "plan_name", type: "string"}
+    "62": {name: "covered_individual_name", type: "string"}
+    "63": {name: "covered_individual_ssn", type: "ssn"}
+    "64": {name: "covered_individual_dob", type: "date"}
+    "65": {name: "coverage_start_date", type: "date"}
+    "66": {name: "coverage_end_date", type: "date"}
+    # Monthly premiums .90-.101 (Jan-Dec column A)
+    # Monthly SLCSP .91-.102 (Jan-Dec column B)
+    # Monthly APTC .92-.103 (Jan-Dec column C)
+    # Monthly amounts (Jan=90-92, Feb=93-95, ... Dec=123-125)
+    "90": {name: "jan_premium", type: "currency"}
+    "91": {name: "jan_slcsp", type: "currency"}
+    "92": {name: "jan_aptc", type: "currency"}
+    "93": {name: "feb_premium", type: "currency"}
+    "94": {name: "feb_slcsp", type: "currency"}
+    "95": {name: "feb_aptc", type: "currency"}
+    "96": {name: "mar_premium", type: "currency"}
+    "97": {name: "mar_slcsp", type: "currency"}
+    "98": {name: "mar_aptc", type: "currency"}
+    "99": {name: "apr_premium", type: "currency"}
+    "100": {name: "apr_slcsp", type: "currency"}
+    "101": {name: "apr_aptc", type: "currency"}
+    "102": {name: "may_premium", type: "currency"}
+    "103": {name: "may_slcsp", type: "currency"}
+    "104": {name: "may_aptc", type: "currency"}
+    "105": {name: "jun_premium", type: "currency"}
+    "106": {name: "jun_slcsp", type: "currency"}
+    "107": {name: "jun_aptc", type: "currency"}
+    "108": {name: "jul_premium", type: "currency"}
+    "109": {name: "jul_slcsp", type: "currency"}
+    "110": {name: "jul_aptc", type: "currency"}
+    "111": {name: "aug_premium", type: "currency"}
+    "112": {name: "aug_slcsp", type: "currency"}
+    "113": {name: "aug_aptc", type: "currency"}
+    "114": {name: "sep_premium", type: "currency"}
+    "115": {name: "sep_slcsp", type: "currency"}
+    "116": {name: "sep_aptc", type: "currency"}
+    "117": {name: "oct_premium", type: "currency"}
+    "118": {name: "oct_slcsp", type: "currency"}
+    "119": {name: "oct_aptc", type: "currency"}
+    "120": {name: "nov_premium", type: "currency"}
+    "121": {name: "nov_slcsp", type: "currency"}
+    "122": {name: "nov_aptc", type: "currency"}
+    "123": {name: "dec_premium", type: "currency"}
+    "124": {name: "dec_slcsp", type: "currency"}
+    "125": {name: "dec_aptc", type: "currency"}
+    "126": {name: "annual_premium", type: "currency"}
+    "127": {name: "annual_slcsp", type: "currency"}
+    "128": {name: "annual_aptc", type: "currency"}
+
+# State Forms
+state_forms:
+  "4940": {name: "IL1", state: "IL", description: "Illinois Return"}
+  "6640": {name: "NJ1", state: "NJ", description: "New Jersey Return"}
+  "6840": {name: "NY1", state: "NY", description: "New York Return"}
+  "6842": {name: "NY2", state: "NY", description: "NY Additions/Subtractions"}
+  "6848": {name: "NY5", state: "NY", description: "NY IT-201 Adjustments"}
+
+# Worksheet Forms
+worksheets:
+  "131": {name: "A-1", description: "State/Local Taxes Worksheet"}
+  "132": {name: "A-2", description: "Medical Expenses Worksheet"}
+  "135": {name: "A-5", description: "Charitable Contributions"}
+  "136": {name: "A-6", description: "Noncash Contributions"}
+  "171": {name: "C-1", description: "Schedule C Summary"}
+  "172": {name: "C-2", description: "Schedule C Expenses"}
+  "191": {name: "D-1", description: "Capital Gains/Losses"}
+  "211": {name: "E-1", description: "Rental Property"}
+  "715": {name: "M-15", description: "Miscellaneous Deductions"}
+  "719": {name: "M-19", description: "Other Adjustments"}
+
+# Internal/Processing Forms
+internal_forms:
+  "103": {name: "3", description: "Processing Notes"}
+  "491": {name: "EF-1", description: "E-File Authorization"}
+  "881": {name: "CN-1", description: "Consolidated 1099 Header"}
+  "882": {name: "CN-2", description: "Consolidated 1099 Summary"}
+  "883": {name: "CN-3", description: "Consolidated Foreign Assets"}
+  "886": {name: "CN-4", description: "Consolidated Transactions"}
+
+# Form 205 - 1099-Q Qualified Tuition Program
+form_205:
+  name: "IRS Form 1099-Q"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "payer_name", type: "string"}
+    "41": {name: "payer_name_cont", type: "string"}
+    "42": {name: "payer_city", type: "string"}
+    "43": {name: "payer_state", type: "state"}
+    "44": {name: "payer_zip", type: "zip"}
+    "46": {name: "payer_tin", type: "ein"}
+    "53": {name: "account_number", type: "string"}
+    "55": {name: "box1_gross_distribution", type: "currency"}
+    "56": {name: "box2_earnings", type: "currency"}
+    "57": {name: "box3_basis", type: "currency"}
+    "60": {name: "box6_checkbox", type: "boolean", true_value: "X"}
+
+# Form 623 - 1099-SA HSA/MSA Distribution
+form_623:
+  name: "IRS Form 1099-SA"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "40": {name: "trustee_name", type: "string"}
+    "41": {name: "trustee_address", type: "string"}
+    "42": {name: "trustee_city", type: "string"}
+    "43": {name: "trustee_state", type: "state"}
+    "44": {name: "trustee_zip", type: "zip"}
+    "48": {name: "trustee_tin", type: "ein"}
+    "57": {name: "account_number", type: "string"}
+    "60": {name: "box1_gross_distribution", type: "currency"}
+    "62": {name: "box3_distribution_code", type: "code"}
+    "64": {name: "box5_fmv_checkbox", type: "boolean", true_value: "X"}
+
+# Form 641 - 1095-C Employer Health Coverage
+form_641:
+  name: "IRS Form 1095-C"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "46": {name: "employer_name", type: "string"}
+    "47": {name: "employer_ein", type: "ein"}
+    "48": {name: "employer_address", type: "string"}
+    "49": {name: "employer_phone", type: "phone"}
+    "50": {name: "employer_city", type: "string"}
+    "51": {name: "employer_state", type: "state"}
+    "52": {name: "employer_zip", type: "zip"}
+    "53": {name: "count", type: "integer"}
+    "102": {name: "employee_name", type: "string"}
+    "104": {name: "employee_dob", type: "date"}
+    # Line 14 monthly codes (Jan-Dec)
+    "61": {name: "line14_jan", type: "code"}
+    "62": {name: "line14_feb", type: "code"}
+    "63": {name: "line14_mar", type: "code"}
+    "64": {name: "line14_apr", type: "code"}
+    "75": {name: "line14_may", type: "code"}
+    "76": {name: "line14_jun", type: "code"}
+    "77": {name: "line14_jul", type: "code"}
+    "78": {name: "line14_aug", type: "code"}
+    "87": {name: "line14_sep", type: "code"}
+    "88": {name: "line14_oct", type: "code"}
+    "89": {name: "line14_nov", type: "code"}
+    "90": {name: "line14_dec", type: "code"}
+    # Line 15 monthly codes (Jan-Dec)
+    "71": {name: "line15_jan", type: "code"}
+    "72": {name: "line15_feb", type: "code"}
+    "73": {name: "line15_mar", type: "code"}
+    "74": {name: "line15_apr", type: "code"}
+    "83": {name: "line15_may", type: "code"}
+    "84": {name: "line15_jun", type: "code"}
+    "85": {name: "line15_jul", type: "code"}
+    "86": {name: "line15_aug", type: "code"}
+    "95": {name: "line15_sep", type: "code"}
+    "96": {name: "line15_oct", type: "code"}
+    "97": {name: "line15_nov", type: "code"}
+    "98": {name: "line15_dec", type: "code"}
+    # Monthly checkboxes
+    "141": {name: "covered_jan", type: "boolean", true_value: "X"}
+    "142": {name: "covered_feb", type: "boolean", true_value: "X"}
+    "143": {name: "covered_mar", type: "boolean", true_value: "X"}
+    "144": {name: "covered_apr", type: "boolean", true_value: "X"}
+    "145": {name: "covered_may", type: "boolean", true_value: "X"}
+    "146": {name: "covered_jun", type: "boolean", true_value: "X"}
+    "147": {name: "covered_jul", type: "boolean", true_value: "X"}
+    "148": {name: "covered_aug", type: "boolean", true_value: "X"}
+    "149": {name: "covered_sep", type: "boolean", true_value: "X"}
+    "150": {name: "covered_oct", type: "boolean", true_value: "X"}
+    "151": {name: "covered_nov", type: "boolean", true_value: "X"}
+    "152": {name: "covered_dec", type: "boolean", true_value: "X"}
+
+# Form 136 - Charitable Contributions (Schedule A)
+form_136:
+  name: "Schedule A - Charitable Contributions"
+  fields:
+    "30": {name: "taxpayer_flag", type: "code"}
+    "33": {name: "donation_count", type: "integer"}
+    "36": {name: "organization_name", type: "string"}
+    "37": {name: "acknowledgement_received", type: "boolean", true_value: "T"}
+    "43": {name: "donee_organization", type: "string"}
+    "44": {name: "qualified_appraisal", type: "boolean", true_value: "T"}
+    "50": {name: "organization_alt", type: "string"}
+    "70": {name: "address_street", type: "string"}
+    "71": {name: "address_city", type: "string"}
+    "72": {name: "address_state", type: "state"}
+    "73": {name: "address_zip", type: "zip"}
+    "100": {name: "property_description", type: "string"}
+    "102": {name: "date_donated", type: "date"}
+    "103": {name: "fair_market_value", type: "currency"}
+    "104": {name: "appraiser_number", type: "string"}
+    "105": {name: "property_description_2", type: "string"}
+    "107": {name: "date_donated_2", type: "date"}
+    "108": {name: "fair_market_value_2", type: "currency"}
+    "110": {name: "property_description_3", type: "string"}
+    "112": {name: "date_donated_3", type: "date"}
+    "113": {name: "fair_market_value_3", type: "currency"}
+
+# Form 171 - Schedule C-1 Summary
+form_171:
+  name: "Schedule C-1 Summary"
+  fields:
+    "80": {name: "gross_receipts", type: "currency"}
+    "85": {name: "returns_allowances", type: "currency"}
+
+# Form 172 - Schedule C-2 Expenses
+form_172:
+  name: "Schedule C-2 Business Expenses"
+  fields:
+    "33": {name: "advertising", type: "currency"}
+    "42": {name: "car_truck", type: "currency"}
+    "49": {name: "commissions_fees", type: "currency"}
+    "53": {name: "depreciation", type: "currency"}
+    "54": {name: "contract_labor", type: "currency"}
+    "55": {name: "depletion", type: "currency"}
+    "61": {name: "expense_desc_1", type: "string"}
+    "63": {name: "expense_amt_1", type: "currency"}
+    "64": {name: "expense_desc_2", type: "string"}
+    "66": {name: "expense_amt_2", type: "currency"}
+    "67": {name: "expense_desc_3", type: "string"}
+    "69": {name: "expense_amt_3", type: "currency"}
+    "70": {name: "expense_desc_4", type: "string"}
+    "72": {name: "expense_amt_4", type: "currency"}
+    "73": {name: "expense_desc_5", type: "string"}
+    "75": {name: "expense_amt_5", type: "currency"}
+    "76": {name: "expense_desc_6", type: "string"}
+    "78": {name: "expense_amt_6", type: "currency"}
+    "79": {name: "expense_desc_7", type: "string"}
+    "81": {name: "expense_amt_7", type: "currency"}
+    "82": {name: "expense_desc_8", type: "string"}
+    "84": {name: "expense_amt_8", type: "currency"}
+
+# Form 191 - Schedule D-1 Capital Gains
+form_191:
+  name: "Schedule D-1 Capital Gains"
+  fields:
+    "30": {name: "description", type: "string"}
+    "33": {name: "gain_loss_type", type: "code", values: {S: "Short-term", L: "Long-term"}}
+    "90": {name: "date_acquired", type: "date"}
+    "91": {name: "date_sold", type: "date"}
+    "92": {name: "sales_price", type: "currency"}
+    "93": {name: "cost_basis", type: "currency"}
+
+# Form 211 - Schedule E-1 Rental Property
+# NOTE: Field .30 has MIXED semantics - contains both owner codes (T/S/J) AND property types
+form_211:
+  name: "Schedule E-1 Rental Property"
+  fields:
+    # Owner/Property type - MIXED: "T", "S", "J" (owner) OR "Warehouse", "RESIDENTIAL" (type)
+    "30": {name: "owner_or_property_type", type: "mixed", note: "T/S/J=owner, or property description"}
+    "31": {name: "address_line_1", type: "string"}
+    "32": {name: "city_or_state", type: "string"}
+    "33": {name: "state", type: "state"}
+    "34": {name: "zip_or_count", type: "string"}
+    "35": {name: "property_count", type: "integer"}
+    "36": {name: "ownership_percentage", type: "percentage"}
+    "37": {name: "state_2", type: "state"}
+    "38": {name: "fair_rental_months", type: "decimal"}
+    "39": {name: "fair_rental_days", type: "integer"}
+    "40": {name: "personal_use_flag", type: "code"}
+    "41": {name: "property_name", type: "string"}
+    "42": {name: "property_address", type: "string"}
+    "43": {name: "city", type: "string"}
+    "44": {name: "state_code", type: "state"}
+    "45": {name: "zip", type: "zip"}
+    "46": {name: "foreign_city", type: "string"}
+    "47": {name: "foreign_country", type: "string"}
+    # Income
+    "54": {name: "rents_received", type: "currency"}
+    "60": {name: "total_expenses", type: "currency"}
+    # Individual expenses
+    "69": {name: "advertising", type: "currency"}
+    "72": {name: "auto_travel", type: "currency"}
+    "75": {name: "cleaning_maintenance", type: "currency"}
+    "78": {name: "commissions", type: "currency"}
+    "81": {name: "insurance", type: "currency"}
+    "84": {name: "legal_professional", type: "currency"}
+    "87": {name: "management_fees", type: "currency"}
+    "90": {name: "mortgage_interest", type: "currency"}
+    "93": {name: "repairs", type: "currency"}
+    "96": {name: "supplies", type: "currency"}
+    "99": {name: "taxes", type: "currency"}
+    "102": {name: "utilities", type: "currency"}
+    "105": {name: "depreciation", type: "currency"}
+    "110": {name: "other_expenses", type: "currency"}
+    "120": {name: "other_expenses_2", type: "currency"}
+
+
+# Form 881 - CN-1 Consolidated Brokerage Header
+form_881:
+  name: "Consolidated 1099 Header"
+  fields:
+    "30": {name: "taxpayer_flag", type: "code"}
+    "31": {name: "corrected", type: "code"}
+    "32": {name: "state", type: "state"}
+    "33": {name: "code", type: "string"}
+    "34": {name: "broker_name", type: "string"}
+    "35": {name: "broker_address", type: "string"}
+    "36": {name: "broker_city", type: "string"}
+    "37": {name: "broker_state", type: "state"}
+    "38": {name: "broker_zip", type: "zip"}
+    "49": {name: "account_name", type: "string"}
+
+# Form 882 - CN-2 Consolidated Summary
+form_882:
+  name: "Consolidated 1099 Summary"
+  fields:
+    "31": {name: "ordinary_dividends", type: "currency"}
+    "32": {name: "qualified_dividends", type: "currency"}
+    "34": {name: "total_capital_gain", type: "currency"}
+    "40": {name: "nontaxable_distributions", type: "currency"}
+    "41": {name: "federal_withholding", type: "currency"}
+    "42": {name: "foreign_tax_paid", type: "currency"}
+    "43": {name: "investment_expenses", type: "currency"}
+    "57": {name: "interest_income", type: "currency"}
+    "301": {name: "state_code", type: "state"}
+
+# Form 886 - CN-4 Consolidated Transactions
+form_886:
+  name: "Consolidated Transactions"
+  fields:
+    "30": {name: "description_short", type: "string"}
+    "34": {name: "short_long_indicator", type: "code", values: {S: "Short", L: "Long"}}
+    "35": {name: "type", type: "code"}
+    "36": {name: "date_acquired", type: "date"}
+    "37": {name: "date_sold", type: "date"}
+    "38": {name: "description_long", type: "string"}
+    "42": {name: "long_term_indicator", type: "code"}
+    "43": {name: "type_long", type: "code"}
+    "44": {name: "date_acquired_long", type: "date"}
+    "45": {name: "date_sold_long", type: "date"}
+    "55": {name: "sales_proceeds_short", type: "currency"}
+    "56": {name: "cost_basis_short", type: "currency"}
+    "62": {name: "wash_sale_code", type: "string"}
+    "63": {name: "sales_proceeds_long", type: "currency"}
+    "64": {name: "cost_basis_long", type: "currency"}
+    "70": {name: "wash_sale_type", type: "string"}
+    "80": {name: "adjustment_type", type: "code"}
+    "301": {name: "state_code", type: "state"}
+
+# Form 120 - K-1 1120S S-Corporation
+# Field mappings determined from source data analysis
+form_120:
+  name: "IRS Schedule K-1 (1120S)"
+  description: "Shareholder's Share of Income, Deductions, Credits"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code", values: {T: "Taxpayer", S: "Spouse"}}
+    "33": {name: "entity_type_code", type: "code"}
+    "34": {name: "corporation_name", type: "string"}
+    "44": {name: "corporation_ein", type: "ein"}
+    "45": {name: "corporation_name_alt", type: "string"}  # Fallback name field
+    "46": {name: "corporation_address", type: "string"}
+    "47": {name: "corporation_city", type: "string"}
+    "48": {name: "corporation_state", type: "state"}
+    "49": {name: "corporation_zip", type: "zip"}
+    "50": {name: "num_shareholders", type: "integer"}
+    "58": {name: "ownership_percentage", type: "decimal"}
+    "60": {name: "entry_number", type: "integer"}
+    "61": {name: "k1_section", type: "code"}
+    "62": {name: "state_code", type: "state"}
+    "68": {name: "box1_ordinary_income", type: "currency"}
+    "70": {name: "box2_net_rental_re", type: "currency"}
+    "102": {name: "box10_other_income", type: "currency"}
+    "135": {name: "profit_share_beg", type: "decimal"}
+    "136": {name: "loss_share_beg", type: "decimal"}
+    "142": {name: "profit_share_end", type: "decimal"}
+    "143": {name: "loss_share_end", type: "decimal"}
+    "277": {name: "beginning_capital_account", type: "currency"}
+    "278": {name: "ending_capital_account", type: "currency"}
+    "530": {name: "stock_basis_beginning", type: "currency"}
+    "531": {name: "stock_basis_ending", type: "currency"}
+    "562": {name: "form_sequence", type: "integer"}
+    "920": {name: "ordinary_income_alt", type: "currency"}  # Alternative ordinary income field
+    "934": {name: "rental_re_income", type: "currency"}
