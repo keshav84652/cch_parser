@@ -172,10 +172,28 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Project specific
-*.txt
+# *.txt  # Commented out as some .txt files may be needed
 *.log
 output/
 checklist_generation.log
 debug_output.txt
-*.json
+# *.json  # Commented out as some .json files may be needed
 comparison_output.txt
+*.analysis.txt
+*_debug.txt
+*_analysis.txt
+*_1099.txt
+*_forms.txt
+*_stats.txt
+*_stats_fixed.txt
+test_encoding.txt
+betesh_debug.txt
+calvo_r_analysis.txt
+calvo_forms.txt
+calvo_1099.txt
+betesh_analysis.txt
+calvo_analysis.txt
+salierno_analysis.txt
+fermin_analysis.txt
+wai_kit_analysis.txt
+categorized_analysis.txt
