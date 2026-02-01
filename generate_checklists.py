@@ -592,14 +592,27 @@ def _add_raw_form_items(doc: CCHDocument, checklist: DetailedChecklist):
         """Aggressively normalize broker name for deduplication.
         Removes common suffixes like LLC, Inc, Securities, etc."""
         result = name.lower().strip()
+
+        # Fix common typos
+        typo_fixes = {
+            'schawb': 'schwab',  # Common typo
+            'fideltiy': 'fidelity',
+            'vangaurd': 'vanguard',
+        }
+        for typo, fix in typo_fixes.items():
+            result = result.replace(typo, fix)
+
         # Remove common corporate suffixes and variations
         # Note: Order matters - check longer patterns first
         suffixes_to_remove = [
+            r'\s*&\s*co\.?\s*inc\.?\b',  # "& Co Inc" as a unit
             r'\s+securities\s+llc\b',  # "Securities LLC" as a unit
             r'\s+llc\b', r'\s+inc\.?\b', r'\s+corp\.?\b', r'\s+ltd\.?\b', r'\s+plc\b',
             r'\s+securities\b', r'\s+sec\.?\b', r'\s+brokerage\b', r'\s+services\b',
             r'\s+markets\b', r'\s+crypto\b', r'\s+financial\b', r'\s+investments?\b',
             r'\s+n\.?a\.?\b',  # Bank N.A.
+            r'\s+us\s+market\s+discount\b',  # Transaction type suffix
+            r'\s*x\d+\b',  # "x5956" style account refs
         ]
         for suffix in suffixes_to_remove:
             result = re.sub(suffix, '', result, flags=re.IGNORECASE)
@@ -777,7 +790,8 @@ def _add_raw_form_items(doc: CCHDocument, checklist: DetailedChecklist):
             acct_suffix = _extract_account_suffix(raw_acct)
             
             # Extract base broker name - strip account numbers AND _Covered_* suffixes
-            base_broker = re.sub(r'[#\d]+.*$', '', broker_with_acct).strip()
+            # Match #, x, or digits followed by more digits (e.g., "#5956", "x5956", "5956")
+            base_broker = re.sub(r'[#x]?\d+.*$', '', broker_with_acct, flags=re.IGNORECASE).strip()
             base_broker = re.sub(r'[-_]\s*(Covered|ST|LT|STCG|LTCG|Not|NON).*$', '', base_broker, flags=re.IGNORECASE).strip()
             
             # Issue #2: Use normalized broker name for deduplication

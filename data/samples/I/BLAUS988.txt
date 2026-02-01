@@ -1,0 +1,369 @@
+**BEGIN,2024:I:BLAUS988:1,894-40-4988,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.30 NY
+.211M P01264592
+.213M 115274
+.44 894-40-4988
+.66 B
+.60 Student
+.61 01/02/2002
+.80 48 Franklin Road
+.82 Scarsdale
+.83 NY
+.84 10583
+.90 1
+.40 Ilai
+.42 Blaustein
+.204M BLAUS988:V1
+.206M 2023.05010
+.435M X
+.207M 2023.04030
+.205M X
+.200M 2023.0501
+.201M X
+.210M PRAKASH T KASAT CPA
+.202M 10/11/2024
+\@151 \ 1A
+\:1
+\&1
+.65 (212) 203-0274
+.75 eldad@igi-us.com
+.77 3
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Address information has been transferred from the prior year.
+.92 Please review this information to ensure the information is correct.
+.94 Address information has been transferred from the prior year.
+.96 Please review this information to ensure the information is correct.
+.98 Address information has been transferred from the prior year.
+.100 Please review this information to ensure the information is correct.
+.102 Address information has been transferred from the prior year.
+\@103 \ 3
+\:1
+\&2
+.90 Please review this information to ensure the information is correct.
+.92 Address information has been transferred from the prior year.
+.94 Please review this information to ensure the information is correct.
+\@104 \ 4
+\:1
+\&1
+.36 2
+.37 2
+\@105 \ 5
+\:1
+\&1
+.91 8712
+\@106 \ 6
+\:1
+\&1
+.45 N
+\@108 \ 8
+\:1
+\&1
+.30 1
+.31 0
+.35 8556
+.36 156
+.53 8712
+.76 8712
+.87 8956
+.89 8956
+\@109 \ 9
+\:1
+\&1
+.85 667
+.96 2417
+.106 4084
+.107 4084
+.108 4084
+.115 NY
+.116 5612
+.117 225
+.123 -1520
+.94 1000
+.121 400
+.120 1345
+\@921 \ BNK-1
+\:1
+\&1
+.41 X
+.37 CHASE BANK, NA
+.38 021000021
+.39 107089366
+.40 1
+.33 X
+.34 X
+\@180 \ IRS-W2
+\:2
+\&1
+.30 T
+.54 15000
+.55 300
+.41 B INTERIOR LLC
+.42 48 FRANKLIN ROAD
+.43 SCARSDALE
+.56 15000
+.57 930
+.58 15000
+.59 217.5
+.76 NY SDI
+.77 8
+.79 NY FLI
+.80 68
+.40 46-3022645
+.85 NY
+.86 46-3022645
+.87 15000
+.88 300
+.44 NY
+.45 10583
+\@180 \ IRS-W2
+\:3
+\&2
+.30 T
+.54 25576
+.55 2390
+.41 Valley National Bank
+.42 70 SPEEDWELL AVE
+.43 MORRISTOWN
+.56 25576
+.57 1585.712
+.58 25576
+.59 371
+.65 C
+.67 AA
+.76 SDI
+.77 13
+.74 X
+.66 3
+.68 1204
+.79 NY PFL
+.80 95
+.40 22-1186387
+.85 NY
+.86 22-1186387
+.87 25576
+.88 1167.82
+.47 489422 CLI2/5F
+.44 NJ
+.45 07960
+\@181 \ IRS-1099INT
+\:1
+\&1
+.30 T
+.31 F
+.43 PA
+.71M 65.
+.44 19176-0379
+.40 GOLDMAN SACHS BANK USA
+.41 PO BOX 70379
+.42 PHILADELPHIA,
+.49 13-3571598
+.59 300061827959
+\@185 \ IRS-K1 1065
+\:1
+\&1
+.85 1
+.34 3
+.93 -1705
+.95 213
+.45 46-2565504
+.33 P
+.46 ITB Realty Holdings LLC
+.101 71
+.116 17753
+.252 5
+.30 T
+.930 -1529
+.35 ITB Realty Holdings LLC
+.250 -46
+.297 87
+.95M -50.
+.115 590
+.550 50
+.551 50
+.101M 91.
+.48 New York
+.49 NY
+.50 10170
+.47 420 Lexington Avenue Suite 1610
+.297M 91.
+.51 3
+.61 X
+.62 X
+.64 Individual
+.65 .05
+.66 .05
+.67 .05
+.68 .05
+.69 .05
+.70 .05
+.71 4344
+.72 97429
+.74 69745
+.75 11813
+.78 97890
+.968 10411
+.968M 11,733.
+.175 16332
+.944 213
+.958 1495
+.956 93 Worth Retail LLC
+.961 80-0637348
+.972 1
+.958M 1,361.
+.176 7119
+.177 191943
+\@185 \ IRS-K1 1065
+\:1
+\&2
+.955 2
+.930 -176
+.956 IGI E86 JV LLC
+.961 82-4757668
+.972 1
+\@491 \ EF-1
+\:1
+\&1
+.430M X
+.31 N
+\@492 \ EF-2
+\:1
+\&1
+.57 24988
+\@391 \ EXT-1
+\:1
+\&1
+.36 2
+.48 175
+.37 X
+.49 1000
+.33 2
+\@743 \ QBI-1
+\:1
+\&1
+.138 3872
+\@1202 \ QBI-3
+\:1
+\&1
+.30 2023
+.31 PASS
+.32 1
+.35 X
+.37 50
+.34 93 Worth Retail LLC
+.36 P
+.33 1
+\@1205 \ QBI-4
+\:1
+\&1
+.32 1
+.33 1
+.34 1
+.35 1
+\@327 \ P-17
+\:1
+\&1
+.35 8556
+\@208 \ IRS 1098-T
+\:1
+\&1
+.30 T
+.40 Boston University
+.41 25 BUICK ST, SUITE 130
+.42 BOSTON
+.43 MA
+.44 02215
+.48 04-2103547
+.60 28114
+.57 X
+.60M 36,540.
+.78 2
+\@331 \ T-1
+\:1
+\&1
+.30 1
+.40 X
+\@332 \ T-2
+\:1
+\&1
+.58 0
+.70 175
+.71 04/14/25
+.60 8712
+\@641 \ IRS-1095-C
+\:1
+\&1
+.30 T
+.46 VALLEY NATIONAL BANK
+.47 22-1186387
+.48 70 SPEEDWELL AVE
+.49 973-686-5400
+.50 MORRISTOWN
+.51 NJ
+.52 USA 07960
+.61 1H
+.62 1H
+.63 1H
+.64 1H
+.71 2A
+.72 2A
+.73 2A
+.74 2A
+.75 1H
+.76 1H
+.77 1H
+.78 1H
+.83 2A
+.84 2A
+.85 2A
+.86 2A
+.87 1H
+.88 1H
+.89 1H
+.90 1H
+.91 125
+.92 125
+.93 125
+.94 125
+.95 2A
+.96 2A
+.97 2A
+.98 2A
+\@6840 \ NY1
+\:1
+\&1
+.33 WEST
+.34 567
+\@6843 \ NY1B
+\:1
+\&1
+.30 Y
+\@6842 \ NY2
+\:1
+\&1
+.31 1
+\@6844 \ NY3
+\:1
+\&1
+.60 201
+.100 213
+.104 214
+.61 X
+.101 X
+.105 X
+\@6850 \ NY6
+\:1
+\&1
+.53 8712
+.54 0
+\@6852 \ NY7
+\:1
+\&1
+.30 1000
+.31 04/14/25
+\*

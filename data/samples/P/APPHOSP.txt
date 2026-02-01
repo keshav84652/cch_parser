@@ -1,0 +1,304 @@
+**BEGIN,2024:P:APPHOSP:1,81-1411981,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.40 Apm Hospitality, LLC
+.43 5399 Post Road
+.44 Charlestown
+.45 RI
+.46 02813
+.51 (401) 364-7640
+.91 Motel
+.90 Rental
+.92 721110
+.93 01/01/2016
+.42 81-1411981
+.30 RI
+.96 A
+.101 ..
+.95 jayant.suthar@gmailc.om
+.80 B
+.200M 2023
+.201M X
+.202M 2023.0501
+.204M X
+.205M APPHOSP:V1
+.206M 2023.05010
+.207M 2023.04030
+.120 X
+.210M 115274
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 End of Year Partner Percentages missing. Review Partner Information.
+.92 End of Year Partner Percentages missing. Review Partner Information.
+.94 End of Year Partner Capital Account missing. Review Partner Information.
+.96 End of Year Partner Percentages missing. Review Partner Information.
+.98 Pro Forma Alert: Options have changed for the CA General information >
+.100 Options > Schedule M-1 calculation options (CA1 box 62). The new default
+.102 is to use CA Income and CA tax. Please check the proformaed option and
+.294M X
+.295M X
+.296M X
+.99 X
+.101 X
+.103 X
+\@103 \ 3
+\:1
+\&2
+.90 change if necessary.
+.92 Pro Forma Alert:  Client address has been transferred from the
+.94 prior year. Please review to ensure the information is correct.
+.96 Pro Forma Alert:  Overrides have been transferred from the prior year to
+.98 Federal > General > Basic Data > Other Information section
+.100 (Interview Form 4). Please verify if these still apply.
+.91 X
+.290M X
+.291M X
+.292M X
+.293M X
+.294M X
+.295M X
+.93 X
+.95 X
+.97 X
+.99 X
+.101 X
+\@104 \ 4
+\:1
+\&1
+.50 3
+.57 B
+.61 B
+\@118 \ 4A
+\:1
+\&1
+.38 (401) 364-7640
+.30 X
+.38M (401) 364-7640
+\@921 \ BNK-1
+\:1
+\&1
+.36 011500913
+.37 7500153635
+.38 1
+.42 1
+.33 X
+.34 X
+.39 X
+\@428 \ DP-9
+\:1
+\&1
+.32 3
+.33 3
+\@641 \ EF-2
+\:1
+\&1
+.60 12345
+.62 2
+.63 Jayant Suthar
+.65 Managing Member
+.66 094-68-6260
+.67 1
+\@225 \ EF-4
+\:1
+\&1
+.30 64953
+\@120 \ 2YR-1
+\:1
+\&1
+.40 92928
+.46 16200
+.47 16200
+.49 16200
+.50 76728
+.51 -16950
+.53 5175
+.55 64953
+.62 1488
+.65 61499
+.66 54265
+.67 11784
+.72 173532
+.73 302568
+.74 -237615
+.32 2
+\@121 \ 2YR-2
+\:1
+\&1
+.40 -237615
+.44 32000
+.50 824670
+.80 -194232
+.82 61382
+.90 -596
+.91 -638
+\@122 \ 2YR-3
+\:1
+\&1
+.64 205121
+.71 619055
+.77 619055
+.83 619055
+.90 212285
+.92 619055
+.94 831340
+.99 831340
+.60 32000
+\@151 \ B-1
+\:1
+\&1
+.31 104000
+.30 Interest Income
+\@271 \ K-1
+\:1
+\&1
+.30 1
+.37 3
+.31 Jayant
+.38 Mitesh
+.109 707529
+.58 5399 Post Road
+.59 Charlestown
+.62 5399 Post Road
+.63 Charlestown
+.135 164500
+.LIST 135 _ 3
+150415 - 09/06/25 18:16 PM Worksheet Partner Information
+                                      19500           _
+                                     145000           _
+.134 831340
+.60 RI
+.102 094-68-6260
+.165 X
+.103 I
+.174 A
+.64 RI
+.110 077-80-4450
+.111 I
+.117 123811
+.106 .8
+.107 .8
+.108 .8
+.114 .2
+.115 .2
+.116 .2
+.144 12801
+.32 L
+.39 J
+.33 Suthar
+.40 Suthar
+.61 02813
+.65 02813
+.176 X
+\@272 \ K-2
+\:1
+\&1
+.50 1
+\@273 \ K-3
+\:1
+\&1
+.32 SBA Cares Act Grant
+.30 PPL
+.37 EIDL Grant
+.35 PPL
+\@291 \ L-1
+\:1
+\&1
+.35 2790
+.36 25404
+.84 Bhakti Groton Hotel
+.86 13050
+.87 19743
+.88 Loan - Bhakti Groton Hotel
+.90 1000000
+.91 1000000
+.130 1015840
+\@292 \ L-2
+\:1
+\&1
+.30 20000
+.31 6413
+.80 164500
+.LIST 80 _ 3
+BCHOI01 - 08/30/24 13:05 PM Worksheet Balance Sheet
+JS                                        _       19500
+2023 MGMT Fees (PSM)                      _      145000
+.157 1015840
+.118 831340
+\@870 \ IRS K1P
+\:1
+\&1
+.31 P
+.45 92-3816793
+.46 BHAKTI GROTON HOTEL LLC
+.47 227 SHELTON DR
+.48 MCDONOUGH
+.49 GA
+.50 30252
+.51 13
+.55 Apm Hospitality, LLC 
+.56 5399 Post Road
+.57 Charlestown, RI  02813
+.59 X
+.60 X
+.62 Domestic limited l
+.63 .1
+.64 .1
+.65 .1
+.66 .1
+.67 .1
+.68 .1
+.69 100000
+.72 13050
+.73 55000
+.74 -48307
+.76 19743
+.95 -48307
+.920 -48307
+.294 9609
+.177 100000
+.91 CT
+.96 -29581
+.95M -16,950.
+.294M 4,000.
+.54 81-1411981
+.869 9003
+.870 214726
+\@379 \ EXT-1
+\:1
+\&1
+.30 2
+\@388 \ EXT-2
+\:1
+\&1
+.30 X
+\@4195 \ CT4
+\:1
+\&1
+.30 1
+.82 43802
+\@4135 \ CT6
+\:1
+\&1
+.35 Section 168(k) federal bonus depreciation deduction
+.36 30953
+.59 25% of Section 168(k) federal bonus depreciation deduction added back
+.60 12228
+.74 0
+.73 -29581
+.72 -48307
+.71 92-3816793
+.70 BHAKTI GROTON HOTEL LLC
+\@4194 \ CT6A
+\:1
+\&1
+.64 0
+\@7693 \ RI4
+\:1
+\&1
+.60 CT
+.49 Jayant suthar
+.48 CT
+\*

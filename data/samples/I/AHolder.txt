@@ -1,0 +1,209 @@
+**BEGIN,2024:I:AHolder:1,216-53-2832,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.30 NJ
+.211M P01264592
+.213M 115274
+.44 216-53-2832
+.61 01/31/1997
+.80 111 Lenox Ave
+.82 Dumont
+.83 NJ
+.84 07628
+.90 1
+.40 Alexis
+.42 Holder
+.204M AHolder:V1
+.206M 2023.05010
+.435M X
+.207M 2023.05000
+.205M X
+.200M 2023.0501
+.201M X
+.210M PRAKASH T KASAT CPA
+.202M 11/01/2024
+\@151 \ 1A
+\:1
+\&1
+.65 2122030274
+.75 aholder877@gmail.com
+.77 3
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Address information has been transferred from the prior year.
+.92 Please review this information to ensure the information is correct.
+.94 Address information has been transferred from the prior year.
+.96 Please review this information to ensure the information is correct.
+.98 Address information has been transferred from the prior year.
+.100 Please review this information to ensure the information is correct.
+\@104 \ 4
+\:1
+\&1
+.36 1
+.37 1
+\@105 \ 5
+\:1
+\&1
+.91 114511
+\@108 \ 8
+\:1
+\&1
+.30 1
+.31 .24
+.35 114511
+.53 114511
+.76 114511
+.87 13850
+.89 13850
+.90 100661
+\@109 \ 9
+\:1
+\&1
+.58 17559
+.75 17559
+.85 17940
+.30 17559
+.106 17940
+.107 381
+.108 381
+.118 5104
+.115 NJ
+.116 113511
+.117 5104
+.123 -2762
+.120 2762
+.34 17559
+\@109 \ 9
+\:1
+\&2
+.115 NY
+.116 106511
+.117 5901
+.123 -110
+.120 6011
+\@921 \ BNK-1
+\:1
+\&1
+.41 X
+.37 JP Morgan Chase
+.38 021202337
+.39 161073610
+.33 X
+.34 X
+\@180 \ IRS-W2
+\:3
+\&1
+.30 T
+.54 119698
+.55 18175
+.41 Conopco, Inc
+.42 700 Sylvan Avenue
+.43 Englewood Cliffs
+.56 120965
+.57 7499.81
+.58 120965
+.59 1753.99
+.65 AA
+.67 D
+.69 DD
+.76 UI/WF/SW
+.77 180
+.74 X
+.93 NY
+.94 131-840-427
+.95 119698
+.96 494.89
+.97 119698
+.98 4560.62
+.66 7830
+.68 1266
+.70 9583
+.79 NJ FLI
+.80 111
+.49 200 Water Street Apt 2114
+.50 New York
+.54M 56,031.
+.40 13-1840427
+.85 NJ
+.86 131-840-427/000
+.87 121930
+.88 6118.53
+.51 NY
+.52 10038
+.99 NYC
+.44 NJ
+.45 07632
+\@491 \ EF-1
+\:1
+\&1
+.430M X
+.31 N
+\@492 \ EF-2
+\:1
+\&1
+.57 62832
+\@391 \ EXT-1
+\:1
+\&1
+.36 1
+.33 1
+\@622 \ IRS-1098E
+\:1
+\&1
+.30 T
+.40 First Tech Federal Credit Union
+.41 P.O. Box 2100
+.42 Beaverton
+.43 OR
+.44 97075
+.48 23-7062675
+.60 1595
+.57 x5652
+.61 X
+.60M 2,339.
+\@327 \ P-17
+\:1
+\&1
+.35 114511
+\@332 \ T-2
+\:1
+\&1
+.58 17559
+.60 114511
+\@641 \ IRS-1095-C
+\:1
+\&1
+.30 T
+.46 Loreal USA SD Inc
+.47 22-3691241
+.48 50 Connell Drive
+.50 Berkeley Heights
+.51 NJ
+.52 07922
+\@6640 \ NJ1
+\:1
+\&1
+.39 0210
+\@6642 \ NJ2
+\:1
+\&1
+.65 Metropolitan Life
+\@6646 \ NJ4
+\:1
+\&1
+.53 113511
+.70 0
+.71 114511
+\@6840 \ NY1
+\:1
+\&1
+.30 N
+\@6850 \ NY6
+\:1
+\&1
+.53 114511
+.54 5901
+\*

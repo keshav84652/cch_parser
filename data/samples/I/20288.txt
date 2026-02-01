@@ -1,0 +1,932 @@
+**BEGIN,2024:I:20288:1,565-47-2554,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.30 NJ
+.211M P01264592
+.213M 115274
+.44 565-47-2554
+.66 B
+.60 Executive
+.61 06/03/1949
+.80 12 Glenwood Court
+.82 Tenafly
+.83 NJ
+.84 07670-1105
+.90 1
+.40 Reuven
+.42 Schwartz
+.204M 20288:V1
+.206M 2023.05010
+.435M X
+.207M 2023.04030
+.205M X
+.200M 2023.0501
+.201M X
+.210M PRAKASH T KASAT CPA
+.202M 10/11/2024
+\@151 \ 1A
+\:1
+\&1
+.65 718 227 6035
+.75 reuv.schwartz@gmail.com
+.77 3
+.78 3
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Foreign Country Code blank or invalid.  Review Foreign Tax Credit.
+.92 Address information has been transferred from the prior year.
+.94 Please review this information to ensure the information is correct.
+.96 Address information has been transferred from the prior year.
+.98 Please review this information to ensure the information is correct.
+.100 Address information has been transferred from the prior year.
+.102 Please review this information to ensure the information is correct.
+\@103 \ 3
+\:1
+\&2
+.90 Address information has been transferred from the prior year.
+.92 Please review this information to ensure the information is correct.
+.94 Overrides have pro formaed to  Consolidated 1099 >
+.96 Form 1099-DIV Dividend Income > (Interview Form CN-2).
+.98 Please verify these still apply.
+.100 Address information has been transferred from the prior year.
+.102 Please review this information to ensure the information is correct.
+\@104 \ 4
+\:1
+\&1
+.36 2
+.37 2
+\@105 \ 5
+\:1
+\&1
+.91 842404
+\@106 \ 6
+\:1
+\&1
+.35 Y
+.45 N
+\@108 \ 8
+\:1
+\&1
+.30 1
+.31 .37
+.36 266852
+.37 35826
+.42 254246
+.39 36823
+.48 201084
+.41 48317
+.53 843148
+.64 9451
+.75 9451
+.88 12757
+.76 833697
+.87 15700
+.89 28457
+.90 805240
+.38 9524
+\@109 \ 9
+\:1
+\&1
+.41 2
+.58 214161
+.65 18902
+.72 15350
+.75 248413
+.96 220000
+.98 70000
+.30 214163
+.106 303624
+.107 55211
+.109 48601
+.110 6610
+.115 NJ
+.116 661149
+.117 44179
+.122 17638
+.120 63314
+.34 214163
+.86 13624
+\@109 \ 9
+\:1
+\&2
+.115 NY
+\@921 \ BNK-1
+\:1
+\&1
+.41 X
+.37 Valley National Bank
+.38 021201383
+.39 000053436113
+.40 1
+.33 X
+.34 X
+\@184 \ IRS-1099R
+\:1
+\&1
+.73 NJ
+.30 T
+.56 238858
+.57 238858
+.40 Fidelity Investment
+.41 P.O. Box 28019
+.42 Albuquerque
+.61 131372
+.58 X
+.64 4
+.65 X
+.72 100320
+.90 043-523-567/001
+.162 238858
+.84 249-029278-001
+.47 04-3523567
+.56M 36,823.
+.350M 36823
+.43 NM
+.44 87125-8019
+.119 800-544-5704
+\@184 \ IRS-1099R
+\:1
+\&2
+.73 NJ
+.30 T
+.56 9520
+.57 9520
+.40 FIDELITY INVESTMENTS
+.41 P.O. Box 28019
+.42 Albuquerque,
+.61 3523
+.58 X
+.64 7
+.65 X
+.72 857
+.90 043-523-567/001
+.162 9520
+.84 127-482617-001
+.47 04-3523567
+.43 NM
+.44 87125-8019
+.119 800-544-5704
+\@132 \ A-2
+\:1
+\&1
+.46 22313
+.49 NJ
+\@181 \ IRS-1099INT
+\:1
+\&1
+.30 T
+.71 76518
+.LIST 71 _ 5
+ParthS - 04/08/25 14:12 PM Worksheet Interest (IRS 1099-INT)
+x1699 00001                           29463           _
+x8718 00002 / 0001                     7813           _
+x2208 00003 / 0001                    13632           _
+x8896 00004 / 0001                    25610           _
+.74 0
+.43 NJ
+.71M 57,713.
+.44 07632
+.40 Connect One
+.41 301 SYLVAN AVENUE
+.42 ENGLEWOOD CLIFFS
+.49 20-1172127
+\@181 \ IRS-1099INT
+\:1
+\&2
+.30 S
+.71M 31,368.
+.40 Connect One
+.49 20-1172127
+.59 0010401334700001
+\@181 \ IRS-1099INT
+\:1
+\&3
+.30 S
+.71M 5,476.
+.40 First Commerce Bank
+.49 20-3528237
+.59 0107033975200002
+\@181 \ IRS-1099INT
+\:1
+\&4
+.30 T
+.88 NJ
+.71M 26,027.
+.40 First Commerce Bank #3584
+.49 20-3528237
+.59 0107033975200002
+.32 NJ
+\@181 \ IRS-1099INT
+\:1
+\&5
+.30 T
+.71M 5,209.
+.40 Spencer Savings Bank
+.49 22-1296609
+\@181 \ IRS-1099INT
+\:1
+\&6
+.30 S
+.71M 5,209.
+.40 Spencer Savings Bank
+.49 22-1296609
+\@181 \ IRS-1099INT
+\:1
+\&7
+.30 T
+.71 29
+.LIST 71 _ 5
+ParthS - 04/08/25 14:12 PM Worksheet Interest (IRS 1099-INT)
+x1699 00001                           29463           _
+x8718 00002 / 0001                     7813           _
+x2208 00003 / 0001                    13632           _
+x8896 00004 / 0001                    25610           _
+.74 0
+.43 NJ
+.71M 8,937.
+.44 07474-0558
+.40 Valley National Bank
+.41 PO BOX 558
+.42 WAYNE
+.49 22-1186387
+.59 00053436113 00001
+\@181 \ IRS-1099INT
+\:1
+\&8
+.30 T
+.71 85000
+.LIST 71 _ 5
+ParthS - 04/08/25 14:12 PM Worksheet Interest (IRS 1099-INT)
+x1699 00001                           29463           _
+x8718 00002 / 0001                     7813           _
+x2208 00003 / 0001                    13632           _
+x8896 00004 / 0001                    25610           _
+.40 Addl for 2025
+\@182 \ IRS-1099DIV
+\:1
+\&1
+.30 T
+.70 147
+.72 100
+.70M 614.
+.40 Focus Fund Investor Class
+.49 13-6082713
+.59 494-170041534
+.71 147
+\@182 \ IRS-1099DIV
+\:1
+\&2
+.30 T
+.70 0
+.72 5981
+.70M 7,639.
+.40 Genesis Fund Investor Class
+.49 13-3240872
+.59 493-170041534
+.71 0
+\@182 \ IRS-1099DIV
+\:1
+\&3
+.30 T
+.70 2556
+.72 1060
+.70M 1,885.
+.40 International Fund Investor Class #8811
+.49 68-0607799
+.59 495-170041534
+.71 1721
+\@182 \ IRS-1099DIV
+\:1
+\&4
+.30 T
+.70 222
+.72 10164
+.70M 6,087.
+.40 Large Cap Growth Fund Investor Class
+.49 13-6068441
+.59 484-170041534
+.71 222
+\@182 \ IRS-1099DIV
+\:1
+\&5
+.30 T
+.70 2712
+.72 0
+.70M 2,725.
+.40 Large Cap Value Investor
+.49 13-2606035
+.59 492-170041534
+.71 2712
+\@182 \ IRS-1099DIV
+\:1
+\&6
+.30 T
+.70 15000
+.40 Addl for 2025
+.71 15000
+\@881 \ CN-1
+\:3
+\&1
+.50 12 Glenwood Court
+.49 Reuven Schwartz
+.44 04-3523567
+.46 X27-187267
+.51 Tenafly
+.34 Fidelity Brokerage Services LLC
+.30 T
+.35 PO BOX 28019
+.56 565-47-2554
+.36 Albuquerque
+.37 NM
+.38 87125-8019
+.52 NJ
+.53 07670-1105
+\@881 \ CN-1
+\:5
+\&2
+.50 12 Glenwood Court
+.49 Reuven Schwartz
+.44 13-2741729
+.46 AFD-722514
+.51 Tenafly
+.34 Pershing LLC
+.30 T
+.35 ONE PERSHING PLAZA
+.56 565-47-2554
+.36 JERSEY CITY
+.37 NJ
+.38 07399
+.52 NJ
+.53 07670-1105
+\@881 \ CN-1
+\:6
+\&3
+.50 12 Glenwood Court
+.49 Reuven Schwartz
+.44 04-3523567
+.46 Y81-056381
+.51 Tenafly
+.34 Fidelity Brokerage Services LLC
+.30 T
+.35 P.O. Box 28019
+.56 565-47-2554
+.36 Albuquerque
+.37 NM
+.38 87125-8019
+.52 NJ
+.53 07670-1105
+\@882 \ CN-2
+\:3
+\&1
+.31 27300
+.32 2682
+.54 Various
+.45 25
+.49 13
+.31M 17,037.
+\@882 \ CN-2
+\:5
+\&2
+.31 23293
+.31M 19,531.
+\@882 \ CN-2
+\:6
+\&3
+.31 5034
+.32 4741
+.34 39
+.35 12
+.40 130
+.42 213
+.31M 1,807.
+\@883 \ CN-3
+\:3
+\&1
+.33 159288
+.31M 47,694.
+.38 211
+\@883 \ CN-3
+\:3
+\&2
+.30 Fidelity #7267- Market discount
+.33 190758
+.31M 13,085.
+\@883 \ CN-3
+\:3
+\&3
+.30 Fidelity #7267- US Treas AIP
+.31M -21,801.
+.38 39101
+\@883 \ CN-3
+\:5
+\&4
+.33 180495
+.31M 82,850.
+\@883 \ CN-3
+\:5
+\&5
+.30 Pershing x2514 - AIP
+.31M -5,582.
+\@883 \ CN-3
+\:5
+\&6
+.30 Pershing LLC #2514 US Treasury Market Discount
+.33 36663
+\@886 \ CN-4
+\:3
+\&1
+.30 Fidelity #7267 ST
+.34 S
+.35 A
+.38 Fidelity #7267 LT
+.42 L
+.43 A
+.36 99/99/99
+.37 12/31/24
+.55 3342000
+.56 3202410
+.44 99/99/99
+.45 12/31/24
+.63 2387000
+.64 2335832
+.62 -139590
+.80 D
+.70 -51168
+.93 D
+\@886 \ CN-4
+\:5
+\&2
+.30 PERSHING LLC #2514 - ST
+.34 S
+.35 A
+.38 PERSHING LLC #2514 - LT
+.42 L
+.43 A
+.46 PERSHING LLC #2514 - STT Not Report To IRS
+.50 S
+.51 B
+.36 99/99/99
+.37 12/31/24
+.55 530314
+.56 530314
+.44 99/99/99
+.45 12/31/24
+.63 1839686
+.64 1803024
+.52 99/99/99
+.53 12/31/24
+.71 3027305
+.72 3027305
+.70 -36663
+.93 D
+\@886 \ CN-4
+\:6
+\&3
+.30 Fidelity Brokerage Services #6381 - ST
+.34 S
+.35 A
+.38 Fidelity Brokerage Services #6381 - LT
+.42 L
+.43 A
+.36 99/99/99
+.37 12/31/24
+.55 85251
+.56 93008
+.44 99/99/99
+.45 12/31/24
+.63 6535
+.64 7160
+\@191 \ D-1
+\:1
+\&1
+.30 Orival
+.90 03/18/96
+.91 06/30/24
+.92 750000
+.93 0
+.144 P
+.33 Z
+.34 C
+\@185 \ IRS-K1 1065
+\:8
+\&4
+.85 8
+.955 11
+.34 3
+.45 82-3358726
+.33 P
+.46 Coyal 613 Partners
+.87 NY
+.30 T
+.35 Coyal 613 Partners
+.93M -121.
+.95M 120.
+.552 5
+.86 8
+.765 8
+.768 NJ
+.48 New York
+.49 NY
+.50 10002
+.47 517 Grand Street
+.61 X
+.62 X
+.64 Individual
+.65 .1666667
+.67 .1666667
+.69 .1666667
+.74 4833
+.968M 3,947.
+.972 8
+\@185 \ IRS-K1 1065
+\:1
+\&1
+.85 1
+.90 481526
+.190 Sec-754 Amortization
+.34 1
+.93 0
+.45 26-3723393
+.33 P
+.46 Green Filtration, LLC
+.101 1641
+.112 233334
+.116 216666
+.87 NJ
+.30 T
+.35 Green Filtration, LLC
+.192 0
+.195 0
+.293 4132
+.297 1641
+.93M 159,053.
+.101M 252.
+.116M 216,675.
+.132M 1,500.
+.191M 21,667.
+.192M 133,775.
+.195M 180,000.
+.86 1
+.293M 4,009.
+.48 Englewood
+.49 NJ
+.50 07631
+.47 214 Jackson Street
+.295M 600,000.
+.297M 252.
+.51 3
+.60 X
+.62 X
+.64 Individual
+.65 .5
+.66 .5
+.67 .5
+.68 .5
+.69 .5
+.70 .5
+.73 -1
+.74 153190
+.78 676620
+.79 X
+.175 523430
+.956 Green Filtration, LLC
+.972 1
+.973 1
+.964 33910
+.178 383
+\@185 \ IRS-K1 1065
+\:3
+\&2
+.85 3
+.955 3
+.190 Sec-754 Amortization
+.34 3
+.95 76781
+.45 20-3336735
+.33 P
+.46 Zyro Properties, LLC
+.101 2906
+.191 14549
+.87 NJ
+.30 T
+.35 Zyro Properties, LLC
+.192 0
+.297 2906
+.95M 78,248.
+.101M 10,630.
+.191M 14,549.
+.295 300000
+.86 3
+.48 Englewood
+.49 NJ
+.50 07631
+.47 213 S Van Brunt Street
+.295M 950,000.
+.297M 10,630.
+.51 3
+.60 X
+.62 X
+.64 Individual
+.65 .99
+.66 .99
+.67 .99
+.68 .99
+.69 .99
+.70 .99
+.73 24200
+.74 61547
+.77 300000
+.78 -173315
+.79 X
+.968 1887679
+.968M 1887679.
+.175 65138
+.944 76781
+.950 14549
+.956 Zyro Properties, LLC
+.972 3
+.178 24200
+\@185 \ IRS-K1 1065
+\:5
+\&3
+.85 5
+.955 5
+.90 404
+.34 1
+.93 -74
+.45 20-3426974
+.33 P
+.46 Zyroair LLC
+.101 469
+.87 NJ
+.30 T
+.35 Zyroair LLC
+.192 -74
+.297 469
+.101M 561.
+.86 5
+.293M 124.
+.48 Englewood
+.49 NJ
+.50 07631
+.47 213 S Van Brunt Street
+.295M 35,000.
+.297M 561.
+.51 3
+.60 X
+.62 X
+.64 Individual
+.65 .5
+.66 .5
+.67 .5
+.68 .5
+.69 .5
+.70 .5
+.73 0
+.74 19891
+.78 20286
+.79 X
+.175 395
+.953 1
+.956 Zyroair LLC
+.972 5
+.178 0
+\@491 \ EF-1
+\:1
+\&1
+.430M X
+.31 N
+\@492 \ EF-2
+\:1
+\&1
+.57 12554
+\@391 \ EXT-1
+\:1
+\&1
+.36 2
+.37 X
+.33 2
+\@743 \ QBI-1
+\:1
+\&1
+.30 X
+\@190 \ IRS-SSA1099
+\:1
+\&1
+.30 T
+.42 57032
+.LIST 42 _ 3
+150415 - 12/05/25 13:14 PM Worksheet Social Security Benefit Statement (SSA-1099)
+2024                                  55332           _
+Addl 2025                              1700           _
+.44 57032
+.45 P 10
+Paid by check or Direct deposit - $47,232.00
+
+Medicare Part B premiums deducted from your benefits  - $7,128..00
+
+Medicare Prescription Drug premi1.m1s
+(Part D) deducted from your benefits - $972.00
+
+Total Additions : $55,332.00
+
+Benifits for 2024: $55,332.00
+.46 P 1
+None
+.48 REUVEN SCHWARTZ
+.49 12 GLENWOOD CT
+.50 TENAFLY NJ 07670-1105
+.51 565-47-2554A
+.42M 53,562.
+.34 1
+\@190 \ IRS-SSA1099
+\:1
+\&2
+.30 T
+.42M 3,282.
+.34 2
+\@312 \ P-2
+\:1
+\&1
+.40 OC
+.32 2
+.90 OC
+.30 OC
+\@312 \ P-2
+\:2
+\&2
+.40 OC
+.32 1
+.30 OC
+\@313 \ P-3
+\:1
+\&1
+.35 0
+.38 0
+.41 0
+.70 0
+.73 0
+.76 0
+.33 35
+.36 24
+.39 17
+.34 35
+.37 24
+.40 17
+.68 35
+.71 24
+.74 17
+.69 35
+.72 24
+.75 17
+\@313 \ P-3
+\:2
+\&2
+.32 1
+.67 1
+.30 3
+.31 2
+.65 3
+.66 2
+\@327 \ P-17
+\:1
+\&1
+.35 124324
+\@331 \ T-1
+\:1
+\&1
+.30 1
+.41 7
+\@332 \ T-2
+\:1
+\&1
+.58 248413
+.45 12581
+.60 833697
+\@651 \ T-22
+\:1
+\&1
+.40 403947
+.41 633697
+.31 F
+\@6640 \ NJ1
+\:1
+\&1
+.39 0261
+\@6642 \ NJ2
+\:1
+\&1
+.65 Bank of Hope
+.68 Bank of Hope
+\@6642 \ NJ2
+\:1
+\&2
+.65 Connect One
+.68 Connect One #109544208
+\@6642 \ NJ2
+\:1
+\&3
+.65 First Commerce Bank
+.68 First Commerce Bank
+\@6642 \ NJ2
+\:1
+\&4
+.65 Noah Bank
+.68 Noah Bank
+\@6642 \ NJ2
+\:1
+\&5
+.65 Spencer Savings Bank (Forfeited interest)
+.68 Spencer Savings Bank (Forfeited interest)
+\@6642 \ NJ2
+\:1
+\&6
+.65 Valley National Bank
+.68 Fidelity
+\@6642 \ NJ2
+\:1
+\&7
+.65 Fidelity
+.68 Fidelity
+\@6642 \ NJ2
+\:1
+\&8
+.65 Fidelity
+.68 Fidelity
+\@6642 \ NJ2
+\:1
+\&9
+.65 Pershing x2514 - AIP
+.68 Focus Fund Investor Class
+\@6642 \ NJ2
+\:1
+\&10
+.65 Genesis Fund Investor Class
+.68 International Fund Investor Class #8811
+\@6642 \ NJ2
+\:1
+\&11
+.65 Large Cap Value Investor
+.68 Fidelity
+\@6642 \ NJ2
+\:1
+\&12
+.65 Fidelity
+.68 Fidelity
+\@6642 \ NJ2
+\:1
+\&13
+.65 Orival Inc
+\@6644 \ NJ3
+\:1
+\&1
+.30 1
+.37 7
+\@6646 \ NJ4
+\:1
+\&1
+.53 661149
+.70 44179
+.71 663149
+\@6648 \ NJ5
+\:1
+\&1
+.42 X
+.40 X
+.43 10/15/2025
+\@6652 \ NJ7
+\:1
+\&1
+.54 22313
+.36 X
+.50 Tenafly
+.52 1
+.51 365
+.53 1
+.33 1
+\@6840 \ NY1
+\:1
+\&1
+.30 N
+\@6842 \ NY2
+\:1
+\&1
+.31 1
+\@6844 \ NY3
+\:1
+\&1
+.60 201
+.64 209
+.100 213
+.61 X
+.65 X
+.101 X
+\@6850 \ NY6
+\:1
+\&1
+.53 649760
+.54 0
+\*

@@ -1,0 +1,484 @@
+**BEGIN,2024:I:3070:1,090-02-0943,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.143 1
+.155 2
+.167 3
+.30 NY
+.211M P01264592
+.213M 115274
+.44 090-02-0943
+.49 091-88-7746
+.66 B
+.72 B
+.60 CONSTRUCTION
+.67 MANAGEMENT
+.61 10/29/1977
+.68 12/18/1977
+.80 1039 DENTON AVE
+.82 NEW HYDE PARK
+.83 NY
+.84 11040
+.90 2
+.40 GURPREET
+.42 SINGH
+.45 TEJWINDER
+.119 KAUR
+.180 T
+.116 C
+.110 DIYA
+.115 Daughter
+.185 T
+.123 C
+.117 YASHNEET
+.122 Daughter
+.190 T
+.130 C
+.124 MANVEER
+.129 Son
+.140 05/19/2004
+.114 065-94-2761
+.152 07/07/2006
+.121 067-96-7292
+.164 08/22/2011
+.128 698-52-1682
+.47 KAUR
+.204M 3070:V1
+.206M 2023.05010
+.435M X
+.207M 2023.03030
+.205M X
+.200M 2023.0501
+.201M X
+.210M PRAKASH T KASAT CPA
+.202M 04/11/2024
+\@151 \ 1A
+\:1
+\&1
+.65 212-365-8805
+.67 (718) 233-4265
+.71 212-365-8805
+.75 drgurpreet2@gmail.com
+.77 3
+.78 3
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Asset Depr Method missing or invalid #2 LAND
+.92 Asset Depr Method missing or invalid #4 LAND
+.94 Asset Life missing or invalid #2 LAND
+.96 Asset Life missing or invalid #4 LAND
+.98 Address information has been transferred from the prior year.
+.100 Please review this information to ensure the information is correct.
+.102 Address information has been transferred from the prior year.
+\@103 \ 3
+\:1
+\&2
+.90 Please review this information to ensure the information is correct.
+.92 Address information has been transferred from the prior year.
+.94 Please review this information to ensure the information is correct.
+.96 Address information has been transferred from the prior year.
+.98 Please review this information to ensure the information is correct.
+.100 The NOL carryover on the Net Operating Loss worksheet
+.102 (Interview Form M-21) needs to be adjusted by any NOL carryback.
+.295M X
+.296M X
+.101 X
+.103 X
+\@103 \ 3
+\:1
+\&3
+.90 Address information has been transferred from the prior year.
+.92 Please review this information to ensure the information is correct.
+\@104 \ 4
+\:1
+\&1
+.36 2
+\@106 \ 6
+\:1
+\&1
+.45 N
+\@108 \ 8
+\:1
+\&1
+.30 2
+.31 0
+.87 27700
+.89 27700
+\@109 \ 9
+\:1
+\&1
+.115 NY
+.116 -20925
+.123 -100
+.121 100
+\@119 \ 19
+\:1
+\&1
+.70 T
+\@921 \ BNK-1
+\:1
+\&1
+.41 X
+.37 Chase Bank
+.38 021000021
+.39 327217722
+.40 1
+.33 X
+.34 X
+\@180 \ IRS-W2
+\:1
+\&1
+.30 T
+.85 NY
+\@132 \ A-2
+\:1
+\&1
+.121 J
+\@133 \ A-3
+\:1
+\&1
+.59 X
+.70 11576
+.69 NY
+.68 Roslyn
+.56 Company Inc
+.55 Malhotra Holding
+.67 90 Mimosa Drive
+.57 453169468
+\@420 \ DP-1
+\:4
+\&4
+\F20104
+\O1
+.30 5
+.112 B
+.31 Cost Basis
+.32 12/31/13
+.33 MSL
+.34 27.5
+.35 367000
+.48 74730
+.49 13345
+.80 13345
+.79 74730
+\@420 \ DP-1
+\:2
+\&2
+\F20016
+\O1
+.30 1
+.36 2
+.112 B
+.31 COST BASIS
+.32 05/30/06
+.33 SL
+.34 27.5
+.35 220000
+.48 112815
+.49 8000
+.37 LAND
+.38 05/30/06
+.123 L
+.39 L
+.41 300000
+.79 112815
+\@420 \ DP-1
+\:1
+\&1
+\F12000
+\O2
+.30 6
+.112 T
+.31 Dodge Carvan
+.32 09/15/15
+.33 MT
+.34 5
+.35 22300
+.48 11150
+.51 11150
+.79 11150
+\@420 \ DP-1
+\:3
+\&3
+\F20016
+\O2
+.30 3
+.36 4
+.112 B
+.31 COST BASIS
+.32 01/31/07
+.33 SL
+.34 27.5
+.35 250000
+.48 130952
+.49 9091
+.37 LAND
+.38 01/31/07
+.123 L
+.39 L
+.41 200000
+.79 130952
+\@421 \ DP-2
+\:1
+\&1
+\F12000
+\O2
+.31 6
+.32 MT
+.33 5
+.39 22300
+.105 21969
+.107 331
+.30 NY
+\@422 \ DP-3
+\:1
+\&1
+\F12000
+\O2
+.30 6
+.38 0
+.37 0
+.262 B
+.263 B
+.264 B
+.265 B
+.266 B
+.260 Y
+.261 Y
+.40 0
+.130 0
+.39 0
+.31 A
+.135 11150
+.136 11150
+\@715 \ M-15
+\:1
+\&1
+.32 2
+.41 500
+.42 2500
+.52 8007
+.30 1
+\@181 \ IRS-1099INT
+\:1
+\&1
+.30 J
+.40 Ocwen
+\@181 \ IRS-1099INT
+\:1
+\&2
+.30 J
+.40 Quicken
+\@181 \ IRS-1099INT
+\:1
+\&3
+.30 J
+.40 Various
+\@881 \ CN-1
+\:1
+\&1
+.34 Robhinhood 5418
+\@171 \ C-1
+\:2
+\&1
+.32 T
+.31 541990
+.30 Construction
+.37 1039 DENTON AVE
+.38 NEW HYDE PARK
+.40 11040
+.39 NY
+\@211 \ E-1
+\:2
+\&2
+.41 RESIDENTIAL PROPERTY
+.42 12908 143RD STREET
+.30 T
+.140 Mortgage interest Paid to Financial
+.34 1
+.144 X
+.45 11436
+.44 NY
+.43 JAMAICA
+\@211 \ E-1
+\:1
+\&1
+.41 RESIDENTIAL RENTAL
+.42 12904 143RD STREET
+.30 T
+.34 1
+.45 11436
+.44 NY
+.43 JAMAICA
+\@212 \ E-2
+\:2
+\&2
+.42 1
+\@212 \ E-2
+\:1
+\&1
+.42 2
+\@213 \ E-3
+\:2
+\&2
+.40 18337
+.42 18182
+\@213 \ E-3
+\:1
+\&1
+.40 20443
+.42 18056
+\@217 \ E-7
+\:2
+\&2
+.54 9091
+.55 -9091
+\@217 \ E-7
+\:1
+\&1
+.54 8000
+.55 -8000
+\@120 \ IRS-K1 1120S
+\:1
+\&1
+.60 1
+.30 T
+.33 1
+.44 38-3989045
+.45 DRM Construction
+.46 1039 Denton Avenue
+\@491 \ EF-1
+\:1
+\&1
+.430M X
+\@492 \ EF-2
+\:1
+\&1
+.57 40943
+.58 07746
+\@391 \ EXT-1
+\:1
+\&1
+.37 X
+.33 2
+\@721 \ M-21
+\:1
+\&1
+.85 2022
+.87 346
+.93 2022
+.95 346
+.31 F
+.94 2
+.86 1
+\@743 \ QBI-1
+\:1
+\&1
+.30 X
+.138 1012
+\@1202 \ QBI-3
+\:1
+\&1
+.30 2020
+.31 RENT
+.32 1
+.35 X
+.57 2021
+.84 2022
+.111 2023
+.138 2017
+.165 2022
+.192 2023
+.58 RENT
+.85 RENT
+.112 RENT
+.139 RENT
+.166 RENT
+.193 RENT
+.37 2243
+.34 RESIDENTIAL RENTAL - 12904 143RD ST
+.59 1
+.86 1
+.113 1
+.140 2
+.167 2
+.194 2
+.36 P
+.61 RESIDENTIAL RENTAL - 12904 143RD ST
+.62 X
+.89 X
+.170 X
+.88 RESIDENTIAL RENTAL - 12904 143RD ST
+.115 RESIDENTIAL RENTAL - 12904 143RD ST
+.142 RESIDENTIAL PROPERTY - 12908 143RD 
+.169 RESIDENTIAL PROPERTY - 12908 143RD 
+.196 RESIDENTIAL PROPERTY - 12908 143RD 
+.63 P
+.64 2200
+.90 P
+.91 8000
+.117 P
+.118 8000
+.144 P
+.146 155
+.171 P
+.172 9091
+.198 P
+.199 9091
+\@1205 \ QBI-4
+\:1
+\&1
+.32 1
+.33 1
+.34 1
+.35 1
+\@209 \ IRS-1099G
+\:1
+\&1
+.30 T
+.70 NY
+.40 NYS Department of Labor
+.41 Unemployment Insurance
+.42 Albany
+.46 27-0293117
+.43 NY
+.44 12240-0001
+.71 27-0293117
+\@209 \ IRS-1099G
+\:1
+\&2
+.30 S
+.70 NY
+.40 NYS Department of Labor
+.41 Unemployment Insurance
+.42 Albany
+.46 27-0293117
+.43 NY
+.44 12240-0001
+.71 270293117
+\@331 \ T-1
+\:1
+\&1
+.30 1
+\@332 \ T-2
+\:1
+\&1
+.58 0
+\@6840 \ NY1
+\:1
+\&1
+.33 NASS
+.34 270
+\@6843 \ NY1B
+\:1
+\&1
+.30 Y
+\@6850 \ NY6
+\:1
+\&1
+.53 -1875
+.54 0
+\*

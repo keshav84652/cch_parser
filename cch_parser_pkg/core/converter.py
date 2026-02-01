@@ -28,8 +28,25 @@ class CCHConverter:
     def __init__(self, mapping_path: Optional[str] = None):
         """Initialize with optional path to mapping YAML file."""
         self.map = MappingLoader(mapping_path)
+
+    def _parse_owner(self, entry: CCHFormEntry, field_num: str = "30") -> TaxpayerType:
+        """Parse owner code (T/S/J) from entry field.
+
+        Args:
+            entry: The form entry to parse
+            field_num: Field number containing owner code (default "30")
+
+        Returns:
+            TaxpayerType.TAXPAYER, TaxpayerType.SPOUSE, or TaxpayerType.JOINT
+        """
+        code = entry.get(field_num, "T").upper()
+        if code == "S":
+            return TaxpayerType.SPOUSE
+        if code == "J":
+            return TaxpayerType.JOINT
+        return TaxpayerType.TAXPAYER
     
-    def to_tax_return(self, doc: CCHDocument) -> TaxReturn:
+    def convert(self, doc: CCHDocument) -> TaxReturn:
         """Convert parsed document to structured TaxReturn"""
         tr = TaxReturn(
             tax_year=doc.tax_year,
@@ -61,50 +78,149 @@ class CCHConverter:
         return tr
 
     def _parse_client_info(self, doc: CCHDocument, tr: TaxReturn) -> None:
-        """Parse client information from Form 101"""
-        # Form 101 is usually implied or part of header, but let's check for explicit form
-        form = doc.get_form("101")
-        if not form or not form.entries:
-            # Fallback to header info if available
-            return
+        """Parse client information from Form 101 or Form 151 for individuals.
 
-        entry = form.entries[0]
-        
+        Taxpayer data can be in EITHER form depending on how CCH export was configured:
+        - Some returns have data in Form 101 (fields 40-44, 60-68, 80-84)
+        - Some returns have data in Form 151 (1A) with same field numbers
+        - We check Form 101 first (more common), then fallback to Form 151
+        """
+        # Try Form 101 first
+        form_101 = doc.get_form("101")
+        form_151 = doc.get_form("151")
+
+        entry = None
+        # Check if Form 101 has taxpayer data (field 40 = first name)
+        if form_101 and form_101.entries:
+            e = form_101.entries[0]
+            if e.get("40"):  # Has first name
+                entry = e
+
+        # Fallback to Form 151 if Form 101 doesn't have data
+        if not entry and form_151 and form_151.entries:
+            e = form_151.entries[0]
+            if e.get("40"):  # Has first name
+                entry = e
+
+        # Field mappings (same for both Form 101 and Form 151):
+        # 40=first_name, 41=middle, 42=last_name, 44=ssn
+        # 45=spouse_first, 46=spouse_middle, 47=spouse_last, 49=spouse_ssn
+        # 60=occupation, 61=dob, 67=spouse_occupation, 68=spouse_dob
+        # 80=street, 82=city, 83=state, 84=zip
+
+        # Get taxpayer data from form entry if available
+        first_name = entry.get("40", "") if entry else ""
+        middle_initial = entry.get("41", "") if entry else ""
+        last_name = entry.get("42", "") if entry else ""
+        ssn = entry.get("44", "") if entry else ""
+
+        # Fallback to header info if form data is incomplete
+        if not ssn:
+            ssn = doc.header.get("ssn", "")
+        if not first_name:
+            first_name = doc.client_id
+
         # Taxpayer
         tr.taxpayer = Person(
-            first_name=entry.get("40"),
-            middle_initial=entry.get("41"),
-            last_name=entry.get("42"),
-            ssn=entry.get("44"),
-            dob=entry.get_decimal("61") or None, # Date logic needed
-            occupation=entry.get("60"),
-            email=entry.get("18"), # Check mapping
-            phone=entry.get("19")
+            first_name=first_name,
+            middle_initial=middle_initial,
+            last_name=last_name,
+            ssn=ssn,
+            dob=entry.get_date("61") if entry else None,
+            occupation=entry.get("60", "") if entry else ""
         )
-        
+
+        if not entry:
+            return
+
         # Spouse
         if entry.get("45"):
             tr.spouse = Person(
-                first_name=entry.get("45"),
-                last_name=entry.get("47"),
-                ssn=entry.get("49"),
-                occupation=entry.get("67")
+                first_name=entry.get("45", ""),
+                middle_initial=entry.get("46", ""),
+                last_name=entry.get("47", ""),
+                ssn=entry.get("49", ""),
+                occupation=entry.get("67", ""),
+                dob=entry.get_date("68")
             )
-        
+
         # Address
         tr.address = Address(
-            street=entry.get("80"),
-            city=entry.get("82"),
-            state=entry.get("83"),
-            zip_code=entry.get("84")
+            street=entry.get("80", ""),
+            city=entry.get("82", ""),
+            state=entry.get("83", ""),
+            zip_code=entry.get("84", "")
         )
-        
-        # Filing Status
-        status_code = entry.get("90")
+
+        # Phone and email - primarily in Form 151, but check Form 101 as fallback
+        phone = ""
+        email = ""
+        spouse_email = ""
+
+        # Try Form 151 first (most common location)
+        if form_151 and form_151.entries:
+            entry_151 = form_151.entries[0]
+            phone = entry_151.get("65", "")
+            email = entry_151.get("75", "")
+            spouse_email = entry_151.get("76", "")
+
+        # Fallback to Form 101 if not found in 151
+        if entry and (not phone or not email):
+            if not phone:
+                phone = entry.get("65", "")
+            if not email:
+                email = entry.get("75", "")
+            if not spouse_email:
+                spouse_email = entry.get("76", "")
+
+        # Set on taxpayer Person object
+        if tr.taxpayer:
+            tr.taxpayer.phone = phone
+            tr.taxpayer.email = email if "@" in email else ""
+        if tr.spouse and spouse_email:
+            tr.spouse.email = spouse_email if "@" in spouse_email else ""
+
+        # Filing Status - from Form 151 field 90
+        status_code = entry.get("90", "")
         try:
             tr.filing_status = FilingStatus(status_code)
         except ValueError:
-            pass # Default is Single
+            pass  # Default is Single
+
+        # Dependents - Form 151 fields 110-136
+        self._parse_dependents(entry, tr)
+
+    def _parse_dependents(self, entry: CCHFormEntry, tr: TaxReturn) -> None:
+        """Parse dependent information from Form 101/151.
+
+        Dependent field patterns (up to 4 dependents):
+        | Dep # | First | Last | SSN | Relationship | DOB |
+        |-------|-------|------|-----|--------------|-----|
+        | 1     | 110   | 112  | 114 | 115          | 140 |
+        | 2     | 117   | 119  | 121 | 122          | 152 |
+        | 3     | 124   | 126  | 128 | 129          | 164 |
+        | 4     | 131   | 133  | 135 | 136          | 176 |
+        """
+        dep_patterns = [
+            {"first": "110", "last": "112", "ssn": "114", "rel": "115", "dob": "140"},
+            {"first": "117", "last": "119", "ssn": "121", "rel": "122", "dob": "152"},
+            {"first": "124", "last": "126", "ssn": "128", "rel": "129", "dob": "164"},
+            {"first": "131", "last": "133", "ssn": "135", "rel": "136", "dob": "176"},
+        ]
+
+        for pattern in dep_patterns:
+            first_name = entry.get(pattern["first"], "")
+            if not first_name:
+                continue
+
+            dep = Dependent(
+                first_name=first_name,
+                last_name=entry.get(pattern["last"], ""),
+                ssn=entry.get(pattern["ssn"], ""),
+                relationship=entry.get(pattern["rel"], ""),
+                dob=entry.get_date(pattern["dob"])
+            )
+            tr.dependents.append(dep)
 
     def _parse_income(self, doc: CCHDocument, tr: TaxReturn) -> None:
         """Parse all income forms"""
@@ -202,25 +318,23 @@ class CCHConverter:
                 tr.deductions.form_1095_c.append(self._parse_1095c(entry))
 
     def _parse_bank_info(self, doc: CCHDocument, tr: TaxReturn) -> None:
-        """Parse bank account info"""
-        # Form 921 for direct deposit
+        """Parse bank account info using YAML mappings (form_921)"""
         entries = doc.get_form_entries("921")
         if entries:
             e = entries[0]
+            f = lambda name: self.map.get_field_number("921", name)
             tr.bank_account = BankAccount(
-                bank_name=e.get("37"),
-                routing_number=e.get("38"),
-                account_number=e.get("39"),
-                is_checking=e.get_bool("33")
+                bank_name=e.get(f("bank_name")),
+                routing_number=e.get(f("routing_number")),
+                account_number=e.get(f("account_number")),
+                is_checking=e.get_bool(f("is_checking"))
             )
 
     def _parse_w2(self, entry: CCHFormEntry) -> W2:
         """Parse W-2 using YAML mappings (form_180) - strict, no fallbacks"""
         f = lambda name: self.map.get_field_number("180", name)
-        
-        owner_code = entry.get(f("taxpayer_or_spouse"), "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return W2(
             owner=owner,
             employer_name=entry.get(f("employer_name")),
@@ -252,16 +366,8 @@ class CCHConverter:
     def _parse_1099int(self, entry: CCHFormEntry) -> Form1099INT:
         """Parse 1099-INT using YAML mappings (form_181) - strict, no fallbacks"""
         f = lambda name: self.map.get_field_number("181", name)
-        
-        owner_code = entry.get(f("taxpayer_or_spouse"), "T")
-        # Handle T/S/J owner codes
-        if owner_code == "S":
-            owner = TaxpayerType.SPOUSE
-        elif owner_code == "J":
-            owner = TaxpayerType.JOINT
-        else:
-            owner = TaxpayerType.TAXPAYER
-        
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return Form1099INT(
             owner=owner,
             payer_name=entry.get(f("payer_name")),
@@ -277,16 +383,8 @@ class CCHConverter:
     def _parse_1099div(self, entry: CCHFormEntry) -> Form1099DIV:
         """Parse 1099-DIV using YAML mappings (form_182) - strict, no fallbacks"""
         f = lambda name: self.map.get_field_number("182", name)
-        
-        owner_code = entry.get(f("taxpayer_or_spouse"), "T")
-        # Handle T/S/J owner codes
-        if owner_code == "S":
-            owner = TaxpayerType.SPOUSE
-        elif owner_code == "J":
-            owner = TaxpayerType.JOINT
-        else:
-            owner = TaxpayerType.TAXPAYER
-        
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return Form1099DIV(
             owner=owner,
             payer_name=entry.get(f("payer_name")),
@@ -302,10 +400,8 @@ class CCHConverter:
     def _parse_1099r(self, entry: CCHFormEntry) -> Form1099R:
         """Parse 1099-R using YAML mappings (form_184) - strict, no fallbacks"""
         f = lambda name: self.map.get_field_number("184", name)
-        
-        owner_code = entry.get(f("taxpayer_or_spouse"), "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return Form1099R(
             owner=owner,
             payer_name=entry.get(f("payer_name")),
@@ -318,52 +414,52 @@ class CCHConverter:
         )
 
     def _parse_1099nec(self, entry: CCHFormEntry) -> Form1099NEC:
-        owner_code = entry.get("30", "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        """Parse 1099-NEC using YAML mappings (form_267)"""
+        f = lambda name: self.map.get_field_number("267", name)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return Form1099NEC(
             owner=owner,
-            payer_name=entry.get("40"),
-            payer_tin=entry.get("49"),
-            nonemployee_compensation=entry.get_decimal("59"),
-            fed_tax_withheld=entry.get_decimal("70")
+            payer_name=entry.get(f("payer_name")),
+            payer_tin=entry.get(f("payer_tin")),
+            nonemployee_compensation=entry.get_decimal(f("box1_nec")),
+            fed_tax_withheld=entry.get_decimal(f("box4_fed_withheld"))
         )
 
     def _parse_1099g(self, entry: CCHFormEntry) -> Form1099G:
-        owner_code = entry.get("30", "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        """Parse 1099-G using YAML mappings (form_209)"""
+        f = lambda name: self.map.get_field_number("209", name)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return Form1099G(
             owner=owner,
-            payer_name=entry.get("40"),
-            unemployment_compensation=entry.get_decimal("55"),
-            state_local_refund=entry.get_decimal("56"),
-            fed_tax_withheld=entry.get_decimal("58"),
-            state=entry.get("242") or entry.get("91") # Try common state fields
+            payer_name=entry.get(f("payer_name")),
+            unemployment_compensation=entry.get_decimal(f("box1_unemployment")),
+            state_local_refund=Decimal("0"),  # Not commonly present in data
+            fed_tax_withheld=entry.get_decimal(f("box4_fed_withheld")),
+            state=entry.get(f("state"))
         )
 
     def _parse_fbar(self, entry: CCHFormEntry) -> FormFBAR:
-        owner_code = entry.get("30", "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        """Parse FBAR using YAML mappings (form_925)"""
+        f = lambda name: self.map.get_field_number("925", name)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return FormFBAR(
             owner=owner,
-            bank_name=entry.get("45"),
-            bank_address=entry.get("50"),
-            bank_city=entry.get("51"),
-            bank_country=entry.get("54"),
-            account_number=entry.get("36"),
-            max_value=entry.get_decimal("33"), # Or maybe .38? Mapping varies. FBAR mapping showed 33 as amount
-            account_type="Bank"
+            bank_name=entry.get(f("bank_name")),
+            bank_address=entry.get(f("bank_address")),
+            bank_city=entry.get(f("bank_city")),
+            bank_country=entry.get(f("bank_country")),
+            account_number=entry.get(f("account_number")),
+            max_value=entry.get_decimal(f("max_value")),
+            account_type=entry.get(f("account_type"), "Bank")
         )
         
     def _parse_k1_1065(self, entry: CCHFormEntry) -> FormK1_1065:
         """Parse K-1 (1065) Partnership using YAML mappings - strict, no fallbacks"""
         f = lambda name: self.map.get_field_number("185", name)
-        
-        # Owner
-        owner_code = entry.get(f("taxpayer_or_spouse"), "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
         
         # Partnership identification - use mapped field with fallbacks for entries lacking field 46
         partnership_name = (entry.get(f("partnership_name")) or 
@@ -411,10 +507,7 @@ class CCHConverter:
     def _parse_k1_1120s(self, entry: CCHFormEntry) -> FormK1_1120S:
         """Parse K-1 1120S (S-Corporation) using YAML mappings - strict, no fallbacks"""
         f = lambda name: self.map.get_field_number("120", name)
-        
-        # Owner
-        owner_code = entry.get(f("taxpayer_or_spouse"), "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
         
         # Corporation name: try mapped fields and explicit fallbacks
         # Data analysis shows field 45 is commonly the name, while mapping might point to 34
@@ -440,89 +533,87 @@ class CCHConverter:
         )
 
     def _parse_ssa1099(self, entry: CCHFormEntry) -> SSA1099:
-        owner_code = entry.get("30", "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        """Parse SSA-1099 using YAML mappings (form_190)"""
+        f = lambda name: self.map.get_field_number("190", name)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return SSA1099(
             owner=owner,
-            beneficiary_name=entry.get("40"),
-            benefits_paid=entry.get_decimal("42"),
-            net_benefits=entry.get_decimal("44"),
-            claim_number=entry.get("51")
+            beneficiary_name=entry.get(f("beneficiary_name")),
+            benefits_paid=entry.get_decimal(f("box3_benefits_paid")),
+            net_benefits=entry.get_decimal(f("box5_net_benefits")),
+            claim_number=entry.get(f("claim_number"))
         )
 
     def _parse_1098(self, entry: CCHFormEntry) -> Form1098:
-        owner_code = entry.get("30", "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        """Parse 1098 Mortgage using YAML mappings (form_206)"""
+        f = lambda name: self.map.get_field_number("206", name)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return Form1098(
             owner=owner,
-            lender_name=entry.get("34"),
-            lender_tin=entry.get("42"),
-            mortgage_interest=entry.get_decimal("41"),
+            lender_name=entry.get(f("lender_name")),
+            lender_tin=entry.get(f("lender_tin")),
+            mortgage_interest=entry.get_decimal(f("box1_mortgage_interest")),
             outstanding_principal=entry.get_decimal("59"),
-            property_address=entry.get("55"),
-            points_paid=entry.get_decimal("44")
+            property_address=entry.get(f("property_address")),
+            points_paid=entry.get_decimal(f("box2_points"))
         )
 
     def _parse_1095a(self, entry: CCHFormEntry) -> Form1095A:
+        """Parse 1095-A using YAML mappings (form_624)"""
+        f = lambda name: self.map.get_field_number("624", name)
+
         return Form1095A(
-            marketplace_state=entry.get("40"),
-            policy_number=entry.get("41"),
-            plan_name=entry.get("42"),
-            covered_individual=entry.get("62"),
-            annual_premium=entry.get_decimal("126"),
-            annual_slcsp=entry.get_decimal("127"),
-            annual_aptc=entry.get_decimal("128")
+            marketplace_state=entry.get(f("marketplace_state")),
+            policy_number=entry.get(f("policy_number")),
+            plan_name=entry.get(f("plan_name")),
+            covered_individual=entry.get(f("covered_individual_name")),
+            annual_premium=entry.get_decimal(f("annual_premium")),
+            annual_slcsp=entry.get_decimal(f("annual_slcsp")),
+            annual_aptc=entry.get_decimal(f("annual_aptc"))
         )
 
     def _parse_1099misc(self, entry: CCHFormEntry) -> Form1099MISC:
-        owner_code = entry.get("30", "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
-        
+        """Parse 1099-MISC using YAML mappings (form_183)"""
+        f = lambda name: self.map.get_field_number("183", name)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
+
         return Form1099MISC(
             owner=owner,
-            payer_name=entry.get("40"),
-            payer_tin=entry.get("48"), # Verified from Sample
-            other_income=entry.get_decimal("67"), # Verified
-            rents=entry.get_decimal("55"), # Mapped from CCH standard (Box 1)
-            royalties=entry.get_decimal("56"), # Mapped from CCH standard (Box 2)
-            fishing_boat_proceeds=entry.get_decimal("59"),
-            medical_payments=entry.get_decimal("60"),
-            nonqualified_deferred_comp=entry.get_decimal("71"),
-            state=entry.get("80"),
-            state_income=entry.get_decimal("82")
+            payer_name=entry.get(f("payer_name")),
+            payer_tin=entry.get(f("payer_tin")),
+            other_income=entry.get_decimal(f("box3_other_income")),
+            rents=entry.get_decimal(f("box1_rents")),
+            royalties=entry.get_decimal(f("box2_royalties")),
+            fishing_boat_proceeds=Decimal("0"),  # Rarely used
+            medical_payments=Decimal("0"),  # Rarely used
+            nonqualified_deferred_comp=Decimal("0"),  # Rarely used
+            state=entry.get(f("state")),
+            state_income=entry.get_decimal(f("state_income"))
         )
 
     def _parse_1095c(self, entry: CCHFormEntry) -> Form1095C:
-        """
-        Parse 1095-C entries.
-        Includes validation to skip form collisions (e.g. EF-2 code 641)
-        which lack employer name field .46
-        """
-        employer_name = entry.get("46")
+        """Parse 1095-C using YAML mappings (form_641)"""
+        f = lambda name: self.map.get_field_number("641", name)
+        employer_name = entry.get(f("employer_name"))
         if not employer_name:
             # Skip invalid entries (likely Form EF-2 which shares code 641)
-            # Returning empty object will result in empty name, but caller appends unconditionally.
-            # We should probably filter in the caller loop, but for now let's handle it by
-            # ensuring the object indicates it's invalid/empty if needed, 
-            # OR better: Filter in _parse_deductions
             pass
 
-        owner_code = entry.get("30", "T")
-        owner = TaxpayerType.SPOUSE if owner_code == "S" else (TaxpayerType.JOINT if owner_code == "J" else TaxpayerType.TAXPAYER)
+        owner = self._parse_owner(entry, f("taxpayer_or_spouse"))
 
         return Form1095C(
             owner=owner,
             employer_name=employer_name,
-            employer_ein=entry.get("47"),
-            employer_address=entry.get("48"),
-            employer_city=entry.get("50"),
-            employer_state=entry.get("51"),
-            employer_zip=entry.get("52"),
-            employee_name=entry.get("114"),
+            employer_ein=entry.get(f("employer_ein")),
+            employer_address=entry.get(f("employer_address")),
+            employer_city=entry.get(f("employer_city")),
+            employer_state=entry.get(f("employer_state")),
+            employer_zip=entry.get(f("employer_zip")),
+            employee_name=entry.get(f("employee_name")),
             employee_ssn=entry.get("115"),
-            offer_of_coverage=entry.get("118"), # Guessing fields for Part II
+            offer_of_coverage=entry.get("118"),
             employee_share=entry.get_decimal("119")
         )
 
@@ -567,40 +658,32 @@ class CCHConverter:
             tr.balance_sheet = bs
 
     def _parse_schedule_e(self, entry: CCHFormEntry) -> ScheduleE:
-        """Parse Schedule E (Form 211) - Rental Real Estate
-        
+        """Parse Schedule E (Form 211) - Rental Real Estate using YAML mappings
+
         IMPORTANT: Field usage varies by property type!
         - Properties with .30=T/S/J use .60 for rents
         - Properties with .30=description use .54 for rents
-        
-        Expense fields:
-        - .93 = repairs
-        - .102 = utilities  
-        - .120/.148 = other expenses
-        - Individual expense fields, NOT .60!
         """
+        f = lambda name: self.map.get_field_number("211", name)
+
         # Handle mixed .30 field - determine if it's owner code or property type
-        field_30 = entry.get("30", "")
+        field_30 = entry.get(f("owner_or_property_type"), "")
         owner = TaxpayerType.TAXPAYER
         property_type = ""
-        
-        if field_30 in ["T", "t"]:
-            owner = TaxpayerType.TAXPAYER
-        elif field_30 in ["S", "s"]:
-            owner = TaxpayerType.SPOUSE
-        elif field_30 in ["J", "j"]:
-            owner = TaxpayerType.TAXPAYER  # Joint - treat as taxpayer
+
+        if field_30.upper() in ["T", "S", "J"]:
+            owner = self._parse_owner(entry, f("owner_or_property_type"))
         else:
             # .30 contains property type description
             property_type = field_30
-        
-        # Property info from validated fields
-        property_name = entry.get("41", "") or property_type
-        property_address = entry.get("42", "") or entry.get("31", "")
-        city = entry.get("43", "")
-        state = entry.get("44", "")
-        zip_code = entry.get("45", "")
-        
+
+        # Property info from YAML fields
+        property_name = entry.get(f("property_name"), "") or property_type
+        property_address = entry.get(f("property_address"), "") or entry.get(f("address_line_1"), "")
+        city = entry.get(f("city"), "")
+        state = entry.get(f("state_code"), "")
+        zip_code = entry.get(f("zip"), "")
+
         # Build full address
         full_address = property_address
         if city:
@@ -609,42 +692,37 @@ class CCHConverter:
             full_address = f"{full_address}, {state}" if full_address else state
         if zip_code:
             full_address = f"{full_address} {zip_code}" if full_address else zip_code
-        
+
         # RENTS - Check multiple fields based on property type
-        # Properties with .30=owner code (T/S/J) have rents in .60
-        # Properties with .30=description have rents in .54
-        if field_30 in ["T", "t", "S", "s", "J", "j"]:
-            rents_received = entry.get_decimal("60")
+        if field_30.upper() in ["T", "S", "J"]:
+            rents_received = entry.get_decimal(f("total_expenses"))  # .60 in owner-code mode
         else:
-            rents_received = entry.get_decimal("54")
-        
+            rents_received = entry.get_decimal(f("rents_received"))
+
         # If still 0, try both
         if rents_received == 0:
-            rents_received = entry.get_decimal("54") or entry.get_decimal("60")
-        
-        # EXPENSES - Sum of individual expense fields (NOT .60!)
-        insurance = entry.get_decimal("81")
-        mortgage_interest = entry.get_decimal("90") + entry.get_decimal("100")  # may be in either
-        repairs = entry.get_decimal("93")
-        taxes = entry.get_decimal("99")
-        utilities = entry.get_decimal("102")
-        depreciation = entry.get_decimal("105")
-        # Other expenses from various fields
+            rents_received = entry.get_decimal(f("rents_received")) or entry.get_decimal(f("total_expenses"))
+
+        # EXPENSES - Use YAML field lookups
+        insurance = entry.get_decimal(f("insurance"))
+        mortgage_interest = entry.get_decimal(f("mortgage_interest"))
+        repairs = entry.get_decimal(f("repairs"))
+        taxes = entry.get_decimal(f("taxes"))
+        utilities = entry.get_decimal(f("utilities"))
+        depreciation = entry.get_decimal(f("depreciation"))
         other_expenses = (
-            entry.get_decimal("110") +  # other expenses 1
-            entry.get_decimal("120") +  # other expenses 2  
-            entry.get_decimal("141") +  # bank service fees
-            entry.get_decimal("148")    # loan cancellation fee, etc
+            entry.get_decimal(f("other_expenses")) +
+            entry.get_decimal(f("other_expenses_2"))
         )
-        
+
         # Calculate total expenses from individual fields
         total_expenses = (
             insurance + mortgage_interest + repairs + taxes +
             utilities + depreciation + other_expenses
         )
-        
+
         net_income_loss = rents_received - total_expenses
-        
+
         return ScheduleE(
             owner=owner,
             property_description=property_name or property_type,
@@ -664,45 +742,83 @@ class CCHConverter:
 
     def _parse_consolidated_1099(self, doc: CCHDocument, tr: TaxReturn) -> None:
         """Parse consolidated 1099 forms (Form 881 header + Form 882 summary)
-        
+
         Form 881 entries and Form 882 entries are linked by section number.
         Build a section->payer map from Form 881, then look up correct payer
         for each Form 882 entry.
+
+        YAML mappings (form_882):
+        - Field 57: interest_income
+        - Field 31: ordinary_dividends
+        - Field 32: qualified_dividends
+        - Field 34: total_capital_gain
+        - Field 41: federal_withholding
         """
         # Get Form 882 summary entries - these have interest and dividend amounts
         form_882 = doc.forms.get("882", None)
         if not form_882:
             return
-        
-        # Get Form 881 header entries for payer names
+
+        # Get Form 881 header entries for payer names, account numbers, and owners
         form_881 = doc.forms.get("881", None)
-        
-        # Build section -> payer name map from Form 881
-        section_to_payer = {}
+
+        # Build section -> (payer_name, account_number, owner) map from Form 881
+        section_to_info = {}
         if form_881:
             for entry_881 in form_881.entries:
                 section = getattr(entry_881, 'section', None)
-                payer = entry_881.get("34", "")
+                payer = entry_881.get("34", "")  # broker_name per YAML
+                acct = entry_881.get("46", "")   # account_number
+                owner_code = entry_881.get("30", "T")  # T=Taxpayer, S=Spouse, J=Joint
                 if section and payer:
-                    section_to_payer[section] = payer
-        
-        # Parse Form 882 entries - match by section number
+                    section_to_info[section] = (payer, acct, owner_code)
+
+        # Use YAML field lookups
+        f = lambda name: self.map.get_field_number("882", name)
+
+        # Parse Form 882 entries
         for entry in form_882.entries:
-            interest_amount = entry.get_decimal("40")  # Box 1 interest
-            
-            if interest_amount and interest_amount > 0:
-                # Look up payer by section number
-                section = getattr(entry, 'section', None)
-                payer_name = section_to_payer.get(section, "Consolidated 1099")
-                
-                # Determine owner from field .31 or default
-                owner_code = entry.get("31", "")
-                # .31 appears to be an amount, not owner code - check other fields
-                # Default to taxpayer
+            section = getattr(entry, 'section', None)
+            payer_name, account_number, owner_code = section_to_info.get(
+                section, ("Consolidated 1099", "", "T")
+            )
+
+            # Parse owner from Form 881 data
+            if owner_code == "S":
+                owner = TaxpayerType.SPOUSE
+            elif owner_code == "J":
+                owner = TaxpayerType.JOINT
+            else:
                 owner = TaxpayerType.TAXPAYER
-                
+
+            # Interest income (field 57 per YAML)
+            interest_amount = entry.get_decimal(f("interest_income"))
+            if interest_amount and interest_amount > 0:
                 tr.income.form_1099_int.append(Form1099INT(
                     owner=owner,
                     payer_name=payer_name,
-                    interest_income=interest_amount
+                    account_number=account_number,
+                    interest_income=interest_amount,
+                    fed_tax_withheld=entry.get_decimal(f("federal_withholding"))
                 ))
+
+            # Dividend income (fields 31, 32 per YAML)
+            ordinary_div = entry.get_decimal(f("ordinary_dividends"))
+            qualified_div = entry.get_decimal(f("qualified_dividends"))
+            capital_gain = entry.get_decimal(f("total_capital_gain"))
+
+            if ordinary_div and ordinary_div > 0:
+                tr.income.form_1099_div.append(Form1099DIV(
+                    owner=owner,
+                    payer_name=payer_name,
+                    account_number=account_number,
+                    ordinary_dividends=ordinary_div,
+                    qualified_dividends=qualified_div,
+                    capital_gain_dist=capital_gain,
+                    fed_tax_withheld=entry.get_decimal(f("federal_withholding"))
+                ))
+
+    # Backwards compatibility alias
+    def to_tax_return(self, doc: CCHDocument) -> TaxReturn:
+        """Deprecated: Use convert() instead."""
+        return self.convert(doc)

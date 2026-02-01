@@ -5,7 +5,13 @@
 
 file_structure:
   encoding: UTF-16LE
-  header_pattern: "**BEGIN,{year}:I:{client_id}:{seq},{ssn},{office},{group},{location}"
+  header_pattern: "**BEGIN,{year}:{type}:{client_id}:{seq},{ssn_or_ein},{office},{group},{location}"
+  return_types:
+    I: "Individual (1040)"
+    P: "Partnership (1065)"
+    S: "S-Corporation (1120S)"
+    C: "C-Corporation (1120)"
+    F: "Fiduciary/Trust (1041)"
   form_pattern: "\\@{form_code} \\ {form_name}"
   section_pattern: "\\:{section_number}"
   entry_pattern: "\\&{entry_number}"
@@ -239,16 +245,13 @@ form_185:
     "74": {name: "withdrawals_distributions", type: "currency"}
     "75": {name: "ending_capital_account", type: "currency"}
     "78": {name: "capital_account_analysis", type: "currency"}
-    # Box 1-11 Income fields
-    "85": {name: "box1_ordinary_income", type: "currency"}
-    "89": {name: "box2_net_rental_re_old", type: "currency"}  # Old mapping, keep for compatibility
-    "90": {name: "box3_other_rental", type: "currency"}
-    "91": {name: "box4a_guaranteed_services", type: "currency"}
-    "92": {name: "box4b_guaranteed_capital", type: "currency"}
-    "93": {name: "box4c_total_guaranteed", type: "currency"}
-    "94": {name: "box5_interest", type: "currency"}
-    "95": {name: "box6a_ordinary_div", type: "currency"}
-    "96": {name: "box6b_qualified_div", type: "currency"}
+    # Box 1-11 Income fields - CORRECTED based on actual data analysis
+    "93": {name: "box1_ordinary_income", type: "currency"}  # Ordinary business income
+    "94": {name: "box1_ordinary_income_spouse", type: "currency"}  # Spouse portion
+    "95": {name: "box2_net_rental_re", type: "currency"}  # Net rental real estate income
+    "96": {name: "box2_net_rental_re_spouse", type: "currency"}  # Spouse portion
+    "85": {name: "k1_line_number", type: "integer"}  # Sequence/line number, NOT income
+    "86": {name: "k1_line_number_alt", type: "integer"}
     "97": {name: "box7_royalties", type: "currency"}
     "98": {name: "box8_net_stcg", type: "currency"}
     "99": {name: "box9a_net_ltcg", type: "currency"}
@@ -703,3 +706,338 @@ form_120:
     "562": {name: "form_sequence", type: "integer"}
     "920": {name: "ordinary_income_alt", type: "currency"}  # Alternative ordinary income field
     "934": {name: "rental_re_income", type: "currency"}
+
+# Form 209 - 1099-G Government Payments
+form_209:
+  name: "IRS Form 1099-G"
+  description: "Government Payments"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code", values: {T: "Taxpayer", S: "Spouse"}}
+    "40": {name: "payer_name", type: "string"}
+    "41": {name: "payer_name_line2", type: "string"}
+    "42": {name: "payer_city", type: "string"}
+    "43": {name: "payer_state", type: "state"}
+    "44": {name: "payer_zip", type: "zip"}
+    "46": {name: "payer_tin", type: "ein"}
+    "55": {name: "form_code", type: "string"}
+    "60": {name: "box1_unemployment", type: "currency"}
+    "60M": {name: "box1_unemployment_memo", type: "currency"}
+    "61": {name: "box4_fed_withheld", type: "currency"}
+    "63": {name: "box3_tax_year", type: "string"}
+    "68": {name: "box2_checkbox", type: "boolean", true_value: "X"}
+    "70": {name: "state", type: "state"}
+    "71": {name: "state_ein", type: "string"}
+
+# Form 925 - FBAR Foreign Bank Account Report
+form_925:
+  name: "FBAR"
+  description: "Foreign Bank Account Report"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code", values: {T: "Taxpayer", S: "Spouse"}}
+    "31": {name: "financial_interest", type: "boolean", true_value: "X"}
+    "32": {name: "signature_authority", type: "boolean", true_value: "X"}
+    "33": {name: "account_count", type: "integer"}
+    "34": {name: "account_type", type: "string"}
+    "35": {name: "max_value", type: "currency"}
+    "36": {name: "account_number", type: "string"}
+    "37": {name: "joint_owner_code", type: "code"}
+    "38": {name: "deposit_account", type: "boolean", true_value: "X"}
+    "40": {name: "num_accounts", type: "integer"}
+    "41": {name: "account_name", type: "string"}
+    "45": {name: "bank_name", type: "string"}
+    "46": {name: "bank_name_line2", type: "string"}
+    "50": {name: "bank_address", type: "string"}
+    "51": {name: "bank_city", type: "string"}
+    "54": {name: "bank_country", type: "string"}
+    "55": {name: "alt_address", type: "string"}
+    "56": {name: "alt_city", type: "string"}
+    "59": {name: "alt_country", type: "string"}
+    "80": {name: "account_type_code", type: "code"}
+    "81": {name: "account_number_alt", type: "string"}
+
+# Form 183 - 1099-MISC Miscellaneous Income
+form_183:
+  name: "IRS Form 1099-MISC"
+  description: "Miscellaneous Income"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code", values: {T: "Taxpayer", S: "Spouse"}}
+    "31": {name: "spouse_code", type: "code"}
+    "32": {name: "state_code", type: "state"}
+    "40": {name: "payer_name", type: "string"}
+    "41": {name: "payer_address", type: "string"}
+    "42": {name: "payer_city", type: "string"}
+    "43": {name: "payer_state", type: "state"}
+    "44": {name: "payer_zip", type: "zip"}
+    "48": {name: "payer_tin", type: "ein"}
+    "57": {name: "box8_substitute_payments", type: "currency"}
+    "65": {name: "box1_rents", type: "currency"}
+    "67": {name: "box3_other_income", type: "currency"}
+    "67M": {name: "box3_other_income_memo", type: "currency"}
+    "68": {name: "box2_royalties", type: "currency"}
+    "74": {name: "box10_crop_insurance", type: "currency"}
+    "79": {name: "box4_fed_withheld", type: "currency"}
+    "80": {name: "state", type: "state"}
+    "81": {name: "state_income", type: "currency"}
+
+# =============================================================================
+# BUSINESS ENTITY FORMS
+# =============================================================================
+
+# Form 101 - Entity Information (used by all return types)
+# Note: Field usage varies by return type (I, P, S, C, F)
+form_101_entity:
+  name: "Entity Information"
+  description: "Entity identification for business returns"
+  fields:
+    "30": {name: "state", type: "state"}
+    "31": {name: "city_code", type: "string"}
+    "40": {name: "entity_name", type: "string"}
+    "41": {name: "dba_name", type: "string"}
+    "42": {name: "ein", type: "ein"}
+    "43": {name: "address_street", type: "string"}
+    "44": {name: "address_city", type: "string"}
+    "45": {name: "address_state", type: "state"}
+    "46": {name: "address_zip", type: "zip"}
+    "47": {name: "county", type: "string"}
+    "48": {name: "phone", type: "phone"}
+    "49": {name: "officer_title", type: "string"}
+    "50": {name: "fiscal_year_start", type: "date"}
+    "51": {name: "fiscal_year_end", type: "date"}
+    "52": {name: "date_incorporated", type: "date"}
+    "53": {name: "business_code", type: "string"}
+    "54": {name: "business_activity", type: "string"}
+    "55": {name: "principal_product", type: "string"}
+    "56": {name: "state_of_incorporation", type: "state"}
+    "57": {name: "filing_due_date", type: "date"}
+    "60": {name: "email", type: "email"}
+    # Partnership-specific fields
+    "90": {name: "business_activity_alt", type: "string"}
+    "91": {name: "principal_product_alt", type: "string"}
+    "92": {name: "business_code_alt", type: "string"}
+    "93": {name: "date_formed", type: "date"}
+    "95": {name: "email_alt", type: "email"}
+
+# Form 102 - Additional Entity Information
+form_102:
+  name: "Entity Information Extended"
+  description: "Additional entity details"
+  fields:
+    "32": {name: "entity_type_code", type: "code"}
+    "40": {name: "entity_name", type: "string"}
+    "42": {name: "ein", type: "ein"}
+    "43": {name: "address_street", type: "string"}
+    "44": {name: "address_city", type: "string"}
+    "45": {name: "address_state", type: "state"}
+    "46": {name: "address_zip", type: "zip"}
+    "48": {name: "phone", type: "phone"}
+    "49": {name: "officer_title", type: "string"}
+    "92": {name: "email", type: "email"}
+
+# Form 271 - K-1 Partner/Shareholder/Beneficiary
+# Used for Partnership (1065), S-Corp (1120S), and Fiduciary (1041)
+form_271:
+  name: "Schedule K-1"
+  description: "Partner/Shareholder/Beneficiary information and allocations"
+  fields:
+    "30": {name: "recipient_number", type: "integer"}
+    "31": {name: "first_name", type: "string"}
+    "32": {name: "start_date", type: "date"}
+    "33": {name: "last_name", type: "string"}
+    "34": {name: "zip_code", type: "zip"}
+    "38": {name: "entry_number", type: "integer"}
+    "39": {name: "days_resident", type: "integer"}
+    "44": {name: "recipient_type", type: "code"}
+    "54": {name: "rents_received", type: "currency"}
+    "54M": {name: "rents_received_memo", type: "currency"}
+    "60": {name: "address_street", type: "string"}
+    "61": {name: "address_city", type: "string"}
+    "62": {name: "address_state", type: "state"}
+    "63": {name: "address_zip", type: "zip"}
+    "87": {name: "entity_type", type: "code"}
+    "100": {name: "ordinary_income", type: "currency"}
+    "100M": {name: "ordinary_income_memo", type: "currency"}
+    "110": {name: "rental_income", type: "currency"}
+    "110M": {name: "rental_income_memo", type: "currency"}
+    "115": {name: "ssn_ein", type: "ssn"}
+    "115M": {name: "interest_income_memo", type: "currency"}
+    "117": {name: "ending_capital", type: "currency"}
+    "120": {name: "mortgage_interest", type: "currency"}
+    "120M": {name: "mortgage_interest_memo", type: "currency"}
+    "122": {name: "date_of_birth", type: "date"}
+    "160": {name: "expense_description", type: "string"}
+    "162": {name: "expense_amount", type: "currency"}
+    "162M": {name: "expense_amount_memo", type: "currency"}
+    "167": {name: "expense_description_2", type: "string"}
+    "169": {name: "expense_amount_2", type: "currency"}
+    "169M": {name: "expense_amount_2_memo", type: "currency"}
+
+# Form 272 - K-2 Extended Partner/Beneficiary Info
+form_272:
+  name: "K-2 Extended"
+  description: "Extended partner/beneficiary allocation details"
+  fields:
+    "30": {name: "recipient_number", type: "integer"}
+    "31": {name: "first_name", type: "string"}
+    "33": {name: "last_name_alt", type: "string"}
+    "37": {name: "entry_number", type: "integer"}
+    "38": {name: "first_name_alt", type: "string"}
+    "40": {name: "last_name", type: "string"}
+    "58": {name: "address_street", type: "string"}
+    "59": {name: "address_city", type: "string"}
+    "60": {name: "address_state", type: "state"}
+    "61": {name: "address_zip", type: "zip"}
+    "62": {name: "address_street_alt", type: "string"}
+    "63": {name: "address_city_alt", type: "string"}
+    "64": {name: "address_state_alt", type: "state"}
+    "65": {name: "address_zip_alt", type: "zip"}
+    "102": {name: "ssn_ein", type: "ssn"}
+    "103": {name: "entity_type", type: "code"}
+    "106": {name: "income_allocation_pct", type: "decimal"}
+    "107": {name: "loss_allocation_pct", type: "decimal"}
+    "108": {name: "capital_allocation_pct", type: "decimal"}
+    "109": {name: "ending_capital", type: "currency"}
+    "110": {name: "ssn_ein_alt", type: "ssn"}
+    "111": {name: "entity_type_alt", type: "code"}
+    "114": {name: "income_allocation_pct_alt", type: "decimal"}
+    "115": {name: "loss_allocation_pct_alt", type: "decimal"}
+    "116": {name: "capital_allocation_pct_alt", type: "decimal"}
+    "117": {name: "ending_capital_alt", type: "currency"}
+    "134": {name: "total_capital", type: "currency"}
+
+# Form 285 - Shareholder Information (S-Corp STK-1)
+form_285:
+  name: "Shareholder Stock"
+  description: "S-Corporation shareholder stock information"
+  fields:
+    "30": {name: "shareholder_number", type: "integer"}
+    "31": {name: "first_name", type: "string"}
+    "33": {name: "last_name", type: "string"}
+    "75": {name: "address_street", type: "string"}
+    "76": {name: "address_city", type: "string"}
+    "77": {name: "address_state", type: "state"}
+    "78": {name: "address_zip", type: "zip"}
+    "110": {name: "ssn_ein", type: "ssn"}
+    "210": {name: "ownership_percentage", type: "decimal"}
+
+# Form 291 - Balance Sheet L-1
+form_291:
+  name: "Balance Sheet L-1"
+  description: "Balance sheet beginning and end of year"
+  fields:
+    "50": {name: "section", type: "integer"}
+    "54": {name: "entry_count", type: "integer"}
+    # Balance sheet items are dynamic - description/amount pairs
+
+# Form 292 - Balance Sheet L-2
+form_292:
+  name: "Balance Sheet L-2"
+  description: "Balance sheet detail"
+  fields:
+    "35": {name: "cash_beginning", type: "currency"}
+    "36": {name: "cash_ending", type: "currency"}
+    "100": {name: "total_assets_beginning", type: "currency"}
+    "101": {name: "total_assets_ending", type: "currency"}
+    "102": {name: "other_assets_beginning", type: "currency"}
+    "103": {name: "other_assets_ending", type: "currency"}
+    "108": {name: "receivables", type: "currency"}
+    "109": {name: "inventory", type: "currency"}
+    "114": {name: "description", type: "string"}
+    "117": {name: "amount", type: "currency"}
+    "130": {name: "total_liabilities", type: "currency"}
+
+# Form 293 - Balance Sheet L-3
+form_293:
+  name: "Balance Sheet L-3"
+  description: "Balance sheet capital accounts"
+  fields:
+    "85": {name: "partners_capital_beginning", type: "currency"}
+    "86": {name: "partners_capital_ending", type: "currency"}
+    "88": {name: "description", type: "string"}
+    "90": {name: "beginning_amount", type: "currency"}
+    "91": {name: "ending_amount", type: "currency"}
+    "118": {name: "retained_earnings", type: "currency"}
+    "157": {name: "total_capital", type: "currency"}
+
+# Form 420 - Depreciation Schedule DP-1
+form_420:
+  name: "Depreciation DP-1"
+  description: "Asset depreciation schedule"
+  fields:
+    "30": {name: "entry_number", type: "integer"}
+    "31": {name: "description", type: "string"}
+    "32": {name: "date_placed_in_service", type: "date"}
+    "33": {name: "depreciation_method", type: "code"}
+    "34": {name: "recovery_period", type: "decimal"}
+    "35": {name: "cost_basis", type: "currency"}
+    "36": {name: "entry_number_alt", type: "integer"}
+    "37": {name: "description_alt", type: "string"}
+    "38": {name: "date_placed_in_service_alt", type: "date"}
+    "39": {name: "method_alt", type: "code"}
+    "40": {name: "recovery_period_alt", type: "decimal"}
+    "41": {name: "prior_depreciation", type: "currency"}
+    "42": {name: "entry_number_2", type: "integer"}
+    "43": {name: "description_2", type: "string"}
+    "44": {name: "date_placed_in_service_2", type: "date"}
+    "45": {name: "method_2", type: "code"}
+    "46": {name: "recovery_period_2", type: "decimal"}
+    "47": {name: "current_depreciation", type: "currency"}
+    "65": {name: "section_179", type: "currency"}
+    "67": {name: "special_depreciation", type: "currency"}
+    "74": {name: "accumulated_depreciation", type: "currency"}
+    "76": {name: "book_value", type: "currency"}
+    "83": {name: "current_year_depreciation", type: "currency"}
+    "85": {name: "total_depreciation", type: "currency"}
+
+# Form 119 - Fiduciary Contact Information 1A
+form_119:
+  name: "Fiduciary Contact 1A"
+  description: "Fiduciary/trustee contact information"
+  fields:
+    "40": {name: "fiduciary_name", type: "string"}
+    "41": {name: "phone", type: "phone"}
+    "42": {name: "ssn_ein", type: "ssn"}
+    "43": {name: "contact_number", type: "integer"}
+
+# Form 371-386 - Fiduciary Tax Computation (T-1 through T-12)
+form_371:
+  name: "Tax Computation T-1"
+  description: "Fiduciary tax computation"
+  fields:
+    "30": {name: "entry", type: "integer"}
+    "37": {name: "tax_bracket", type: "integer"}
+
+form_373:
+  name: "Tax Computation T-3"
+  description: "Fiduciary deductions"
+  fields:
+    "47": {name: "income_distribution_deduction", type: "currency"}
+    "50": {name: "adjusted_total_income", type: "currency"}
+
+form_385:
+  name: "State Tax T-11"
+  description: "Fiduciary state tax allocation"
+  fields:
+    "30": {name: "allocation_type", type: "code"}
+    "31": {name: "state", type: "state"}
+    "36": {name: "state_income", type: "currency"}
+    "37": {name: "state_deductions", type: "currency"}
+    "39": {name: "state_taxable_income", type: "currency"}
+
+# Form 743 - QBI-1 Qualified Business Income
+form_743:
+  name: "QBI-1"
+  description: "Qualified Business Income deduction"
+  fields:
+    "30": {name: "taxpayer_or_spouse", type: "code"}
+    "31": {name: "state", type: "state"}
+    "32": {name: "state_alt", type: "state"}
+    "33": {name: "use_simplified", type: "boolean"}
+    "34": {name: "aggregate_qbi", type: "boolean"}
+    "36": {name: "routing_number", type: "string"}
+    "37": {name: "account_number", type: "string"}
+    "38": {name: "entry", type: "integer"}
+    "39": {name: "direct_deposit", type: "boolean"}
+    "40": {name: "rent_description", type: "string"}
+    "41": {name: "is_checking", type: "boolean"}
+    "42": {name: "entry_number", type: "integer"}
+

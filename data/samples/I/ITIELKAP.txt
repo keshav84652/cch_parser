@@ -1,0 +1,428 @@
+**BEGIN,2024:I:ITIELKAP:1,280-45-3337,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.143 1
+.155 2
+.30 TX
+.211M P01264592
+.213M 115274
+.44 280-45-3337
+.49 114-17-3657
+.66 B
+.72 B
+.60 Financial Advisor
+.67 Home Maker
+.61 01/09/1985
+.68 05/07/1985
+.80 2330 Gramercy St
+.82 Houston
+.83 TX
+.84 77030
+.90 3
+.40 Itiel Abraham
+.42 Kaplan
+.45 Hila
+.180 T
+.116 C
+.110 Yali
+.115 Daughter
+.185 T
+.123 C
+.117 Ivri
+.122 Son
+.140 04/19/2009
+.114 726-48-7908
+.152 10/04/2013
+.121 185-91-0381
+.47 Kaplan
+.204M ITIELKAP:V1
+.206M 2023.05010
+.435M X
+.207M 2023.03030
+.205M X
+.200M 2023.0501
+.201M X
+.210M PRAKASH T KASAT CPA
+.202M 04/13/2024
+\@151 \ 1A
+\:1
+\&1
+.65 (347) 455-5523
+.67 (347) 455-5523
+.75 itielk@gmail.com
+.79 K05173770001852
+.80 K05173310055852
+.81 NJ
+.82 NJ
+.83 01/09/2023
+.84 11/30/2019
+.85 02/22/2019
+.86 11/20/2015
+.77 1
+.78 1
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Address information has been transferred from the prior year.
+.92 Please review this information to ensure the information is correct.
+.94 Address information has been transferred from the prior year.
+.96 Please review this information to ensure the information is correct.
+.98 Address information has been transferred from the prior year.
+.100 Please review this information to ensure the information is correct.
+.102 Address information has been transferred from the prior year.
+\@103 \ 3
+\:1
+\&2
+.90 Please review this information to ensure the information is correct.
+.92 Address information has been transferred from the prior year.
+.94 Please review this information to ensure the information is correct.
+\@106 \ 6
+\:1
+\&1
+.45 N
+\@108 \ 8
+\:1
+\&1
+.30 6
+.31 0
+.87 13850
+.89 13850
+\@109 \ 9
+\:1
+\&1
+.115 NY
+\@921 \ BNK-1
+\:1
+\&1
+.41 X
+.38 111000614
+.39 919290103
+.40 1
+.33 X
+.34 X
+\@180 \ IRS-W2
+\:2
+\&1
+.30 T
+.54 25947
+.41 Maple Development Group LLC
+.42 5847 San Felipe St Ste 4675
+.43 Houstan
+.56 25947
+.57 1608.714
+.58 25947
+.59 376
+.65 DD
+.66 11850
+.40 84-3924933
+.44 TX
+.45 77057
+\@180 \ IRS-W2
+\:3
+\&2
+.30 T
+.54 13538
+.41 Insperity Peo Services LP
+.42 19001 Crescent Springs Dr
+.43 Kingwood
+.56 13538
+.57 839.356
+.58 13538
+.59 196.32
+.65 DD
+.66 5640
+.40 76-0689539
+.44 TX
+.45 77339-3802
+\@132 \ A-2
+\:1
+\&1
+.46 32164
+.LIST 46 _ 2
+NAgarwal - 11/01/23 08:01 AM Worksheet Itemized Deductions (Schedule A)
+Pentagon federal credit union             _           _
+.75 NJ State Tax Payments
+.76 1
+\@133 \ A-3
+\:1
+\&1
+.30 14232
+.LIST 30 _ 4
+NAgarwal - 11/01/23 08:00 AM Worksheet Itemized Deductions (Schedule A)
+Pentagon Federal Credit union         28610           _
+Less: Pro rata for $1,576,000        -14378           _
+MFS has $375K limit                       _           _
+.110 T
+.113 2330 Gramercy
+.116 01/27/22
+.118 10906
+.119 697
+.120 360
+.119M 333.
+\@420 \ DP-1
+\:1
+\&1
+\F12000
+\O1
+.30 1
+.112 F
+.31 Furniture
+.32 07/01/18
+.33 MT
+.34 5
+.35 1968
+.50 1968
+\@420 \ DP-1
+\:2
+\&2
+\F20016
+\O1
+.30 2
+.112 B
+.31 Building
+.32 01/01/11
+.53 3
+.33 MSL
+.34 27.5
+.35 250000
+.48 54544
+.49 0
+.80 0
+.79 54544
+\@420 \ DP-1
+\:3
+\&3
+\F20016
+\O2
+.30 3
+.36 4
+.31 Building
+.32 01/15/22
+.33 SL
+.34 27.5
+.35 904492
+.48 63041
+.49 32891
+.37 Land
+.38 01/15/22
+.39 L
+.41 226123
+.58 0
+.79 32891
+.88 0
+\@171 \ C-1
+\:1
+\&1
+.32 T
+.31 541990
+.36 Starling Financial Advisors LLC
+.80 40000
+.LIST 80 _ 3
+Mnanda - 08/26/21 11:45 AM Worksheet Profit or Loss from Business (Schedule C)
+from S corp                               _           _
+Maple development                         _           _
+\@211 \ E-1
+\:1
+\&1
+.41 Family Residence
+.42 28 Yoni Netanyahu St
+.30 T
+.46 Givat Shmuel
+.47 IS
+.45 54101
+.43 Givat Shmuel
+\@211 \ E-1
+\:2
+\&2
+.41 Single family residence
+.42 151 Derech Hamelech Street
+.60 20237
+.LIST 60 _ 2
+150415 - 12/01/23 13:56 PM Worksheet Rent and Royalty (Schedule E)
+50% of 19680                              _           _
+.47 IS
+.93 32387
+.LIST 93 _ 2
+150415 - 12/01/23 13:57 PM Worksheet Rent and Royalty (Schedule E)
+50% of 6717                               _           _
+.45 54101
+.43 Givat Shmuel
+\@212 \ E-2
+\:1
+\&1
+.42 1
+\@213 \ E-3
+\:1
+\&1
+.40 12537
+.42 12537
+.44 0
+.46 0
+\@213 \ E-3
+\:2
+\&2
+.40 15726
+.42 15726
+.44 0
+.46 0
+\@217 \ E-7
+\:1
+\&1
+.54 9091
+.55 -9091
+\@217 \ E-7
+\:2
+\&2
+.54 32891
+.55 -32891
+\@120 \ IRS-K1 1120S
+\:2
+\&1
+.60 2
+.944 1
+.30 T
+.33 1
+.34 Starling Financial Consulting LLC
+.44 84-4108037
+.45 Starling Financial Consulting LLC
+.68 106899
+.102 2572
+.100 4109
+.920 106899
+.264 100218
+.278 24139
+.47 Houston
+.48 TX
+.49 77030
+.46 2330 Gramercy St
+.50 3
+.58 1
+.922 4109
+.943 1
+.135 100
+.136 100
+.142 100
+.562 2
+.143 100
+\@491 \ EF-1
+\:1
+\&1
+.30 Y
+.430M X
+.31 Y
+\@743 \ QBI-1
+\:1
+\&1
+.40 TB
+.41 1
+.42 S
+.47 RENT
+.48 1
+.49 X
+.54 RENT
+.55 2
+.56 X
+.30 X
+.72 1
+.78 1
+.84 1
+\@1202 \ QBI-3
+\:1
+\&1
+.30 2017
+.31 RENT
+.32 1
+.57 2020
+.84 2021
+.111 2022
+.138 2023
+.165 2022
+.192 2023
+.38 2472
+.58 RENT
+.85 RENT
+.112 RENT
+.139 RENT
+.166 RENT
+.193 RENT
+.34 Family Residence - 28 Yoni Netanyah
+.59 1
+.86 1
+.113 1
+.140 1
+.167 2
+.194 2
+.36 P
+.61 Family Residence - 28 Yoni Netanyah
+.62 X
+.89 X
+.116 X
+.143 X
+.170 X
+.197 X
+.88 Family Residence - 28 Yoni Netanyah
+.115 Family Residence - 28 Yoni Netanyah
+.142 Family Residence - 28 Yoni Netanyah
+.169 Single family residence - 151 Derec
+.196 Single family residence - 151 Derec
+.63 P
+.64 1857
+.90 P
+.91 2573
+.117 P
+.118 5635
+.144 P
+.145 9091
+.171 P
+.172 11046
+.198 P
+.199 32891
+\@1205 \ QBI-4
+\:1
+\&1
+.32 1
+.33 1
+.34 .4151
+.35 1
+\@331 \ T-1
+\:1
+\&1
+.30 1
+.41 7
+\@332 \ T-2
+\:1
+\&1
+.58 0
+\@333 \ T-3
+\:1
+\&1
+.30 X
+.31 X
+.32 X
+.34 11/15/2025
+\@651 \ T-22
+\:1
+\&1
+.31 F
+\@6840 \ NY1
+\:1
+\&1
+.30 N
+\@6842 \ NY2
+\:1
+\&1
+.31 1
+\@6844 \ NY3
+\:1
+\&1
+.100 213
+.104 214
+.101 X
+.105 X
+\@6850 \ NY6
+\:1
+\&1
+.54 0
+\*

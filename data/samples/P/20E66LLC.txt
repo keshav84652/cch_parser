@@ -1,0 +1,472 @@
+**BEGIN,2024:P:20E66LLC:1,87-1693817,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.40 20 E 66 Street LLC
+.43 3 Columbus Circle Fl 15
+.44 New York
+.45 NY
+.46 10019
+.51 212-520-6677
+.91 Rental Real Estate
+.90 Rental Real Estate
+.92 531110
+.93 07/08/2021
+.42 87-1693817
+.30 NY
+.31 NYC
+.96 A
+.95 Dovi@empireeq.com
+.80 Y
+.200M 2023
+.201M X
+.202M 2023.0501
+.204M X
+.205M 20E66LLC:V1
+.206M 2023.05010
+.207M 2023.04020
+.210M 115274
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Pro Forma Alert: Options have changed for the CA General information >
+.92 Options > Schedule M-1 calculation options (CA1 box 62). The new default
+.94 is to use CA Income and CA tax. Please check the proformaed option and
+.96 change if necessary.
+.98 Pro Forma Alert:  Client address has been transferred from the
+.100 prior year. Please review to ensure the information is correct.
+.102 Pro Forma Alert:  Overrides have been transferred from the prior year to
+.91 X
+.290M X
+.291M X
+.292M X
+.293M X
+.294M X
+.295M X
+.296M X
+.93 X
+.95 X
+.97 X
+.99 X
+.101 X
+.103 X
+\@103 \ 3
+\:1
+\&2
+.90 Federal > General > Basic Data > Other Information section
+.92 (Interview Form 4). Please verify if these still apply.
+.91 X
+.290M X
+.291M X
+.93 X
+\@104 \ 4
+\:1
+\&1
+.50 3
+\@118 \ 4A
+\:1
+\&1
+.31 1
+.38 212-520-6677
+.30 X
+.31M 1
+.38M 212-520-6677
+\@921 \ BNK-1
+\:1
+\&1
+.35 First Republic Bank
+.36 321081669
+.37 80008770812
+.33 X
+.34 X
+.39 X
+\@743 \ QBI-1
+\:1
+\&1
+.40 RENT
+.41 1
+.42 X
+\@641 \ EF-2
+\:1
+\&1
+.60 12345
+.62 2
+.63 Dov Lesches
+.65 Member
+\@120 \ 2YR-1
+\:1
+\&1
+.32 4
+\@121 \ 2YR-2
+\:1
+\&1
+.41 117632
+\@122 \ 2YR-3
+\:1
+\&1
+.62 708158
+.64 1421240
+.71 117632
+.77 117632
+.83 117632
+.90 -1467049
+.92 117632
+.94 -1349417
+.95 708158
+.98 708158
+.99 -2057575
+\@420 \ DP-1
+\:1
+\&1
+\F21063
+\O1
+.30 1
+.36 2
+.42 3
+.31 20 E 66th - Land
+.32 07/01/21
+.33 L
+.35 285000
+.LIST 35 _ 2
+BCHOI01 - 06/21/22 14:12 PM Worksheet Rent and Royalty
+1425000*.2                                _           _
+.37 20 E 66th - Building
+.43 Improvement
+.38 07/01/21
+.44 10/01/22
+.39 MSL
+.45 MSL
+.40 27.5
+.46 27.5
+.41 1140000
+.LIST 41 _ 2
+BCHOI01 - 06/21/22 14:12 PM Worksheet Rent and Royalty
+1425000*.8                                _           _
+.47 60898
+.74 101910
+.83 2675
+.75 41455
+.84 2214
+.103 41455
+.112 2214
+.102 101910
+.111 2675
+\@423 \ DP-4
+\:1
+\&1
+\F21063
+\O1
+.30 2
+.37 3
+.33 101910
+.35 41455
+.40 2675
+.42 2214
+\@211 \ E-1
+\:1
+\&1
+.44 B
+.54 603678
+.37 NY
+.95 16350
+.100 22034
+.110 112670
+.105 15614
+.54M 618,856.
+.169 175
+.167 Filing Fees
+.176 28
+.162 285
+.160 Bank Charges
+.174 Postage & Delivery
+.183 14600
+.181 Property Management Fees
+.115 93018
+.120 166875
+.LIST 120 _ 3
+150415 - 06/20/22 17:51 PM Worksheet Rent and Royalty
+Real Estate Tax                      166875      204784
+NYC Tax                                   _          50
+.129 25507
+.95M 5,000.
+.100M 20,754.
+.105M 43,678.
+.110M 102,710.
+.115M 27,204.
+.120M 204,834.
+.129M 25,340.
+.162M 426.
+.169M 408.
+.176M 58.
+.183M 17,520.
+.31 20 East 66th Street
+.32 New York
+.33 NY
+.34 10065
+.39 365
+.38 2
+.188 X
+.189 X
+.190 X
+.191 X
+\@211 \ E-1
+\:1
+\&2
+.169 1099
+.167 Telephone Expense
+.162 8700
+.160 Super
+.174 Licenses & Permits
+.162M 8,650.
+.169M 494.
+.176M 479.
+.180 X
+.187 X
+.188 X
+.189 X
+.190 X
+\@271 \ K-1
+\:1
+\&1
+.30 1
+.37 2
+.44 3
+.51 4
+.31 Dov
+.38 David
+.45 Edward
+.52 JPPJ LLC
+.109 125201
+.58 1290 Carrol Street
+.59 Brooklyn
+.62 102-B East Shearwater Court
+.63 Jersey City
+.66 39 Barnes LN
+.67 Purchase
+.134 -2057575
+.70 1609 E 29th Street
+.71 Brooklyn
+.60 NY
+.102 075-74-1970
+.165 X
+.64 NJ
+.110 343-72-3552
+.68 NY
+.118 058-36-2168
+.72 NY
+.126 83-3392159
+.127 L
+.83 XXX
+.90 XXX
+.117 -2314473
+.125 108628
+.133 23069
+.106 .0495
+.107 .0495
+.108 .0495
+.114 .8
+.115 .8
+.116 .8
+.122 .1305
+.123 .1305
+.124 .1305
+.130 .02
+.131 .02
+.132 .02
+.144 11178
+.150 5884
+.156 962
+.LIST 156 _ 3
+BCHOI01 - 02/07/23 09:49 AM Worksheet Partner Information
+                                        962         268
+                                          _         206
+.39 M
+.46 R
+.33 Lesches
+.40 Bartz
+.47 Roskind
+.61 11213
+.65 07305
+.69 10577
+.73 11229
+.176 X
+\@270 \ K-1A
+\:1
+\&1
+.30 1
+.35 2
+.36 Alemanno LLC
+.31 ANDC EQ LLC
+.37 85-2416237
+.32 86-3024173
+\@274 \ K-4
+\:1
+\&1
+.40 7510
+.41 7511
+.52 1
+.56 0
+.58 0
+.60 .9175717
+.61 2
+.65 1
+.67 1
+.69 0
+.70 3
+.74 0
+.76 0
+.78 .070845474
+.42 7003
+.79 4
+.83 0
+.85 0
+.87 .011582826
+.49 2
+.50 2
+\@274 \ K-4
+\:2
+\&2
+.40 5668
+.41 5760
+.52 1
+.56 .9175717
+.58 .9175717
+.60 .9175717
+.61 2
+.65 0
+.67 0
+.69 0
+.70 3
+.74 .070845474
+.76 .070845474
+.78 .070845474
+.42 5791
+.79 4
+.83 .011582826
+.85 .011582826
+.87 .011582826
+\@279 \ K-9
+\:1
+\&1
+.90 1780620
+.92 2242334
+.94 138499
+.91 1775637
+.93 2191187
+.95 24750
+\@291 \ L-1
+\:1
+\&1
+.35 48995
+.37 2450
+.80 663429
+.LIST 80 _ 6
+NAgarwal - 02/23/24 07:22 AM Worksheet Balance Sheet
+Loan to Related parties                   _     3097605
+16 Barrow                                 _       64584
+46 Henry                                  _      -23360
+Empire EQ Homes                           _        -400
+C/F ADJUSTMENT                            _    -2475000
+.36 10273
+.38 0
+.81 643240
+.LIST 81 _ 6
+NAhya01 - 02/13/25 07:37 AM Worksheet Balance Sheet
+Loan to related Parties             3076816           _
+16 Barrow                             65184           _
+46 Henry                             -23360           _
+Empire EQ Homes                        -400           _
+C/F Adj                            -2475000           _
+.56 Utility Deposit
+.58 1705
+.59 1705
+.100 1207064
+.102 104585
+.108 285000
+.101 1207064
+.103 148254
+.LIST 103 _ 3
+NAhya01 - 02/13/25 07:42 AM Worksheet Balance Sheet
+Accumulated Depre                    104585           _
+Current Year Depre                    43669           _
+.109 285000
+.130 2104058
+\@292 \ L-2
+\:1
+\&1
+.46 Credit Cards
+.48 71973
+.49 0
+.80 1780620
+.LIST 80 _ 2
+NAgarwal - 02/23/24 07:24 AM Worksheet Balance Sheet
+David M Bartz                             _     1780620
+.85 2242334
+.81 1775637
+.LIST 81 _ 2
+NAhya01 - 02/13/25 07:43 AM Worksheet Balance Sheet
+David M Bartz                       1775637           _
+.86 2191187
+.88 Security Deposits
+.90 66706
+.91 24750
+.157 2104058
+.118 -2057575
+\@310 \ ML-1
+\:1
+\&1
+.60 X
+.61 X
+\@379 \ EXT-1
+\:1
+\&1
+.30 2
+\@388 \ EXT-2
+\:1
+\&1
+.30 X
+\@6890 \ NY1
+\:1
+\&1
+.42 Y
+.43 Y
+.32 2
+.47 Y
+\@6905 \ NY2A
+\:1
+\&1
+.30 1
+\@6809 \ NY19
+\:1
+\&1
+.30 1
+\@6810 \ NY20
+\:1
+\&1
+.30 1
+\@6814 \ NY24
+\:1
+\&1
+.44 618856
+.45 618856
+\@9490 \ NYC1
+\:1
+\&1
+.30 B
+\@9491 \ NYC2
+\:1
+\&1
+.31 Y
+.32 Y
+.51 Residential Property
+.52 20 E 66th Street
+.53 Manhattan
+.54 1380
+.55 60
+\@9492 \ NYC3
+\:1
+\&1
+.100M 04/15/2024
+.101M 06/17/2024
+\*

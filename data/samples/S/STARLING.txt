@@ -1,0 +1,221 @@
+**BEGIN,2024:S:STARLING:1,84-4108037,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.40 Starling Financial Consulting LLC
+.42 84-4108037
+.43 2330 Gramercy Street
+.44 Houston
+.45 TX
+.46 77030
+.48 (212) 203-0274
+.49 President
+.52 06/05/2019
+.53 541990
+.54 06/05/2019
+.55 Tx
+.92 itielk@gmail.com
+.200M 0300
+.201M X
+.202M 2023.0501
+.204M X
+.205M STARLING:V1
+.206M 2023.05010
+.207M 2023.03000
+.210M 115274
+\@102 \ 2
+\:1
+\&1
+.112 X
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Pro Forma Alert:  Client address has been transferred from the prior
+.92 year.  Please review to ensure the information is correct.
+.91 X
+.290M X
+.291M X
+.93 X
+\@104 \ 4
+\:1
+\&1
+.50 C
+.52 Consulting
+.53 Consulting
+\@590 \ OS-1
+\:1
+\&1
+.30 1
+.31 Itiel
+.32 A
+.33 Kaplan
+.34 294 Staling Rd
+.78 280-45-3337
+.79 1
+.80 1
+.82 40000
+.83 40000
+.106 President
+.50 Englewood
+.51 NJ
+.52 07631
+\@300 \ EF-2
+\:1
+\&1
+.60 12345
+.65 208-45-3337
+.62 2
+.63 ITIEL KAPLAN
+\@120 \ 2YR-1
+\:1
+\&1
+.40 314166
+.41 40000
+.42 274166
+.45 274166
+.48 5633
+.50 38400
+.53 0
+.58 103191
+.59 147224
+.60 126942
+\@121 \ 2YR-2
+\:1
+\&1
+.54 2414
+.53 8166
+\@122 \ 2YR-3
+\:1
+\&1
+.63 169364
+\@123 \ 2YR-4
+\:1
+\&1
+.40 116362
+.54 116362
+.60 53002
+.63 126942
+.67 10580
+.69 169364
+.75 0
+\@131 \ A-1
+\:1
+\&1
+.30 285333
+.30M 320,833.
+\@132 \ A-2
+\:1
+\&1
+.119 Management Fees
+.121 40000
+\@420 \ DP-1
+\:1
+\&1
+\F22449
+\O1
+.30 1
+.36 2
+.42 3
+.31 Furniture & Fixtures
+.32 06/30/22
+.33 M
+.34 7
+.35 11864
+.65 0
+.37 Furniture & Fixtures
+.43 Furniture & Fixtures
+.38 01/04/23
+.44 04/01/24
+.68 11864
+.137 F
+.149 F
+.39 M
+.45 M
+.40 7
+.46 7
+.181 4109
+.41 8166
+.47 4109
+.76 8166
+.85 4109
+.74 0
+.83 0
+.93 0
+\@133 \ A-3
+\:1
+\&1
+.41 1851
+.LIST 41 _ 3
+Mnanda - 08/26/21 11:05 AM Worksheet Business
+CLeaning and Maintenance                  _           _
+Repairs                                   _           _
+.50 38695
+.50M 320,833.
+\@134 \ A-4
+\:1
+\&1
+.34 Auto and Truck Expense
+.36 17105
+.41 Bank Charges
+.43 1790
+.48 Business meeting
+.50 11734
+.55 Cleaning and Maintenance
+.57 8122
+.62 Conference and Seminars
+.64 7288
+.190 Cash - 60% limitation
+.193 2572
+.191 1
+.69 Insurance
+.71 2835
+.76 Legal and Professional
+.78 9600
+.83 Office Supplies
+.85 8972
+.90 Outside Service
+.92 6144
+.97 Travel
+.99 10866
+.104 Utilities, Telephone & Internet
+.106 13432
+\@743 \ QBI-1
+\:1
+\&1
+.40 TB
+.41 1
+.42 X
+\@271 \ K-1
+\:1
+\&1
+.30 1
+.31 Itiel Abraham
+.75 2330 Gramercy Street
+.76 Houston
+.111 TX
+.110 280-45-3337
+.112 I
+.210 100
+.77 TX
+.78 77030
+.33 Kaplan
+\@280 \ K-10
+\:1
+\&1
+.60 100218
+\@294 \ L-4
+\:1
+\&1
+.30 53002
+\@374 \ T-4
+\:1
+\&1
+.130M 04/15/2024
+.131M 06/17/2024
+\@400 \ EXT-1
+\:1
+\&1
+.30 X
+.120 X
+\*

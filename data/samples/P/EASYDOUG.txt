@@ -1,0 +1,845 @@
+**BEGIN,2024:P:EASYDOUG:1,47-5641293,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.40 Easy Dough LLC
+.43 30-30 47th Avenue, Suite #160
+.44 Long Island City
+.45 NY
+.46 11101
+.51 212-203-0274
+.91 Bakery
+.90 Bakery
+.92 722515
+.93 01/01/2016
+.42 47-5641293
+.30 NY
+.31 NYC
+.96 A
+.95 douglas@cdg.nyc
+.80 B
+.200M 2023
+.201M X
+.202M 2023.0501
+.204M X
+.205M EASYDOUG:V1
+.206M 2023.05010
+.207M 2023.04020
+.210M 115274
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Pro Forma Alert: Options have changed for the CA General information >
+.92 Options > Schedule M-1 calculation options (CA1 box 62). The new default
+.94 is to use CA Income and CA tax. Please check the proformaed option and
+.96 change if necessary.
+.98 Pro Forma Alert:  Client address has been transferred from the
+.100 prior year. Please review to ensure the information is correct.
+.102 Pro Forma Alert:  Overrides have been transferred from the prior year to
+.91 X
+.290M X
+.291M X
+.292M X
+.293M X
+.294M X
+.295M X
+.296M X
+.93 X
+.95 X
+.97 X
+.99 X
+.101 X
+.103 X
+\@103 \ 3
+\:1
+\&2
+.90 Federal > General > Basic Data > Other Information section
+.92 (Interview Form 4). Please verify if these still apply.
+.91 X
+.290M X
+.291M X
+.93 X
+\@104 \ 4
+\:1
+\&1
+.31 X
+.50 3
+.57 N
+.61 N
+.71 Y
+\@118 \ 4A
+\:1
+\&1
+.30 X
+\@921 \ BNK-1
+\:1
+\&1
+.35 Chase Bank
+.36 021000021
+.37 857112119
+.42 1
+.33 X
+.34 X
+.39 X
+\@428 \ DP-9
+\:1
+\&1
+.32 3
+.33 3
+\@743 \ QBI-1
+\:1
+\&1
+.40 TB
+.41 1
+.42 X
+\@641 \ EF-2
+\:1
+\&1
+.60 12345
+.62 2
+.63 Douglas Kaplan
+.65 Managing Member
+.66 074-76-5678
+.67 1
+\@225 \ EF-4
+\:1
+\&1
+.30 807853
+\@120 \ 2YR-1
+\:1
+\&1
+.40 1183151
+.43 266691
+.46 108607
+.47 375298
+.49 375298
+.50 807853
+.55 807853
+.60 571403
+.62 17565
+.64 353220
+.65 94477
+.66 22849
+.67 42426
+.72 115310
+.73 1217250
+.74 -409397
+.32 3
+\@121 \ 2YR-2
+\:1
+\&1
+.40 -409397
+.80 -409397
+.82 807853
+.90 -4440
+\@122 \ 2YR-3
+\:1
+\&1
+.52 176
+.64 2719343
+.71 -409573
+.75 176
+.77 -409397
+.83 -409397
+.90 -212873
+.92 -409397
+.94 -622270
+.97 176
+.98 176
+.99 -622446
+\@131 \ A-1
+\:1
+\&1
+.30 Partnership Activity
+.40 348558
+.LIST 40 _ 6
+NAhya01 - 08/10/24 10:17 AM Worksheet Trade or Business Income and Expenses
+                                     193207     1254438
+                                     119691      -71287
+                                        -14           _
+                                     -13970           _
+                                      49644           _
+.40M 1183151.
+\@132 \ A-2
+\:1
+\&1
+.35 56861
+.LIST 35 _ 5
+150415 - 03/21/23 11:39 AM Worksheet Trade or Business Income and Expenses
+Beverage Purchase                     19136      100822
+Food Purchase                         41828      174375
+Employee Meals                        -4103      -11018
+                                          _        2512
+.109 Merchant Account Fees
+.110 11194
+.LIST 110 _ 3
+150415 - 03/21/23 14:11 PM Worksheet Trade or Business Income and Expenses
+                                      12741       43070
+Credit Card Tip Fee                   -1547       -5700
+.115 Restaurant Supplies
+.116 19642
+.35M 266,691.
+.110M 37,370.
+.116M 71,237.
+\@133 \ A-3
+\:1
+\&1
+.30 221760
+.37 17080
+.46 136532
+.LIST 46 _ 2
+Mnanda - 03/22/21 16:01 PM Worksheet Trade or Business Income and Expenses
+Rent                                      _      353220
+.110 Payroll Taxes
+.111 32057
+.LIST 111 _ 4
+150415 - 03/21/23 11:48 AM Worksheet Trade or Business Income and Expenses
+FICA Tax Expense                      22003       63035
+SUTA Expense                           9018       28658
+FUTA Expense                           1036        2179
+.116 Other Taxes
+.117 544
+.122 Licenses & Permits
+.123 2100
+.139 27797
+.LIST 139 _ 3
+150415 - 08/10/24 10:24 AM Worksheet Trade or Business Income and Expenses
+                                      27797         106
+                                          _       22743
+.148 10524
+.30M 571,403.
+.37M 17,565.
+.46M 353,220.
+.111M 93,872.
+.117M 545.
+.123M 60.
+.139M 22,849.
+.148M 29,230.
+\@134 \ A-4
+\:1
+\&1
+.30 210
+.32 Bank Charges
+.33 3668
+.LIST 33 _ 3
+150415 - 03/21/23 12:17 PM Worksheet Trade or Business Income and Expenses
+Bank Charges                           3611        1626
+Chargeback                               57           _
+.38 Computer & Internet Expense
+.39 677
+.44 Dues and Subscriptions
+.45 6516
+.50 Insurance
+.51 1525
+.LIST 51 _ 5
+150415 - 03/21/23 14:11 PM Worksheet Trade or Business Income and Expenses
+                                       1663        4494
+Disability                               78        2745
+PFL                                    -989       -3558
+Fraudulent Check                        773           _
+.56 Legal and Professional
+.57 66747
+.LIST 57 _ 4
+150415 - 03/21/23 11:58 AM Worksheet Trade or Business Income and Expenses
+Legal Fees                                _        3596
+Accounting Fees                           _           _
+Professional Fees                         _           _
+.62 Office Expense
+.63 512
+.LIST 63 _ 4
+150415 - 03/21/23 12:28 PM Worksheet Trade or Business Income and Expenses
+Cash over short                          52         523
+Storage                                   _         255
+Ask My Accountant                       460           _
+.68 Travel
+.69 275
+.74 Utilities
+.75 17945
+.80 Waste Removal
+.81 4036
+.86 Payroll Processing Fees
+.87 9829
+.LIST 87 _ 3
+NAhya01 - 02/14/25 10:08 AM Worksheet Trade or Business Income and Expenses
+Payroll Service Fees                   9829           _
+Payroll Expenses                          0           _
+.92 Permit Expense
+.93 228
+.98 Music & Entertainment
+.99 33
+.104 Office Supplies
+.105 259
+.LIST 105 _ 3
+150415 - 03/21/23 12:08 PM Worksheet Trade or Business Income and Expenses
+Office Supplies                         252         104
+Other Supplies                            7          72
+.30M 352.
+.33M 1,626.
+.39M 653.
+.45M 8,054.
+.51M 3,681.
+.57M 3,596.
+.63M 778.
+.69M 408.
+.75M 25,934.
+.81M 8,013.
+.87M 9,897.
+.93M 672.
+.99M 16,435.
+.105M 176.
+\@420 \ DP-1
+\:1
+\&1
+\F21039
+\O1
+.30 1
+.36 2
+.42 3
+.125 M
+.31 Bakery Equipment
+.32 01/24/17
+.121 1
+.122 10/09
+.70 3
+.33 MT
+.34 7
+.35 105494
+.65 105494
+.37 Walk In Cooler
+.43 Security Cameras
+.38 02/23/17
+.44 03/15/17
+.137 M
+.149 M
+.39 MT
+.45 MT
+.40 7
+.46 5
+.79 3
+.88 3
+.50M 7
+.51M 7
+.52M 5
+.55M MT
+.133 1
+.145 1
+.56M MT
+.57M MT
+.134 10/09
+.146 10/09
+.41 17275
+.47 1000
+.74 17275
+.83 1000
+.161 MT
+.93 103626
+.102 16969
+.111 1000
+.183 MT
+.172 MT
+.162 7
+.173 7
+.184 5
+\@420 \ DP-1
+\:1
+\&2
+\F21039
+\O1
+.30 4
+.36 5
+.42 6
+.31 Equipment
+.32 04/17/17
+.121 1
+.122 10/09
+.70 3
+.33 MT
+.34 5
+.35 15000
+.65 15000
+.37 Equipment
+.43 Equipment
+.38 10/30/17
+.44 08/21/17
+.39 MT
+.45 MT
+.40 5
+.46 5
+.79 3
+.88 3
+.50M 5
+.51M 5
+.52M 5
+.55M MT
+.133 1
+.145 1
+.56M MT
+.57M MT
+.134 10/09
+.146 10/09
+.41 2284
+.47 2484
+.74 2284
+.83 2484
+.161 MT
+.93 15000
+.102 2284
+.111 2484
+.183 MT
+.172 MT
+.162 5
+.173 5
+.184 5
+\@420 \ DP-1
+\:1
+\&3
+\F21039
+\O1
+.30 7
+.36 8
+.42 9
+.31 Equipment
+.32 06/12/17
+.121 1
+.122 10/09
+.70 3
+.33 MT
+.34 5
+.35 710
+.65 710
+.37 Equipment
+.43 Equipment
+.38 10/05/17
+.44 07/06/17
+.39 MT
+.45 MT
+.40 5
+.46 5
+.79 3
+.88 3
+.50M 5
+.51M 5
+.52M 5
+.55M MT
+.133 1
+.145 1
+.56M MT
+.57M MT
+.134 10/09
+.146 10/09
+.41 750
+.47 936
+.74 750
+.83 936
+.161 MT
+.93 710
+.102 750
+.111 936
+.183 MT
+.172 MT
+.162 5
+.173 5
+.184 5
+\@420 \ DP-1
+\:1
+\&4
+\F21039
+\O1
+.30 10
+.36 11
+.42 12
+.31 Equipment
+.32 09/14/17
+.121 1
+.122 10/09
+.70 3
+.33 MT
+.34 5
+.35 71
+.65 71
+.37 Equipment
+.43 Equipment
+.38 08/16/17
+.44 07/01/17
+.39 MT
+.45 MT
+.40 5
+.46 5
+.79 3
+.88 3
+.50M 5
+.51M 5
+.52M 5
+.55M MT
+.133 1
+.145 1
+.56M MT
+.57M MT
+.134 10/09
+.146 10/09
+.41 556
+.47 51539
+.74 556
+.83 51539
+.161 MT
+.93 71
+.102 556
+.111 51539
+.183 MT
+.172 MT
+.162 5
+.173 5
+.184 5
+\@420 \ DP-1
+\:1
+\&5
+\F21039
+\O1
+.30 13
+.36 19
+.42 20
+.31 Bakery Equipment
+.32 03/01/18
+.121 1
+.122 10/09
+.33 MT
+.34 5
+.35 2358
+.37 Improvement
+.43 Furniture & Equipment
+.38 06/01/22
+.44 05/01/22
+.68 2358
+.39 MT
+.45 MT
+.40 15
+.46 5
+.79 3
+.88 3
+.50M 5
+.55M MT
+.133 1
+.145 1
+.134 10/09
+.146 10/09
+.41 250802
+.47 58126
+.74 23826
+.83 18600
+.161 MT
+.102 25080
+.111 17438
+.162 5
+\@421 \ DP-2
+\:1
+\&1
+\F21039
+\O1
+.31 1
+.32 MT
+.33 7
+.39 105494
+.105 100789
+.107 4705
+.41 2
+.51 3
+.61 4
+.71 5
+.81 6
+.91 7
+.42 MT
+.52 MT
+.62 MT
+.72 MT
+.82 MT
+.92 MT
+.43 7
+.53 5
+.63 5
+.73 5
+.83 5
+.93 5
+.49 17275
+.59 1000
+.69 15000
+.79 2284
+.89 2484
+.99 710
+.113 16506
+.121 1000
+.129 15000
+.137 2284
+.145 2484
+.153 710
+.115 769
+.30 NY
+.40 NY
+.50 NY
+.60 NY
+.70 NY
+.80 NY
+.90 NY
+.228 X
+.237 X
+.246 X
+.264 X
+.273 X
+.282 X
+\@421 \ DP-2
+\:1
+\&2
+\F21039
+\O1
+.31 8
+.32 MT
+.33 5
+.39 750
+.105 749
+.41 9
+.51 10
+.61 11
+.71 12
+.81 13
+.91 19
+.42 MT
+.52 MT
+.62 MT
+.72 MT
+.82 MT
+.92 MT
+.43 5
+.53 5
+.63 5
+.73 5
+.83 5
+.93 15
+.271 0
+.49 936
+.59 71
+.69 556
+.79 51539
+.89 2358
+.99 250802
+.156 0
+.113 936
+.121 71
+.129 556
+.137 51538
+.145 2358
+.153 36366
+.155 21444
+.97 0
+.30 NY
+.40 NY
+.50 NY
+.60 NY
+.70 NY
+.80 NY
+.90 NY
+.228 X
+.237 X
+.246 X
+.255 X
+.264 X
+.273 X
+\@421 \ DP-2
+\:1
+\&3
+\F21039
+\O1
+.31 19
+.32 MT
+.33 15
+.39 250802
+.108 0
+.105 36366
+.107 21444
+.37 0
+.41 20
+.51 20
+.42 MT
+.52 MT
+.43 5
+.53 5
+.49 58126
+.59 58126
+.116 0
+.124 0
+.113 30225
+.121 30225
+.115 11160
+.123 11160
+.47 0
+.57 0
+.30 NY
+.40 NY
+.50 NY
+.228 X
+.246 X
+\@191 \ D-1
+\:1
+\&1
+.50 1231
+.53 1
+.30 Disposal of business assets
+.32 10/09/24
+.107 293428
+.62 CAP
+.35 Sale of business
+.36 01/24/17
+.37 10/09/24
+.52 L
+.64 L
+.109 49100
+.272 C
+\@271 \ K-1
+\:1
+\&1
+.30 1
+.37 2
+.44 3
+.31 Frank
+.38 Thomas
+.45 Douglas
+.109 -256814
+.58 47-20 Center Blvd #1404
+.59 Long Island City
+.62 77 Park Avenue #16A
+.63 New York
+.135 196836
+.66 301 East 79th Street #15M
+.67 New York
+.134 -622446
+.60 NY
+.102 110-80-5307
+.165 X
+.103 I
+.174 A
+.64 NY
+.110 505-63-0174
+.178 X
+.111 I
+.187 A
+.68 NY
+.118 074-76-5678
+.191 X
+.119 I
+.200 A
+.76 NYC
+.83 NYC
+.90 NYC
+.117 -299588
+.125 -66044
+.106 .38
+.107 .38
+.108 .38
+.114 .38
+.115 .38
+.116 .38
+.122 .24
+.123 .24
+.124 .24
+.141 196837
+.147 60044
+.33 Mccole
+.40 Burke
+.47 Kaplan
+.61 11109
+.65 10016
+.69 10075
+\@272 \ K-2
+\:1
+\&1
+.50 1
+.54 2
+.58 3
+\@273 \ K-3
+\:1
+\&1
+.32 PPP Repayment
+.30 PPL
+.37 Restaurant Revitalization Fund
+.35 PPL
+\@279 \ K-9
+\:1
+\&1
+.60 Cash 50% limitation
+.61 1
+\@291 \ L-1
+\:1
+\&1
+.35 2642
+.36 1421
+.100 509385
+.102 242883
+.114 Security Deposit
+.116 87000
+.118 Other Assets
+.120 10337
+.130 366481
+\@292 \ L-2
+\:1
+\&1
+.30 122921
+.46 Sales Tax Payable
+.48 88391
+.50 Credit Card Payable
+.52 17998
+.54 Cash Overdraft
+.58 Tips Payable
+.60 4117
+.62 Related Party Loans
+.64 255600
+.85 499900
+.86 492319
+.157 366481
+.118 -622446
+\@379 \ EXT-1
+\:1
+\&1
+.30 2
+\@388 \ EXT-2
+\:1
+\&1
+.30 X
+\@6890 \ NY1
+\:1
+\&1
+.42 Y
+.43 Y
+.45 47-5641293
+.46 47-5641293
+.47 N
+.48 N
+\@6905 \ NY2A
+\:1
+\&1
+.30 1
+\@6814 \ NY24
+\:1
+\&1
+.30 1183151
+.31 1183151
+\@9491 \ NYC2
+\:1
+\&1
+.31 Y
+.32 Y
+.50 Y
+\@9492 \ NYC3
+\:1
+\&1
+.100M 04/15/2024
+.101M 06/17/2024
+\@9495 \ NYC6
+\:1
+\&1
+.80 562163
+.81 12/31/22
+\@9495 \ NYC6
+\:1
+\&2
+.80 420495
+.81 12/31/23
+\*

@@ -1,0 +1,699 @@
+**BEGIN,2024:C:Publishing:1,13-2652671,EGG,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.30 NY
+.31 NYC
+.40 Earl G Graves Publishing Co., Inc.
+.42 13-2652671
+.43 500 7th Avenue, 8th Floor
+.44 New York
+.45 NY
+.46 10018
+.47 Manhattan
+.48 212-242-8000
+.49 President
+.52 08/18/1969
+.53 513190
+.54 Digital Publication
+.55 Advertising
+.56 Ny
+.60 ssingla@kbl.com
+.90 S
+.91 X
+.201M X
+.202M 2023.0506
+.204M X
+.205M Publishing:V1
+.206M 2023.05060
+.207M 2023.04030
+.210M 115274
+\@103 \ 3
+\:1
+\&1
+.40 1
+.41 SANJAY SINGLA
+.33 KBL, LLP
+.34 1350 BROADWAY, SUITE 1510
+.35 NEW YORK
+.37 10018
+.32 2127859700
+.31 03-0525474
+.90 Pro Forma Alert:  In the prior year, this company was identified as a
+.92 member of a consolidated return.  Proforma amounts for this return do
+.94 not reflect any consolidated adjustments from the prior year and were
+.96 calculated as if a single non-consolidated return was filed.  The prior
+.98 year consolidated return contained proforma information sheets for
+.100 Depreciation, NOL, AMT NOL, Charitable Contributions, AMT Charitable
+.102 Contributions, Capital Loss Carryover and Credits to assist you in
+.91 X
+.290M X
+.291M X
+.292M X
+.293M X
+.294M X
+.295M X
+.296M X
+.59 Y
+.93 X
+.43 P01328564
+.95 X
+.97 X
+.99 X
+.101 X
+.103 X
+.48 SSINGLA@KBL.COM
+.36 NY
+\@103 \ 3
+\:1
+\&2
+.90 adjusting the proforma amounts in this return and for other members of
+.92 the consolidated group.  Other federal items requiring adjustments include,
+.94 but are not limited to, tax payments, percentage depletion carryover and
+.96 section 1231 loss recapture. State carryover amounts may also be affected.
+.98 Please review this return information to ensure that any consolidated
+.100 adjustments are properly reflected.
+.102 Pro Forma Alert:  Client address has been transferred from the prior
+.91 X
+.290M X
+.291M X
+.292M X
+.293M X
+.294M X
+.295M X
+.296M X
+.93 X
+.95 X
+.97 X
+.99 X
+.101 X
+.103 X
+\@103 \ 3
+\:1
+\&3
+.90 year.  Please review to ensure the information is correct.
+.91 X
+.290M X
+\@104 \ 4
+\:1
+\&1
+.50 A
+\@106 \ 6
+\:1
+\&1
+.50 KBL, LLP
+.51 1350 Broadway, Suite 1510
+.52 New York, NY 10018
+.53 _____________________________
+.54 212-785-9700
+\@107 \ 7
+\:1
+\&1
+.50 KBL, LLP
+.51 1350 Broadway, Suite 1510
+.52 New York, NY 10018
+.53 _____________________________
+.54 212-785-9700
+\@300 \ EF-2
+\:1
+\&1
+.60 12345
+.61 57735
+.62 2
+.63 EARL G. GRAVES JR.
+.70 4
+.48 Y
+\@225 \ EF-4
+\:1
+\&1
+.30 -298607
+\@131 \ A-1
+\:1
+\&1
+.30 6685688
+.LIST 30 _ 8
+Mnanda - 10/27/21 15:48 PM Worksheet Business
+Advertising Revenue                 6684720     8568134
+Subscription Income                       _           _
+Misc Income                             967        4987
+TV                                        _           _
+Less: PPP (M-1)                           _           _
+Less: Forgiveness                         _           _
+                                          1           _
+.30M 8,573,121.
+\@132 \ A-2
+\:1
+\&1
+.119 Production Costs
+.121 328337
+.121M 431,581.
+\@133 \ A-3
+\:1
+\&1
+.35 2539877
+.LIST 35 _ 7
+Mnanda - 10/27/21 16:10 PM Worksheet Business
+IM - Compensation                    998642     1093560
+Editorial Compensation               528900      505195
+Art                                  195313      206067
+Marketing Compensation               169688      198000
+Adv NY Compensation                  630251      587586
+Compensation All Shop                 17083           _
+.50 9378
+.LIST 50 _ 4
+Mnanda - 10/27/21 16:36 PM Worksheet Business
+Adv. NY                                   _           _
+G&A Equipment                          9378       16018
+G&A Leased Equipments                     _       10380
+.134 Payroll Taxes
+.136 275079
+.LIST 136 _ 7
+Mnanda - 10/27/21 18:04 PM Worksheet Business
+G&A FICA                             198981      213882
+G&A Futa                               1423        2293
+G&A NY SUI                            33957       35087
+G&A 401K Funding                      37221       80673
+G&A CA SUI                             3321        2141
+G & A IL SUI                            176         336
+.166 243107
+.LIST 166 _ 2
+RahulD - 07/29/25 11:36 AM Worksheet Business
+G&A Interest Expenses                243107           _
+.174 66512
+.LIST 174 _ 5
+Mnanda - 10/27/21 16:21 PM Worksheet Business
+IM Marketing Promotion                57787       77010
+Adevrtising - Marketing Tools          8185       11390
+Marketing - Promotions                    0         205
+Marketing Event Marketing               540           _
+.183 305620
+.LIST 183 _ 3
+Mnanda - 10/27/21 18:02 PM Worksheet Business
+G&A Health & Life Insurance          286574      237946
+G&A Disability Insurance              19046       30818
+.35M 2,590,408.
+.50M 26,398.
+.136M 334,412.
+.174M 88,605.
+.183M 268,764.
+\@134 \ A-4
+\:1
+\&1
+.30 66935
+.LIST 30 _ 8
+Mnanda - 10/27/21 16:36 PM Worksheet Business
+Adv. NY Business Ent                  29012           _
+IM Business Entertainment               797         274
+TV - OW                                   _           _
+Editorial                             10650         171
+P A                                       _           _
+Business Ente                             _           _
+CEO Business Ent                      26476        7056
+.34 Auto & Truck
+.36 100577
+.LIST 36 _ 2
+Mnanda - 10/27/21 17:34 PM Worksheet Business
+G&A                                  100577       95481
+.41 Bank Charges
+.43 4249
+.LIST 43 _ 2
+Mnanda - 10/27/21 17:46 PM Worksheet Business
+G&A                                    4249        2340
+.48 Commissions & Bonuses
+.50 215782
+.LIST 50 _ 2
+Mnanda - 10/27/21 17:02 PM Worksheet Business
+Advertising & Selling  Adv. NY       215782      266297
+.55 Consultants
+.57 334310
+.LIST 57 _ 7
+Mnanda - 10/27/21 18:21 PM Worksheet Business
+IM Consultant                         42669       23500
+Editorial Consultant                  22649       30425
+Marketing Consultant                  65943      184290
+G&A Misc Consultant                  206751      149284
+                                         -1           _
+                                      -3701           _
+.62 Dues & Subscriptions
+.64 151615
+.LIST 64 _ 7
+Mnanda - 10/27/21 16:22 PM Worksheet Business
+CEO Dues & Professional               28131       29784
+G&A Subscrption                           0         900
+G&A Dues & Professional Fees         106719       93871
+G&A Misc Subscription                   900        4692
+Adv NY                                15866       11067
+                                         -1           _
+.69 Fees
+.71 171435
+.LIST 71 _ 2
+RahulD - 07/29/25 13:56 PM Worksheet Business
+Penalties & Fees                     171435           _
+.76 Freelance Writers
+.78 650160
+.LIST 78 _ 3
+Mnanda - 10/27/21 16:18 PM Worksheet Business
+IM Freelance Writers                  43501      445039
+Editorial                            606659      245428
+.83 Gift
+.85 5250
+.LIST 85 _ 2
+RahulD - 07/29/25 14:01 PM Worksheet Business
+CEO - Business Gift                    5250           _
+.90 Insurance
+.92 25398
+.LIST 92 _ 3
+Mnanda - 10/27/21 17:45 PM Worksheet Business
+G&A                                   25398       17699
+G&A workers compensation                  _        9000
+.97 Internet Development
+.99 4454
+.LIST 99 _ 3
+Mnanda - 10/27/21 18:21 PM Worksheet Business
+G&A                                    4455       11591
+                                         -1           _
+.104 Management Fees
+.106 1479352
+.LIST 106 _ 2
+Mnanda - 10/27/21 18:02 PM Worksheet Business
+G&A                                 1479352     1661611
+.111 Media Expense
+.113 11654
+.118 Miscellaneous
+.120 62248
+.LIST 120 _ 15
+Mnanda - 10/27/21 16:17 PM Worksheet Business
+IM                                      288         408
+Editorial                               947        5871
+Adv. NY                                5377        1316
+IM Misc                                   _           _
+Editorial                                 _           _
+G & A                                     _           _
+Adv NY Production                         _           _
+CEO Miscellaneous                     21558       59017
+Marketing Misc                         3171           _
+G & A Misc                                _        4326
+G & A Misc Supplies                    7302       49044
+Misc Expenses                           568           _
+G & A Mis Misc                        23038         490
+                                         -1           _
+.125 Payroll Processing Fees
+.127 10041
+.132 Postage
+.134 7831
+.LIST 134 _ 8
+Mnanda - 10/27/21 16:14 PM Worksheet Business
+IM Postage                             1373         607
+Editorial                                 _          83
+G&A                                    5990        7460
+Art Postage                               _          45
+Marketing Postage                        84          62
+                                          _         173
+Adv NY Postage                          384           _
+.30M 7,501.
+.36M 95,481.
+.43M 2,340.
+.50M 266,297.
+.57M 387,499.
+.64M 140,314.
+.78M 690,467.
+.92M 26,699.
+.99M 11,591.
+.106M 1,661,611.
+.113M 8,559.
+.120M 120,472.
+.127M 14,957.
+.134M 8,430.
+\@134 \ A-4
+\:1
+\&2
+.34 Printing
+.36 2772
+.LIST 36 _ 2
+Mnanda - 10/27/21 17:34 PM Worksheet Business
+G&A                                  100577       95481
+.41 Service Contractor
+.43 13835
+.LIST 43 _ 2
+Mnanda - 10/27/21 17:46 PM Worksheet Business
+G&A                                    4249        2340
+.48 Storage
+.50 43172
+.LIST 50 _ 2
+Mnanda - 10/27/21 17:02 PM Worksheet Business
+Advertising & Selling  Adv. NY       215782      266297
+.55 Supplies
+.57 425
+.LIST 57 _ 7
+Mnanda - 10/27/21 18:21 PM Worksheet Business
+IM Consultant                         42669       23500
+Editorial Consultant                  22649       30425
+Marketing Consultant                  65943      184290
+G&A Misc Consultant                  206751      149284
+                                         -1           _
+                                      -3701           _
+.62 Telephone
+.64 40955
+.LIST 64 _ 7
+Mnanda - 10/27/21 16:22 PM Worksheet Business
+CEO Dues & Professional               28131       29784
+G&A Subscrption                           0         900
+G&A Dues & Professional Fees         106719       93871
+G&A Misc Subscription                   900        4692
+Adv NY                                15866       11067
+                                         -1           _
+.69 Travel In Town
+.71 25264
+.LIST 71 _ 2
+RahulD - 07/29/25 13:56 PM Worksheet Business
+Penalties & Fees                     171435           _
+.76 Travel Out of Town
+.78 196636
+.LIST 78 _ 3
+Mnanda - 10/27/21 16:18 PM Worksheet Business
+IM Freelance Writers                  43501      445039
+Editorial                            606659      245428
+.83 Web Administration
+.85 795158
+.LIST 85 _ 2
+RahulD - 07/29/25 14:01 PM Worksheet Business
+CEO - Business Gift                    5250           _
+.36M 2,606.
+.43M 203,553.
+.50M 36,741.
+.57M 44.
+.64M 36,250.
+.71M 33,512.
+.78M 376,987.
+.85M 1,003,399.
+\@120 \ 2YR-1
+\:1
+\&1
+.40 8573121
+.41 431581
+.61 2590408
+.64 26398
+.65 334412
+.70 88605
+.73 268764
+.79 5131560
+\@122 \ 2YR-3
+\:1
+\&1
+.60 -302357
+.64 3750
+.100 -17239190
+\@123 \ 2YR-4
+\:1
+\&1
+.68 136725
+.58 -431581
+\@124 \ 2YR-5
+\:1
+\&1
+.41 7501
+\@135 \ A-5
+\:1
+\&1
+.30 F
+.34 1
+.41 2009
+.42 2987303
+.51 12/31/09
+.108 2103836
+.109 883467
+.101 12/31/20
+.102 12/31/21
+.53 2010
+.54 1505875
+.63 12/31/10
+.116 1505875
+.65 2011
+.66 581635
+.75 12/31/11
+.123 581635
+.77 2012
+.78 2249743
+.87 12/31/12
+.130 1128831
+.89 2013
+.90 65958
+.99 12/31/13
+.103 12/31/22
+.131 1120912
+.138 65958
+\@135 \ A-5
+\:1
+\&2
+.41 2014
+.42 2960182
+.51 12/31/14
+.53 2015
+.54 270978
+.63 12/31/15
+.65 2016
+.66 310026
+.75 12/31/16
+.77 2017
+.78 1258620
+.87 12/31/17
+.89 2018
+.90 4090614
+.99 12/31/18
+.110 2960182
+.117 270978
+.124 310026
+.131 489990
+\@135 \ A-5
+\:1
+\&3
+.41 2019
+.42 3671633
+.51 12/31/19
+.53 2023
+.54 298607
+.63 12/31/23
+\@135 \ A-5
+\:2
+\&4
+.30 S
+.31 FC
+.32 NYC
+.34 1
+.41 2015
+.42 231375
+.51 12/31/15
+.108 231375
+.101 12/31/22
+.53 2016
+.63 12/31/16
+.65 2017
+.66 1775470
+.75 12/31/17
+.122 1775470
+.77 2018
+.78 3576449
+.87 12/31/18
+.129 2272552
+.89 2019
+.90 2309034
+.99 12/31/19
+\@135 \ A-5
+\:2
+\&5
+.41 2023
+.42 298607
+.51 12/31/23
+\@135 \ A-5
+\:3
+\&6
+.30 S
+.31 NY
+.34 1
+.41 2015
+.42 231375
+.51 12/31/15
+.108 231375
+.101 12/31/22
+.53 2016
+.63 12/31/16
+.65 2017
+.66 1775470
+.75 12/31/17
+.122 1775470
+.77 2018
+.78 3576449
+.87 12/31/18
+.129 2272552
+.89 2019
+.90 2309034
+.99 12/31/19
+\@135 \ A-5
+\:3
+\&7
+.41 2023
+.42 298607
+.51 12/31/23
+\@135 \ A-5
+\:4
+\&8
+.30 F
+.34 2
+.41 2023
+.42 416559
+.51 12/31/23
+\@136 \ A-6
+\:2
+\&1
+.31 2020
+.33 12/31/20
+.32 01/01/20
+.39 2021
+.41 12/31/21
+.40 01/01/21
+.47 2022
+.49 12/31/22
+.48 01/01/22
+.98 4279397
+\@136 \ A-6
+\:3
+\&2
+.31 2020
+.33 12/31/20
+.32 01/01/20
+.86 23077
+.39 2021
+.41 12/31/21
+.40 01/01/21
+.47 2022
+.49 12/31/22
+.48 01/01/22
+.92 23077
+.98 4279397
+\@291 \ L-1
+\:1
+\&1
+.35 24340
+.37 1708718
+.36 4722
+.38 937508
+.56 PREPAID EXPENSES
+.58 235619
+.59 38024
+.100 1727510
+.102 1727510
+.130 1968677
+\@292 \ L-2
+\:1
+\&1
+.30 3051612
+.LIST 30 _ 3
+150415 - 10/07/24 10:43 AM Worksheet Balance Sheet
+                                          _      602542
+                                          _     2449070
+.31 3687508
+.LIST 31 _ 3
+RahulD - 07/29/25 10:59 AM Worksheet Balance Sheet
+Accounts Payable & Accrued Exp      1067003           _
+Income taxes Payable                2620505           _
+.80 1954817
+.81 2674178
+.88 DUE TO AFFILIATES
+.90 4162259
+.91 4210444
+.93 DUE TO GRAVES VENTURES, LLC
+.95 5495116
+.96 4824981
+.98 UNEARNED REVENUE
+.100 510000
+.101 290000
+.132 1300
+.134 4335120
+.146 -17541547
+.157 1968677
+.133 1300
+.135 4335120
+\@351 \ P-1
+\:1
+\&1
+.96M 04/15/2024
+.97M 06/17/2024
+\@430 \ FE-1
+\:1
+\&1
+.42 X
+\@436 \ FE-7
+\:1
+\&1
+.30 X
+\@365 \ GEN-1
+\:1
+\&1
+.30 NY
+.90 1
+.87 SSINGLA@KBL.COM
+.88 SSINGLA@KBL.COM
+\@366 \ GEN-2
+\:1
+\&1
+.30 Earl G Graves, Ltd
+.31 13-2833426
+.37 S
+.39 1
+.33 500 7th Avenue, 8th Floor
+.34 New York
+.35 NY
+.36 10018
+\@700 \ STPAY-1
+\:1
+\&1
+.30 NY
+.35M 06/17/24
+.36M 09/16/24
+.37M 12/16/24
+\@770 \ UP-1
+\:1
+\&1
+.30 NY
+.38 3500
+\@770 \ UP-1
+\:2
+\&2
+.30 MTA
+.38 1050
+\@6830 \ NY1
+\:1
+\&1
+.49 X
+.50 X
+.46 SANJAY SINGLA
+.47 (212)242-8000
+.48 57735
+\@6840 \ NY11
+\:1
+\&1
+.32 3612931
+.33 3612931
+.34 1
+.35 1
+.36 .071
+.37 .0885
+.38 10
+.39 10
+.54 12/31/2014
+.142 X
+.143 X
+.30 10
+.31 10
+\@6820 \ NYI1
+\:1
+\&1
+.41 SANJAY SINGLA
+.42 (212)242-8000
+.43 57735
+\@9470 \ NYC1
+\:1
+\&1
+.110M 03/15/2024
+.111M 06/17/2024
+\*

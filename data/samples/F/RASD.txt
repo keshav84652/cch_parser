@@ -1,0 +1,87 @@
+**BEGIN,2024:F:RASD:1,83-6266948,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.54 80-0003725
+.59 05/16/2018
+.56 G
+.40 Rasd Tr
+.42 South Dakota Trust Company LLC
+.44 246 Founders Park Dr., Ste. 101
+.45 Rapid City
+.46 SD
+.47 57701
+.55 83-6266948
+.51 (212) 203-0274
+.102M RASD:V1
+.52 bkdentist@gmail.com
+.206M 2023.05060
+.43 Trustee
+.100M X
+.101M 2023.0506
+.207M 2023.04030
+.103M 115274
+\@102 \ 2
+\:1
+\&1
+.32 N
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Address information has been transferred from the prior year.  Please
+.92 review this information to ensure the information is correct.
+.91 X
+.290M X
+.291M X
+.93 X
+\@105 \ 5
+\:1
+\&1
+.35 2
+.37 2
+\@126 \ 26
+\:1
+\&1
+.52 Y
+\@131 \ A-1
+\:1
+\&1
+.194 State Fees
+\@191 \ D-1
+\:1
+\&1
+.30 US Treasury
+.33 S
+.90 99/99/99
+.91 11/26/24
+.92 1
+.93 1
+\@271 \ K-1
+\:1
+\&1
+.30 1
+.31 Rabiel
+.60 99 Warren Street, Apt 9J
+.61 New York
+.115 130-68-1450
+.87 I
+.122 07/16/1978
+.33 Amirian
+.62 NY
+.63 10007
+\@381 \ EXT-1
+\:1
+\&1
+.37 2
+.38 2
+\@215 \ EF-1
+\:1
+\&1
+.40 RASD
+\@216 \ EF-2
+\:1
+\&1
+.60 12345
+.62 2
+\*

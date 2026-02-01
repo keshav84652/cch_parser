@@ -72,6 +72,12 @@ class CCHFormEntry:
             return self.fields[field_num].as_bool
         return False
 
+    def get_date(self, field_num: str) -> Optional[datetime]:
+        """Get field as date"""
+        if field_num in self.fields:
+            return self.fields[field_num].as_date
+        return None
+
 @dataclass
 class CCHForm:
     """Represents a form section in the CCH export (e.g., IRS-W2)"""
@@ -88,7 +94,12 @@ class CCHDocument:
     @property
     def tax_year(self) -> int:
         return int(self.header.get("year", 0))
-    
+
+    @property
+    def return_type(self) -> str:
+        """Return type code: I=Individual, P=Partnership, S=S-Corp, C=C-Corp, F=Fiduciary"""
+        return self.header.get("return_type", "I")
+
     @property
     def client_id(self) -> str:
         return self.header.get("client_id", "")
@@ -113,8 +124,9 @@ class CCHReader:
     """
     
     # Regex patterns for parsing
+    # Return types: I=Individual, P=Partnership, S=S-Corp, C=C-Corp, F=Fiduciary
     HEADER_PATTERN = re.compile(
-        r"\*\*BEGIN,(\d{4}):I:([^:]+):(\d+),([^,]+),([^,]*),([^,]*),(.*)$"
+        r"\*\*BEGIN,(\d{4}):([IPSCF]):([^:]+):(\d+),([^,]*),([^,]*),([^,]*),(.*)$"
     )
     FORM_PATTERN = re.compile(r"\\@(\d+)\s*\\\s*(.+)$")
     SECTION_PATTERN = re.compile(r"\\:(\d+)")
@@ -174,17 +186,26 @@ class CCHReader:
             return content
     
     def parse_header(self, line: str) -> Optional[Dict[str, str]]:
-        """Parse the header line of a CCH export"""
+        """Parse the header line of a CCH export.
+
+        Supports all return types:
+        - I: Individual (1040)
+        - P: Partnership (1065)
+        - S: S-Corporation (1120S)
+        - C: C-Corporation (1120)
+        - F: Fiduciary/Trust (1041)
+        """
         match = self.HEADER_PATTERN.match(line.strip())
         if match:
             return {
                 "year": match.group(1),
-                "client_id": match.group(2),
-                "sequence": match.group(3),
-                "ssn": match.group(4),
-                "office": match.group(5),
-                "group": match.group(6),
-                "location": match.group(7).strip()
+                "return_type": match.group(2),
+                "client_id": match.group(3),
+                "sequence": match.group(4),
+                "ssn": match.group(5),  # For entities this is EIN
+                "office": match.group(6),
+                "group": match.group(7),
+                "location": match.group(8).strip()
             }
         return None
     
@@ -223,23 +244,30 @@ class CCHReader:
             # Check for form start
             form_match = self.FORM_PATTERN.match(line)
             if form_match:
-                # Save previous entry
-                if current_entry and current_form:
+                # In CCH format, entry/section markers come BEFORE the form line
+                # So if we have a pending entry with NO fields, it belongs to this NEW form
+                # If the entry has fields, save it to the PREVIOUS form
+                if current_entry and current_form and current_entry.fields:
                     current_form.entries.append(current_entry)
-                
+                    current_entry = None
+
                 form_code = form_match.group(1)
                 form_name = form_match.group(2).strip()
-                
+
                 # Check if form already exists (multiple entries)
                 if form_code in current_doc.forms:
                     current_form = current_doc.forms[form_code]
                 else:
                     current_form = CCHForm(code=form_code, name=form_name)
                     current_doc.forms[form_code] = current_form
-                
-                current_entry = None
-                current_section = 1
-                current_entry_num = 1
+
+                # If we have a pending entry (no fields), keep it for this new form
+                # Otherwise, we'll wait for an entry marker
+                if not current_entry:
+                    current_entry = CCHFormEntry(
+                        section=current_section,
+                        entry=current_entry_num
+                    )
                 continue
             
             # Check for section marker
@@ -251,10 +279,10 @@ class CCHReader:
             # Check for entry marker
             entry_match = self.ENTRY_PATTERN.match(line)
             if entry_match:
-                # Save previous entry
-                if current_entry and current_form:
+                # Save previous entry only if it has fields
+                if current_entry and current_form and current_entry.fields:
                     current_form.entries.append(current_entry)
-                
+
                 current_entry_num = int(entry_match.group(1))
                 current_entry = CCHFormEntry(
                     section=current_section,
@@ -291,7 +319,7 @@ class CCHReader:
         
         # Yield last document
         if current_doc:
-            if current_entry and current_form:
+            if current_entry and current_form and current_entry.fields:
                 current_form.entries.append(current_entry)
             yield current_doc
 

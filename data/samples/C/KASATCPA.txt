@@ -1,0 +1,72 @@
+**BEGIN,2024:C:KASATCPA:1,82-4816247,Default,Default,Main Office/Main
+\@101 \ 1
+\:1
+\&1
+.40 Kasat CPA, P.C.
+.42 82-4816247
+.43 3722 69th Street
+.44 Woodside
+.45 NY
+.46 11377
+.48 646-853-8740
+.49 President
+.50 05/01/24
+.51 04/30/25
+.52 05/01/2017
+.53 541213
+.54 Accountancy
+.55 Accounting
+.56 Ny
+.75 Y
+.201M X
+.202M 2023.0506
+.204M X
+.205M KASATCPA:V1
+.206M 2023.05060
+.207M 2023.03020
+.210M 115274
+\@103 \ 3
+\:1
+\&1
+.40 1
+.90 Location of Books State Code is invalid.  Review General Information
+.92 Pro Forma Alert:  Client address has been transferred from the prior
+.94 year.  Please review to ensure the information is correct.
+.291M X
+.292M X
+.93 X
+.95 X
+\@104 \ 4
+\:1
+\&1
+.38 N
+.50 C
+.55 N
+.61 N
+.63 1
+\@921 \ BNK-1
+\:1
+\&1
+.36 021000021
+.37 806242988
+.42 1
+.38 1
+\@300 \ EF-2
+\:1
+\&1
+.63 Prakash Kasat
+\@610 \ L-10
+\:1
+\&1
+.44 N
+.45 N
+.48 N
+.49 N
+.50 N
+.51 N
+\@351 \ P-1
+\:1
+\&1
+.96M 08/15/2024
+.97M 10/15/2024
+\*
